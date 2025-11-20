@@ -1,0 +1,1791 @@
+{
+  "app": {
+    "name": "Ai Town Lab",
+    "tagline": "Generador de Avatares Profesionales con IA",
+    "description": "Transforma selfies en retratos profesionales de alta calidad"
+  },
+  "nav": {
+    "home": "Inicio",
+    "pricing": "Precios",
+    "aiVideo": "AI Video",
+    "aiImage": "AI Imagen",
+    "generate": "Generar",
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar sesión",
+    "createStudio": "Espacio de Trabajo"
+  },
+  "hero": {
+    "title": "Avatares Profesionales en 60 Segundos",
+    "subtitle": "Sube un selfie y deja que la IA cree impresionantes retratos profesionales para ti",
+    "cta": "Empezar",
+    "ctaSecondary": "Ver Ejemplos",
+    "badge": "Plataforma Creativa con IA",
+    "welcomeTo": "Bienvenido a",
+    "aiTownLab": "AI Town Lab",
+    "tagline": "Laboratorio Creativo de IA Todo en Uno, Convierte Tu Imaginación en Realidad",
+    "imageGen": "Generación de Imágenes",
+    "videoGen": "Creación de Videos",
+    "creativeDesign": "Diseño Creativo",
+    "startCreating": "Comenzar a Crear",
+    "viewShowcase": "Ver Galería",
+    "poweredBy": "Impulsado por:",
+    "imageLabel": "IA Imagen",
+    "videoLabel": "IA Video",
+    "quickBadge": "Generación Rápida"
+  },
+  "quickGenerator": {
+    "title": "Generador Rápido de Avatares",
+    "subtitle": "Sube tu foto, selecciona un modelo de IA y genera avatares profesionales rápidamente",
+    "uploadPrompt": "Sube Tu Foto",
+    "uploadHint": "Arrastra y suelta o haz clic para seleccionar (máx. 5MB)",
+    "styleLabel": "Seleccionar Estilo",
+    "generate": "Generar Avatar",
+    "generating": "Generando...",
+    "selectStyle": "Por favor selecciona un estilo",
+    "uploadImage": "Por favor sube una imagen",
+    "needLogin": "Se requiere iniciar sesión para usar las funciones de generación",
+    "pleaseLogin": "Por favor inicia sesión primero",
+    "pleaseUploadImage": "Por favor sube una imagen primero",
+    "uploadSection": "Subir Imagen",
+    "selectModel": "Seleccionar Modelo IA",
+    "promptSection": "Prompt (Opcional)",
+    "promptPlaceholder": "Ej.: Soy un empleado de banco, necesito una foto LinkedIn profesional",
+    "startGeneration": "Iniciar Generación",
+    "uploading": "Subiendo...",
+    "generatingImage": "Generando...",
+    "resultSection": "Resultado Generado",
+    "regenerate": "Regenerar",
+    "download": "Descargar",
+    "aiGenerating": "IA está generando...",
+    "estimatedTime": "Tiempo estimado: 10-30 segundos",
+    "resultPlaceholder": "La imagen generada aparecerá aquí",
+    "usageTips": "💡 Consejos de Uso",
+    "tip1": "• Mejores resultados con fotos frontales claras",
+    "tip2": "• Agrega prompts para resultados más precisos",
+    "tip3": "• Diferentes modelos de IA tienen diferentes características de estilo",
+    "tip4": "• La generación suele tardar 10-30 segundos",
+    "exploreMore": "Explorar Más Estilos →",
+    "changeImage": "Haz clic para cambiar la imagen",
+    "uploadDescription": "Arrastra y suelta o haz clic para seleccionar",
+    "uploadFormats": "Soporta JPG, PNG, WebP (máx. 5MB)",
+    "badge": "Inicio Rápido",
+    "imageTab": "IA Imagen",
+    "videoTab": "IA Video",
+    "imageDesc": "Generación de Imágenes",
+    "videoDesc": "Creación de Videos",
+    "loginTitle": "Desbloquea la Creación con IA",
+    "loginSubtitle": "Inicia sesión para acceder a todos los modelos de IA y comenzar tu viaje creativo",
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "exploreImages": "Explorar Más Funciones de Imagen",
+    "exploreImagesDesc": "Ver todos los modelos de generación de imágenes y funciones avanzadas",
+    "exploreVideos": "Explorar Más Funciones de Video",
+    "exploreVideosDesc": "Ver todos los modelos de generación de videos y funciones avanzadas"
+  },
+  "examples": {
+    "title": "Galería de Ejemplos",
+    "subtitle": "Mira avatares profesionales generados por otros usuarios"
+  },
+  "creative": {
+    "title": "Generador de Avatares IA",
+    "subtitle": "Elige un estilo y comienza a crear tu avatar único",
+    "exploreMore": "Explorar Más Estilos",
+    "tabs": {
+      "myPhotos": "Mis Fotos",
+      "publicGallery": "Galería Pública"
+    },
+    "noPhotos": "Aún no hay fotos, ¡comienza a crear!",
+    "noPublicPhotos": "Aún no hay fotos públicas",
+    "loadMore": "Cargar Más",
+    "loading": "Cargando...",
+    "seo": {
+      "aboutTitle": "Sobre la Generación de Avatares Profesionales con IA",
+      "aboutDescription": "Usa sistemas avanzados de canalización de IA para generar rápidamente avatares profesionales de alta calidad. Soporta canalización profesional (7 etapas) y canalización rápida (3 etapas).",
+      "tutorialTitle": "Tutorial",
+      "tutorial1": "Sube tu foto",
+      "tutorial2": "Selecciona canalización de generación (profesional o rápida)",
+      "tutorial3": "Haz clic en generar y espera la creación de IA",
+      "tutorial4": "Después de la generación, puedes elegir mostrar públicamente tu trabajo",
+      "faqTitle": "FAQ",
+      "faq1Question": "¿Cuánto tiempo tarda la generación?",
+      "faq1Answer": "La canalización rápida tarda unos 5-10 segundos, la canalización profesional tarda unos 15-25 segundos.",
+      "faq2Question": "¿Cuántos puedo generar?",
+      "faq2Answer": "Los usuarios gratuitos tienen 3 oportunidades gratuitas de generación, los usuarios de pago pueden comprar créditos para generación ilimitada.",
+      "faq3Question": "¿Quién posee los derechos de autor de las fotos generadas?",
+      "faq3Answer": "Los derechos de autor de las fotos generadas pertenecen al usuario y pueden usarse libremente."
+    },
+    "actions": {
+      "publish": "Publicar",
+      "unpublish": "Despublicar",
+      "feature": "Destacar",
+      "unfeature": "Quitar Destacado",
+      "publishToGallery": "Publicar en Galería",
+      "unpublishFromGallery": "Despublicar de Galería"
+    },
+    "styles": {
+      "linkedin-professional": "Foto Profesional de LinkedIn",
+      "linkedin-pro-pipeline": "Foto Profesional de LinkedIn",
+      "dating-app-photo": "Foto para App de Citas",
+      "social-media-avatar": "Avatar para Redes Sociales",
+      "executive-portrait": "Retrato Ejecutivo",
+      "creative-artistic-portrait": "Retrato Artístico Creativo",
+      "official-id-photo": "Foto de Identificación Oficial"
+    },
+    "generator": {
+      "mode": "Modo de Generación",
+      "qualityMode": "Modo de Calidad",
+      "simple": "Simple Rápido",
+      "simpleDesc": "8-15s · 100 créditos",
+      "pro": "Pro Profesional",
+      "proDesc": "15-25s · 150 créditos",
+      "imageToImage": "Imagen a Imagen",
+      "textToImage": "Texto a Imagen",
+      "uploadImage": "Subir Imagen",
+      "aiModel": "Modelo IA",
+      "customPrompt": "Prompt Personalizado (Opcional)",
+      "customPromptPlaceholder": "Añade descripción extra para mejorar la generación...",
+      "startGeneration": "Iniciar Generación",
+      "uploading": "Subiendo...",
+      "generating": "Generando..."
+    },
+    "progress": {
+      "title": "Progreso de Generación",
+      "initializing": "Inicializando",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "failed": "Generación Fallida",
+      "estimatedTime": "Tiempo estimado restante",
+      "seconds": "segundos"
+    },
+    "comparison": {
+      "original": "Original",
+      "generated": "Generado",
+      "viewOriginal": "Ver Original",
+      "viewGenerated": "Ver Generado"
+    }
+  },
+  "pricing": {
+    "title": "Elige Tu Plan",
+    "subtitle": "Precios flexibles para tus necesidades",
+    "free": "Gratis",
+    "popular": "Más Popular",
+    "perMonth": "por mes",
+    "perYear": "/año",
+    "save": "Ahorra",
+    "getStarted": "Empezar",
+    "buyNow": "Comprar Ahora",
+    "subscribe": "Suscribirse",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "credits": "Créditos",
+    "billedAnnually": "Facturado anualmente",
+    "plans": {
+      "subscription-monthly-1000": {
+        "name": "Básico Mensual",
+        "description": "1000 créditos por mes",
+        "features": [
+          "1000 créditos mensuales",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Acceso miembro premium"
+        ]
+      },
+      "subscription-monthly-5000": {
+        "name": "Pro Mensual",
+        "description": "5000 créditos por mes",
+        "features": [
+          "5000 créditos mensuales",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Procesamiento prioritario",
+          "Acceso miembro premium"
+        ]
+      },
+      "subscription-monthly-10000": {
+        "name": "Premium Mensual",
+        "description": "10000 créditos por mes",
+        "features": [
+          "10000 créditos mensuales",
+          "Imágenes de máxima calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Procesamiento prioritario",
+          "Soporte dedicado",
+          "Acceso miembro premium"
+        ]
+      },
+      "subscription-yearly-1000": {
+        "name": "Básico Anual",
+        "description": "1000 créditos por mes",
+        "features": [
+          "1000 créditos mensuales",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Acceso miembro premium",
+          "Ahorra $24/año"
+        ]
+      },
+      "subscription-yearly-5000": {
+        "name": "Pro Anual",
+        "description": "5000 créditos por mes",
+        "features": [
+          "5000 créditos mensuales",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Procesamiento prioritario",
+          "Acceso miembro premium",
+          "Ahorra $120/año"
+        ]
+      },
+      "subscription-yearly-10000": {
+        "name": "Premium Anual",
+        "description": "10000 créditos por mes",
+        "features": [
+          "10000 créditos mensuales",
+          "Imágenes de máxima calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "Procesamiento prioritario",
+          "Soporte dedicado",
+          "Acceso miembro premium",
+          "Ahorra $240/año"
+        ]
+      },
+      "credits-1000": {
+        "name": "Paquete Inicial",
+        "description": "Paquete de créditos único",
+        "features": [
+          "1000 créditos",
+          "Nunca expira",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente"
+        ]
+      },
+      "credits-5000": {
+        "name": "Paquete Valor",
+        "description": "Paquete de créditos único",
+        "features": [
+          "5000 créditos",
+          "Nunca expira",
+          "Imágenes de alta calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "10% créditos bonus"
+        ]
+      },
+      "credits-10000": {
+        "name": "Paquete Ultimate",
+        "description": "Paquete de créditos único",
+        "features": [
+          "10000 créditos",
+          "Nunca expira",
+          "Imágenes de máxima calidad",
+          "Todos los estilos disponibles",
+          "Almacenamiento permanente",
+          "20% créditos bonus"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre bod_avatars",
+    "q1": "¿Cómo uso bod_avatars?",
+    "a1": "Simplemente sube tu selfie, elige tu estilo preferido y haz clic en generar. La IA creará tu avatar profesional en segundos.",
+    "q2": "¿Qué formatos de imagen son compatibles?",
+    "a2": "Admitimos formatos JPEG, PNG y WebP, con un tamaño máximo de archivo de 5MB.",
+    "q3": "¿Cuánto tiempo tarda la generación?",
+    "a3": "Normalmente de 30 a 60 segundos. El tiempo exacto depende del modelo seleccionado y la carga actual del servidor.",
+    "q4": "¿Se guardan mis fotos?",
+    "a4": "Las fotos originales se eliminan automáticamente después de 24 horas. Los avatares generados se guardan permanentemente en tu cuenta.",
+    "q5": "¿Puedo usarlos comercialmente?",
+    "a5": "Sí, tienes plenos derechos para usar los avatares generados con fines comerciales o personales."
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "signup": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "signupNow": "Regístrate ahora",
+    "loginNow": "Inicia sesión ahora",
+    "or": "o",
+    "googleLogin": "Iniciar sesión con Google",
+    "emailSent": "Correo de verificación enviado",
+    "checkEmail": "Por favor revisa tu correo y haz clic en el enlace de verificación"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Finalizar",
+    "select": "Por favor selecciona",
+    "credits": "créditos"
+  },
+  "seo": {
+    "home": {
+      "title": "Generador de Avatares Profesionales con IA - Crea Retratos en 60 Segundos",
+      "description": "Transforma tus selfies en retratos profesionales de alta calidad usando tecnología IA. Perfecto para LinkedIn, currículums, fotos de identificación y más. Calidad profesional, fácil de usar.",
+      "keywords": "generador avatar IA,retrato profesional,foto LinkedIn,foto de identificación,generación foto IA,creador avatar"
+    },
+    "pricing": {
+      "title": "Planes de Precios - Paquetes Flexibles de Generación de Avatares",
+      "description": "Elige el paquete de generación de avatares que se ajuste a tus necesidades. Prueba gratuita y múltiples planes de pago disponibles. Paga según uses sin tarifas ocultas."
+    },
+    "create": {
+      "title": "Espacio de trabajo AI - AI Town Lab",
+      "description": "Plataforma de creación AI profesional que integra generación de imágenes y creación de videos. Compatible con varios modelos de AI, incluidos Nano Banana, GPT-4o, Google Veo, OpenAI Sora y más.",
+      "keywords": "Creación AI,Generación de imágenes,Generación de videos,Espacio de trabajo AI,Plataforma creativa,Nano Banana,GPT-4o,Veo,Sora"
+    },
+    "creative": {
+      "title": "Generación Creativa de Avatares con IA - Explora Múltiples Estilos",
+      "description": "Explora varios estilos de generación de avatares IA: retratos profesionales, fotos de citas, avatares de redes sociales, retratos artísticos y más. Sube tu foto y genera instantáneamente."
+    },
+    "aiVideo": {
+      "title": "Generador de Videos IA - Veo 3.1 & Sora 2 | Creación Profesional de Videos",
+      "description": "Genera videos profesionales de alta calidad desde texto o imágenes usando tecnología IA de Google Veo 3.1 y OpenAI Sora 2. Soporta múltiples modos y relaciones de aspecto para crear contenido de video impresionante.",
+      "keywords": "generación video IA,generador video,Veo 3.1,Sora 2,texto a video,imagen a video,creación video IA"
+    },
+    "aiImage": {
+      "title": "Generador de Imágenes IA - Creación Profesional de Avatares e Imágenes",
+      "description": "Genera avatares e imágenes de calidad profesional usando tecnología IA avanzada. Soporta modelos Nano Banana y GPT-4o para generación rápida de fotos de alta calidad e imágenes creativas.",
+      "keywords": "generación imagen IA,generador avatar,foto profesional,Nano Banana,GPT-4o,creación imagen IA"
+    }
+  },
+  "workflows": {
+    "linkedin": {
+      "name": "Retrato Profesional",
+      "description": "Fotos profesionales para LinkedIn y currículums",
+      "fields": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Juan Pérez"
+        },
+        "industry": {
+          "label": "Industria",
+          "options": {
+            "tech": "Tecnología/Internet",
+            "finance": "Finanzas/Consultoría",
+            "education": "Educación/Formación",
+            "healthcare": "Salud/Medicina",
+            "legal": "Legal/Derecho",
+            "creative": "Creativo/Diseño",
+            "sales": "Ventas/Marketing",
+            "other": "Otro"
+          }
+        },
+        "position": {
+          "label": "Nivel de Posición",
+          "options": {
+            "junior": "Junior",
+            "mid": "Nivel Medio",
+            "senior": "Senior",
+            "manager": "Gerente",
+            "executive": "Ejecutivo"
+          }
+        },
+        "attire": {
+          "label": "Vestimenta",
+          "options": {
+            "formal": "Traje Formal con Corbata",
+            "business_casual": "Casual de Negocios",
+            "smart_casual": "Casual Elegante",
+            "creative_casual": "Casual Creativo"
+          }
+        },
+        "background": {
+          "label": "Fondo",
+          "options": {
+            "solid": "Fondo Sólido (Gris/Azul)",
+            "modern_office": "Oficina Moderna",
+            "minimal_workspace": "Espacio de Trabajo Minimalista",
+            "natural_light": "Luz Natural junto a Ventana",
+            "bookshelf": "Fondo de Estantería"
+          }
+        }
+      }
+    },
+    "dating": {
+      "name": "Foto para App de Citas",
+      "description": "Fotos atractivas para Tinder y apps de citas",
+      "fields": {
+        "name": {
+          "label": "Apodo",
+          "placeholder": "Alex"
+        },
+        "vibe": {
+          "label": "Vibra",
+          "options": {
+            "energetic": "Enérgico y Vibrante",
+            "mature": "Maduro y Encantador",
+            "artistic": "Artístico y Culto",
+            "athletic": "Atlético y Saludable",
+            "humorous": "Humorístico y Divertido",
+            "gentle": "Amable y Accesible"
+          }
+        },
+        "setting": {
+          "label": "Entorno",
+          "options": {
+            "outdoor": "Exterior con Luz Natural",
+            "cafe": "Café Acogedor",
+            "urban": "Calle Urbana",
+            "home": "Hogar Cálido",
+            "gym": "Gimnasio",
+            "travel": "Destino de Viaje"
+          }
+        },
+        "style": {
+          "label": "Estilo",
+          "options": {
+            "casual": "Casual Relajado",
+            "trendy": "Moda Tendencia",
+            "sporty": "Deportivo Atlético",
+            "artsy": "Artístico Creativo",
+            "elegant": "Elegante Refinado"
+          }
+        },
+        "mood": {
+          "label": "Expresión",
+          "options": {
+            "natural_smile": "Sonrisa Natural",
+            "laughing": "Risa Feliz",
+            "warm_gaze": "Mirada Cálida",
+            "confident": "Confiado",
+            "playful": "Juguetón"
+          }
+        }
+      }
+    },
+    "executive": {
+      "name": "Retrato Ejecutivo",
+      "description": "Fotos autoritativas para CEOs y ejecutivos",
+      "fields": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Carlos Martínez"
+        },
+        "title": {
+          "label": "Título",
+          "placeholder": "CEO / Fundador / Presidente"
+        },
+        "company": {
+          "label": "Tipo de Empresa",
+          "options": {
+            "tech": "Tecnología",
+            "finance": "Institución Financiera",
+            "manufacturing": "Manufactura",
+            "consulting": "Firma de Consultoría",
+            "startup": "Startup",
+            "traditional": "Empresa Tradicional"
+          }
+        },
+        "leadership": {
+          "label": "Estilo de Liderazgo",
+          "options": {
+            "authoritative": "Autoritativo y Profesional",
+            "innovative": "Innovador y Visionario",
+            "approachable": "Accesible y Pragmático",
+            "steady": "Estable y Confiable",
+            "decisive": "Decisivo y Comandante"
+          }
+        },
+        "background": {
+          "label": "Fondo",
+          "options": {
+            "black": "Negro Puro (Lujo)",
+            "office": "Panorama de Oficina",
+            "skyline": "Horizonte de Ciudad",
+            "boardroom": "Sala de Juntas Moderna",
+            "corporate": "Ambiente Corporativo"
+          }
+        }
+      }
+    },
+    "social": {
+      "name": "Avatar para Redes Sociales",
+      "description": "Fotos virales para Instagram, TikTok y redes sociales",
+      "fields": {
+        "name": {
+          "label": "Usuario",
+          "placeholder": "Vivi"
+        },
+        "niche": {
+          "label": "Nicho de Contenido",
+          "options": {
+            "fashion": "Moda y Belleza",
+            "lifestyle": "Estilo de Vida",
+            "travel": "Viajes y Exploración",
+            "food": "Comida y Culinaria",
+            "fitness": "Fitness y Bienestar",
+            "knowledge": "Conocimiento y Educación",
+            "creative": "Arte y Creatividad"
+          }
+        },
+        "aesthetic": {
+          "label": "Estética",
+          "options": {
+            "fresh": "Fresco y Natural",
+            "luxury": "Lujo de Alta Gama",
+            "sweet": "Dulce y Juvenil",
+            "edgy": "Audaz y Fresco",
+            "cozy": "Cálido y Acogedor",
+            "vintage": "Vintage Retro",
+            "japanese": "Minimalista Japonés"
+          }
+        },
+        "color": {
+          "label": "Ambiente de Color",
+          "options": {
+            "bright": "Brillante y Aireado",
+            "warm": "Cálido y Suave",
+            "vibrant": "Vibrante Saturado",
+            "muted": "Apagado Terroso",
+            "film": "Película Vintage",
+            "monochrome": "Blanco y Negro"
+          }
+        },
+        "vibe": {
+          "label": "Personalidad",
+          "options": {
+            "sunny": "Soleado y Alegre",
+            "cool": "Fresco y Distante",
+            "sweet": "Dulce y Adorable",
+            "elegant": "Elegante y Sofisticado",
+            "bold": "Audaz y Confiado",
+            "warm": "Cálido y Amigable"
+          }
+        }
+      }
+    },
+    "creative": {
+      "name": "Retrato Artístico Creativo",
+      "description": "Retratos artísticos para artistas y creativos",
+      "fields": {
+        "name": {
+          "label": "Nombre/Nombre Artístico",
+          "placeholder": "Luna"
+        },
+        "style": {
+          "label": "Estilo Artístico",
+          "options": {
+            "cyberpunk": "Cyberpunk",
+            "vaporwave": "Vaporwave",
+            "oil_painting": "Pintura al Óleo",
+            "watercolor": "Acuarela Soñadora",
+            "pop_art": "Arte Pop",
+            "surrealism": "Surrealismo",
+            "minimalism": "Minimalismo",
+            "gothic": "Gótico Oscuro"
+          }
+        },
+        "color": {
+          "label": "Esquema de Colores",
+          "options": {
+            "neon": "Neón Vibrante",
+            "black_gold": "Negro y Oro Lujo",
+            "pink_blue": "Gradiente Rosa y Azul",
+            "vintage": "Marrón Vintage",
+            "contrast": "Alto Contraste Audaz",
+            "monochrome_red": "Blanco Negro con Acento Rojo",
+            "rainbow": "Arcoíris Multicolor"
+          }
+        },
+        "mood": {
+          "label": "Estado de Ánimo",
+          "options": {
+            "mysterious": "Misterioso y Soñador",
+            "futuristic": "Futurista Vanguardista",
+            "romantic": "Romántico y Gentil",
+            "powerful": "Poderoso y Explosivo",
+            "melancholic": "Melancólico y Poético",
+            "wild": "Salvaje e Indómito",
+            "serene": "Sereno y Zen"
+          }
+        },
+        "elements": {
+          "label": "Elementos Visuales",
+          "options": {
+            "light_shadow": "Contraste de Luz y Sombra",
+            "geometric": "Patrones Geométricos",
+            "floral": "Floral Natural",
+            "neon_glow": "Efectos de Brillo Neón",
+            "smoke": "Humo y Niebla",
+            "cosmic": "Cósmico Estrellado",
+            "abstract": "Líneas Abstractas"
+          }
+        }
+      }
+    },
+    "official": {
+      "name": "Foto de Documento Oficial",
+      "description": "Fotos conformes para pasaportes, visas e identificaciones",
+      "fields": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "María García"
+        },
+        "type": {
+          "label": "Tipo de Documento",
+          "options": {
+            "passport": "Pasaporte/Visa",
+            "id": "Identificación Nacional",
+            "driver": "Licencia de Conducir",
+            "resume": "Foto de Currículum",
+            "student": "Identificación de Estudiante",
+            "work": "Permiso de Trabajo"
+          }
+        },
+        "standard": {
+          "label": "Estándar del País",
+          "options": {
+            "china": "Estándares de China",
+            "usa": "Estándares de EE.UU.",
+            "eu": "Estándares de la UE",
+            "canada": "Estándares de Canadá",
+            "australia": "Estándares de Australia",
+            "japan": "Estándares de Japón"
+          }
+        },
+        "background": {
+          "label": "Color de Fondo",
+          "options": {
+            "white": "Fondo Blanco",
+            "blue": "Fondo Azul",
+            "red": "Fondo Rojo",
+            "gray": "Fondo Gris"
+          }
+        },
+        "attire": {
+          "label": "Vestimenta",
+          "options": {
+            "dark_suit": "Traje Formal Oscuro",
+            "white_shirt": "Camisa Blanca",
+            "business_casual": "Casual de Negocios",
+            "appropriate": "Ropa Apropiada"
+          }
+        }
+      }
+    },
+    "modal": {
+      "title": "Flujo de Trabajo Inteligente",
+      "subtitle": "Completa la información a continuación y la IA generará prompts profesionalmente optimizados",
+      "optimizing": "La IA está optimizando prompts...",
+      "generating": "Generando imagen profesional...",
+      "generateButton": "Generar Avatar Profesional",
+      "cancelButton": "Cancelar",
+      "required": "Requerido",
+      "optional": "Opcional"
+    }
+  },
+  "home": {
+    "simpleSteps": {
+      "title": "3 Pasos Simples para Fotos Profesionales",
+      "subtitle": "No se necesita cita con fotógrafo, no hay horas de sesión fotográfica",
+      "step1": {
+        "title": "Subir Fotos",
+        "description": "Sube 6-12 selfies, múltiples ángulos funcionan mejor"
+      },
+      "step2": {
+        "title": "Generación con IA",
+        "description": "Elige estilo y escena, la IA comienza a crear para ti"
+      },
+      "step3": {
+        "title": "Descargar y Usar",
+        "description": "Obtén 40-100 fotos profesionales, usa libremente"
+      },
+      "cta": "Comenzar a Generar Ahora",
+      "freeTrial": "⚡ Los nuevos usuarios obtienen 3 pruebas de generación gratuitas"
+    },
+    "videoShowcase": {
+      "badge": "Tecnología de Creación de Video con IA",
+      "title": "Hacer la Creación de Video Simple",
+      "subtitle": "De texto a video, de imágenes a animación, la IA te ayuda a realizar todas las ideas de video",
+      "examplePrompt": "Prompt de ejemplo:",
+      "videoPlaybackNotSupported": "Tu navegador no soporta reproducción de video",
+      "videoDuration": "⏱️ video de {duration} segundos",
+      "generateTime": "⚡ {time} minutos para generar",
+      "wideApplications": "Amplia Gama de Aplicaciones",
+      "startCreating": "Comenzar a Crear Video",
+      "modelSupport": "🎉 Soporta Veo 3.1, Sora 2 y otros modelos de IA de primera línea",
+      "multipleRatios": "Horizontal, vertical, cuadrado - múltiples relaciones de aspecto para satisfacer todas las necesidades de plataforma",
+      "features": {
+        "textToVideo": {
+          "title": "Texto a Video",
+          "description": "Ingresa descripción de texto, la IA genera video automáticamente",
+          "example": "Un gatito bailando a la luz de la luna"
+        },
+        "imageToVideo": {
+          "title": "Imagen a Video",
+          "description": "Sube imágenes estáticas, genera animaciones suaves",
+          "example": "Da vida a personas en fotos"
+        },
+        "reference": {
+          "title": "Generación de Referencia",
+          "description": "Proporciona materiales de referencia, crea videos similares",
+          "example": "Genera videos del mismo estilo basados en imágenes de estilo"
+        }
+      },
+      "useCases": {
+        "shortForm": {
+          "title": "Creación de Video Corto",
+          "description": "TikTok, Douyin, YouTube Shorts"
+        },
+        "branding": {
+          "title": "Promoción de Marca",
+          "description": "Videos corporativos, videos de presentación de productos"
+        },
+        "animation": {
+          "title": "Cortometrajes de Animación",
+          "description": "Animación MG, animación de personajes, efectos"
+        },
+        "advertising": {
+          "title": "Creatividad Publicitaria",
+          "description": "Videos de marketing, anuncios en redes sociales"
+        }
+      }
+    },
+    "multiFunctionShowcase": {
+      "title": "Más que Avatares",
+      "subtitle": "Generación de Imágenes + Creación de Videos, satisface todas tus necesidades creativas",
+      "videoDemo": "▶️ Demo de Video",
+      "createNow": "Comenzar a Crear",
+      "viewMore": "Ver Más",
+      "features": {
+        "aiGeneration": {
+          "title": "Generación Inteligente con IA",
+          "description": "No se necesitan habilidades profesionales, la IA completa la creación automáticamente"
+        },
+        "multipleStyles": {
+          "title": "Múltiples Estilos Disponibles",
+          "description": "De negocios a creativo, satisfaciendo diferentes necesidades de escenario"
+        },
+        "highQuality": {
+          "title": "Salida de Alta Calidad",
+          "description": "Calidad profesional, lista para uso comercial"
+        }
+      },
+      "useCases": {
+        "avatar": {
+          "name": "Avatar IA",
+          "description": "Retratos profesionales, fotos de LinkedIn, fotos de identificación"
+        },
+        "poster": {
+          "name": "Pósters de Negocios",
+          "description": "Diseño de anuncios, promoción de productos, redes sociales"
+        },
+        "videoAd": {
+          "name": "Anuncios de Video",
+          "description": "Promoción de marca, demos de productos, videos cortos"
+        },
+        "animation": {
+          "name": "Animación",
+          "description": "Animación MG, animación de personajes, efectos"
+        }
+      },
+      "showcases": {
+        "avatar": {
+          "title": "Avatar Profesional de LinkedIn",
+          "description": "Genera retratos de negocios de alta calidad con un clic",
+          "tags": "1:1,60s,100 imágenes"
+        },
+        "poster": {
+          "title": "Póster Publicitario de Producto",
+          "description": "La IA diseña hermosos materiales de marketing",
+          "tags": "16:9,90s,Personalizado"
+        },
+        "videoAd": {
+          "title": "Video de Promoción de Marca",
+          "description": "Genera videos profesionales a partir de descripciones de texto",
+          "tags": "16:9,5s,HD"
+        },
+        "animation": {
+          "title": "Cortometraje de Animación de Personajes",
+          "description": "Genera animaciones suaves a partir de imágenes estáticas",
+          "tags": "9:16,10s,Suave"
+        }
+      }
+    }
+  },
+  "trustIndicators": {
+    "title": "Plataforma Profesional de Creación con IA",
+    "models": "Modelos de IA",
+    "speed": "Ultrarrápido",
+    "seconds": "seg",
+    "quality": "Calidad Ultra HD",
+    "support": "Soporte 24/7",
+    "poweredBy": "Impulsado por IA"
+  },
+  "beforeAfterShowcase": {
+    "title": "Transformación Impulsada por IA",
+    "subtitle": "Sube fotos, genera obras profesionales en 60 segundos",
+    "uploadedPhoto": "Foto Subida",
+    "aiGenerated": "Generado por IA",
+    "example": "Ejemplo",
+    "altBefore": "Foto subida",
+    "altAfter": "Foto generada por IA"
+  },
+  "comparisonSlider": {
+    "beforeLabel": "Original",
+    "afterLabel": "Generado",
+    "dragToCompare": "Arrastra para comparar"
+  },
+  "creativeGallery": {
+    "title": "Escaparate Creativo",
+    "subtitle": "Explora posibilidades infinitas, inspírate con estos ejemplos seleccionados",
+    "portrait": "Retrato y Avatar",
+    "commercial": "Comercial y Anuncios",
+    "animation": "Animación y Video",
+    "creative": "Diseño Creativo",
+    "allWorks": "Todas las Obras",
+    "imageWorks": "Generación de Imágenes",
+    "videoWorks": "Creación de Videos",
+    "createSimilar": "Crear Similar",
+    "viewMore": "Ver Galería Completa",
+    "loading": "Cargando...",
+    "untitled": "Sin título"
+  },
+  "errors": {
+    "api": {
+      "PRO_MODEL_REQUIRES_SUBSCRIPTION": "Los modelos Sora 2 Pro solo están disponibles para suscriptores de pago o usuarios con créditos. Por favor actualiza tu plan.",
+      "PRO_MODEL_DURATION_LIMIT": "Los modelos Sora 2 Pro solo soportan duración de 10s y 15s",
+      "INSUFFICIENT_CREDITS": "Créditos insuficientes, por favor recarga o actualiza tu plan",
+      "INVALID_REQUEST": "Parámetros de solicitud inválidos",
+      "UNAUTHORIZED": "Por favor inicia sesión primero",
+      "INTERNAL_ERROR": "Error interno del servidor, por favor intenta de nuevo más tarde",
+      "NOT_FOUND": "Recurso solicitado no encontrado",
+      "FILE_TOO_LARGE": "El tamaño del archivo excede el límite",
+      "INVALID_FILE_TYPE": "Tipo de archivo no soportado",
+      "GENERATION_FAILED": "Generación fallida, por favor intenta de nuevo",
+      "TIMEOUT": "Tiempo de espera de solicitud agotado, por favor intenta de nuevo más tarde"
+    }
+  },
+  "footer": {
+    "sections": {
+      "product": "Producto",
+      "resources": "Recursos",
+      "company": "Empresa",
+      "contact": "Contáctanos"
+    },
+    "links": {
+      "generate": "Generar Avatar",
+      "pricing": "Precios",
+      "examples": "Ejemplos",
+      "faq": "FAQ",
+      "docs": "Documentación",
+      "blog": "Blog",
+      "about": "Acerca de",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio"
+    },
+    "copyright": "© {year} Velocentra CO. Todos los derechos reservados.",
+    "operatedBy": "AI Town Lab es operado por Velocentra CO"
+  },
+  "company": {
+    "legalName": "Velocentra CO",
+    "legalNameCn": "维洛森",
+    "productBrand": "AI Town Lab"
+  },
+  "about": {
+    "title": "Acerca de AI Town Lab",
+    "description": "AI Town Lab es operado por Velocentra CO, enfocado en tecnología de generación de imágenes y videos con IA",
+    "keywords": "AI Town Lab,Velocentra,generación de imágenes IA,creación de videos IA,acerca de",
+    "badge": "Acerca de",
+    "subtitle": "Operado por Velocentra CO",
+    "operatedBy": "AI Town Lab es una plataforma creativa de IA de Velocentra CO",
+    "intro": {
+      "title": "Presentación de la empresa",
+      "content": "Velocentra CO es una empresa de tecnología IA que valora la velocidad y el poder. Nuestro nombre deriva de Velocity (velocidad) y Centra (centro), representando nuestro compromiso de ser el centro de velocidad en la creación IA. AI Town Lab se enfoca en generación de imágenes y videos, proporcionando a los creadores herramientas IA rápidas y profesionales."
+    },
+    "technology": {
+      "title": "Nuestra tecnología",
+      "models": {
+        "title": "Mejores modelos de IA",
+        "content": "Integración de modelos de IA líderes en la industria incluyendo Google Veo 3.1, OpenAI Sora 2, Nano Banana y GPT-4o para garantizar calidad de generación profesional."
+      },
+      "image": {
+        "title": "Generación de imágenes profesionales",
+        "content": "Soporte para diversos escenarios de generación de imágenes, desde avatares profesionales hasta diseño creativo, ofreciendo capacidades de generación de imágenes de alta calidad y diversificadas."
+      },
+      "video": {
+        "title": "Creación de videos de alta calidad",
+        "content": "Múltiples modos incluyendo texto-a-video e imagen-a-video, generando rápidamente contenido de video de alta calidad para satisfacer diversas necesidades creativas."
+      }
+    },
+    "capabilities": {
+      "title": "Capacidades del producto",
+      "avatars": {
+        "title": "Avatares profesionales con IA",
+        "content": "Transforme rápidamente selfies en retratos profesionales de alta calidad, adecuados para LinkedIn, currículums, fotos de identificación, etc."
+      },
+      "images": {
+        "title": "Creación de imágenes con IA",
+        "content": "Potentes capacidades de generación de imágenes con soporte para modos texto-a-imagen e imagen-a-imagen, satisfaciendo necesidades desde diseño comercial hasta creación personal."
+      },
+      "videos": {
+        "title": "Producción de videos con IA",
+        "content": "Utilizando la última tecnología de generación de videos con IA para crear rápidamente contenido de video de alta calidad con varias relaciones de aspecto y opciones de duración."
+      },
+      "scenarios": {
+        "title": "Soporte multi-escenario",
+        "content": "Cubriendo retratos profesionales, redes sociales, diseño creativo, marketing y más escenarios de aplicación en una plataforma integrada."
+      }
+    },
+    "vision": {
+      "title": "Nuestra visión",
+      "content": "Hacer que la creación con IA sea accesible para todos, empoderando a cada creador. Creemos que la tecnología debería servir a la creatividad, no limitarla. A través de la innovación continua, estamos comprometidos a romper fronteras creativas y hacer que los sueños creativos sean alcanzables para todos.",
+      "value1": "🚀 Ultra rápido",
+      "value2": "🎨 Calidad profesional",
+      "value3": "💡 Impulsado por innovación"
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tiene alguna pregunta o sugerencia, no dude en contactarnos",
+      "email": "support@aitownlab.com"
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "description": "Política de privacidad de AI Town Lab - Conozca cómo recopilamos, usamos y protegemos su información personal",
+    "badge": "Protección de privacidad",
+    "subtitle": "AI Town Lab (operado por Velocentra CO)",
+    "lastUpdated": "Última actualización",
+    "intro": "Bienvenido a AI Town Lab. Valoramos su privacidad y nos comprometemos a proteger su información personal. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos sus datos. Al usar nuestros servicios, acepta las prácticas descritas en esta política.",
+    "collection": {
+      "title": "Información que recopilamos",
+      "intro": "Para proporcionar nuestros servicios, recopilamos los siguientes tipos de información:",
+      "account": {
+        "title": "Información de cuenta",
+        "content": "Información básica como dirección de correo electrónico y nombre de usuario proporcionados durante el registro"
+      },
+      "uploads": {
+        "title": "Contenido subido",
+        "content": "Archivos de imagen y video que sube para la generación con IA"
+      },
+      "payment": {
+        "title": "Información de pago",
+        "content": "Datos de pago procesados a través de Stripe. No almacenamos directamente información completa de tarjetas de crédito"
+      },
+      "usage": {
+        "title": "Datos de uso",
+        "content": "Información técnica incluyendo archivos de registro, direcciones IP, tipo de navegador y tiempos de acceso"
+      }
+    },
+    "usage": {
+      "title": "Cómo usamos su información",
+      "service": "Proporcionar, mantener y mejorar los servicios de generación de imágenes y videos con IA",
+      "improvement": "Analizar patrones de uso para optimizar las funciones del producto y la experiencia del usuario",
+      "payment": "Procesar transacciones de pago y gestionar suscripciones",
+      "communication": "Enviar notificaciones relacionadas con el servicio, actualizaciones e información de marketing (opción de exclusión disponible)",
+      "security": "Detectar y prevenir fraudes, abusos o amenazas de seguridad"
+    },
+    "storage": {
+      "title": "Almacenamiento y seguridad de datos",
+      "platform": {
+        "title": "Plataforma de almacenamiento",
+        "content": "Utilizamos Supabase como nuestra plataforma principal de almacenamiento de datos con medidas de seguridad estándar de la industria"
+      },
+      "retention": {
+        "title": "Retención de imágenes subidas",
+        "content": "Las imágenes originales subidas se eliminan automáticamente dentro de las 24 horas posteriores al procesamiento de IA"
+      },
+      "generated": {
+        "title": "Contenido generado",
+        "content": "Las imágenes y videos generados por IA se guardan permanentemente en su cuenta a menos que elija eliminarlos"
+      },
+      "security": {
+        "title": "Medidas de seguridad",
+        "content": "Todas las transmisiones de datos usan cifrado HTTPS, y los datos almacenados están protegidos con cifrado"
+      }
+    },
+    "thirdParty": {
+      "title": "Servicios de terceros",
+      "intro": "Utilizamos los siguientes servicios de terceros para proporcionar funcionalidad completa:",
+      "stripe": "Procesa de forma segura las transacciones de pago cumpliendo con los estándares PCI DSS",
+      "aiProviders": "Google (Veo), OpenAI (Sora), Replicate y otros proporcionan servicios de modelos de IA",
+      "supabase": "Proporciona servicios seguros de base de datos y almacenamiento"
+    },
+    "cookies": {
+      "title": "Uso de cookies",
+      "intro": "Utilizamos cookies y tecnologías similares para:",
+      "auth": "Mantener su sesión de inicio de sesión y autenticación",
+      "preferences": "Guardar sus preferencias de usuario y selección de idioma",
+      "analytics": "Analizar el uso del sitio web para mejorar nuestros servicios"
+    },
+    "rights": {
+      "title": "Sus derechos (RGPD/CCPA)",
+      "intro": "Bajo las leyes de privacidad como RGPD y CCPA, tiene los siguientes derechos:",
+      "access": {
+        "title": "Derecho de acceso",
+        "content": "Solicitar ver sus datos personales que poseemos"
+      },
+      "deletion": {
+        "title": "Derecho de eliminación",
+        "content": "Solicitar la eliminación de su cuenta y datos relacionados"
+      },
+      "export": {
+        "title": "Portabilidad de datos",
+        "content": "Solicitar exportar una copia de sus datos"
+      },
+      "marketing": {
+        "title": "Exclusión de marketing",
+        "content": "Darse de baja de correos electrónicos de marketing en cualquier momento"
+      },
+      "rectification": {
+        "title": "Derecho de rectificación",
+        "content": "Solicitar corrección de información personal inexacta"
+      }
+    },
+    "children": {
+      "title": "Privacidad de menores",
+      "content": "Nuestros servicios están destinados a usuarios de 18 años o más. No recopilamos intencionalmente información personal de personas menores de 18 años. Si descubrimos que hemos recopilado datos de menores, los eliminaremos de inmediato."
+    },
+    "changes": {
+      "title": "Cambios en la política",
+      "content": "Podemos actualizar esta Política de Privacidad de vez en cuando. Los cambios significativos se comunicarán por correo electrónico o anuncio en el sitio web. El uso continuado del servicio indica la aceptación de la política actualizada."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tiene alguna pregunta sobre esta Política de Privacidad o desea ejercer sus derechos de privacidad, póngase en contacto con:",
+      "email": "Correo electrónico",
+      "company": "Empresa"
+    }
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "description": "Términos de servicio de AI Town Lab - Comprenda las reglas y derechos de uso de nuestros servicios",
+    "badge": "Términos de servicio",
+    "subtitle": "AI Town Lab (operado por Velocentra CO)",
+    "lastUpdated": "Última actualización",
+    "intro": "¡Bienvenido a AI Town Lab! Estos Términos de Servicio constituyen un acuerdo legalmente vinculante entre usted y Velocentra CO. Al usar nuestros servicios, acepta cumplir con estos términos. Por favor lea cuidadosamente.",
+    "service": {
+      "title": "Descripción del servicio",
+      "description": "AI Town Lab proporciona los siguientes servicios:",
+      "image": "Servicios de generación de imágenes con IA incluyendo avatares profesionales, diseño creativo, etc.",
+      "video": "Servicios de creación de videos con IA con soporte para texto-a-video e imagen-a-video",
+      "models": "Integración de múltiples modelos de IA de primer nivel (Google Veo, OpenAI Sora, Nano Banana, etc.)",
+      "availability": "Los servicios se basan en modelos de suscripción y créditos. No garantizamos una disponibilidad del servicio del 100%"
+    },
+    "account": {
+      "title": "Responsabilidades de la cuenta",
+      "age": "Debe tener al menos 18 años para usar nuestros servicios",
+      "security": "Es responsable de mantener la seguridad y confidencialidad de su cuenta",
+      "sharing": "Está prohibido compartir credenciales de cuenta o permitir que otros usen su cuenta",
+      "accuracy": "Es responsable de asegurar que la información proporcionada sea precisa y esté actualizada"
+    },
+    "payment": {
+      "title": "Pago y suscripción",
+      "processor": {
+        "title": "Procesamiento de pagos",
+        "content": "Todos los pagos se procesan de forma segura a través de Stripe cumpliendo con los estándares PCI DSS"
+      },
+      "subscription": {
+        "title": "Renovación automática",
+        "content": "Los planes de suscripción se renuevan automáticamente a menos que se cancelen antes del final del ciclo de facturación. Recibirá recordatorios de renovación"
+      },
+      "refund": {
+        "title": "Política de reembolso",
+        "content": "Las solicitudes de reembolso se manejan caso por caso. Póngase en contacto con el servicio al cliente para discutir su situación específica"
+      },
+      "credits": {
+        "title": "Reglas de créditos",
+        "content": "Los créditos comprados nunca caducan pero no son reembolsables. Los créditos se pueden usar para todos los servicios de generación"
+      }
+    },
+    "usage": {
+      "title": "Uso aceptable",
+      "intro": "Acepta no usar el servicio para los siguientes propósitos:",
+      "illegal": "Generar contenido ilegal, violento, pornográfico o dañino",
+      "impersonation": "Hacerse pasar por otros o representar de manera engañosa relaciones con otros",
+      "infringement": "Infringir los derechos de autor, marcas comerciales, derechos de imagen u otra propiedad intelectual de otros",
+      "abuse": "Abusar de los recursos del sistema o intentar interrumpir las operaciones normales del servicio",
+      "harmful": "Generar contenido que pueda causar discriminación, acoso o daño"
+    },
+    "ownership": {
+      "title": "Propiedad del contenido",
+      "uploads": {
+        "title": "Contenido subido",
+        "content": "Conserva todos los derechos sobre su contenido subido"
+      },
+      "generated": {
+        "title": "Contenido generado",
+        "content": "Los derechos de autor del contenido generado por IA le pertenecen y es libre de usarlo"
+      },
+      "commercial": {
+        "title": "Uso comercial",
+        "content": "Puede usar el contenido generado para cualquier propósito comercial o personal"
+      },
+      "showcase": {
+        "title": "Derechos de exhibición",
+        "content": "Nos reservamos el derecho de exhibir trabajos excelentes con fines de marketing y mejora del producto (con su consentimiento explícito)"
+      }
+    },
+    "changes": {
+      "title": "Cambios y terminación del servicio",
+      "features": "Nos reservamos el derecho de modificar, suspender o terminar cualquier función o servicio en cualquier momento",
+      "pricing": "Los precios y planes pueden ajustarse; los cambios significativos se comunicarán a los usuarios existentes con anticipación",
+      "termination": "Las cuentas que violen los términos de servicio pueden ser suspendidas o terminadas sin previo aviso"
+    },
+    "disclaimer": {
+      "title": "Descargo de responsabilidad",
+      "aiQuality": "La calidad de generación de IA puede variar debido a múltiples factores; no garantizamos una salida perfecta",
+      "responsibility": "Usted es completamente responsable de cómo usa el contenido generado y sus consecuencias",
+      "thirdParty": "Las limitaciones de los proveedores de servicios de IA de terceros pueden afectar el rendimiento del servicio",
+      "asIs": "Los servicios se proporcionan 'tal cual' sin garantías expresas o implícitas"
+    },
+    "liability": {
+      "title": "Limitación de responsabilidad",
+      "content": "En la máxima medida permitida por la ley, Velocentra CO no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo, incluyendo pero no limitado a pérdida de ganancias, pérdida de datos o interrupción del negocio."
+    },
+    "dispute": {
+      "title": "Resolución de disputas",
+      "law": {
+        "title": "Ley aplicable",
+        "content": "Estos términos se rigen por las leyes de la jurisdicción relevante"
+      },
+      "negotiation": {
+        "title": "Resolución negociada",
+        "content": "Cualquier disputa debe resolverse primero mediante negociación amistosa"
+      }
+    },
+    "termsChanges": {
+      "title": "Cambios en los términos",
+      "content": "Podemos actualizar estos Términos de Servicio de vez en cuando. Los cambios significativos se comunicarán por correo electrónico o anuncio en el sitio web. El uso continuado del servicio indica la aceptación de los términos actualizados."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tiene alguna pregunta sobre estos Términos de Servicio, póngase en contacto con:",
+      "email": "Correo electrónico",
+      "company": "Empresa"
+    },
+    "acceptance": "Al usar AI Town Lab, reconoce que ha leído, entendido y acepta estar sujeto a estos Términos de Servicio."
+  },
+  "createStudio": {
+    "title": "Espacio de Trabajo",
+    "subtitle": "Plataforma Creativa Impulsada por IA",
+    "loading": "Cargando...",
+    "imageTab": "Generación de Imágenes",
+    "videoTab": "Creación de Videos",
+    "myWorks": "Mis Obras",
+    "selectModel": "Seleccionar Modelo de IA",
+    "imageModels": "Modelos de Generación de Imágenes",
+    "videoModels": "Modelos de Creación de Videos",
+    "recommended": "Recomendado",
+    "modelTip": "Elige el mejor modelo de IA para tus necesidades creativas",
+    "imageGen": "Generación de Imágenes",
+    "videoGen": "Creación de Videos",
+    "canvasTip": "Ajusta parámetros, libera creatividad, deja que la IA cree contenido asombroso para ti",
+    "generatorParams": "Parámetros del Generador",
+    "adjustParams": "Ajusta los parámetros a continuación para comenzar a crear",
+    "currentTasks": "En Progreso",
+    "completedTasks": "Completado",
+    "noCurrentTasks": "No hay tareas en progreso",
+    "noCurrentTasksDesc": "¡Completa los parámetros a la izquierda y haz clic en generar para comenzar!",
+    "noCompletedTasks": "No hay obras completadas",
+    "noCompletedTasksDesc": "Tu historial de creación se mostrará aquí",
+    "generating": "Generando...",
+    "pending": "Pendiente",
+    "processing": "Procesando",
+    "download": "Descargar",
+    "clickToSwitch": "Haz clic para cambiar",
+    "aiImageGen": "Generación de Imágenes IA",
+    "aiVideoGen": "Video IA",
+    "aiImageGeneration": "Generación de Imágenes con IA",
+    "aiVideoGeneration": "Generación de Videos con IA",
+    "noTasks": "Sin Tareas",
+    "noTasksDesc": "Selecciona un modelo a la izquierda, ingresa una descripción para comenzar a crear",
+    "inProgress": "En Progreso",
+    "history": "Historial",
+    "queueing": "En cola...",
+    "aiGenerating": "IA Generando...",
+    "mayTakeSomeTime": "Esto puede tomar 10-30 segundos",
+    "generationFailed": "Generación Fallida",
+    "generationTask": "Tarea de Generación",
+    "copyPrompt": "Copiar Prompt",
+    "regenerate": "Regenerar",
+    "copied": "Copiado",
+    "promptCopied": "Prompt copiado al portapapeles",
+    "failedNoDownload": "Generación fallida, no se puede descargar"
+  },
+  "aiImage": {
+    "title": "Generador de Imágenes IA",
+    "subtitle": "Genera imágenes de calidad profesional con tecnología IA potente",
+    "hero": {
+      "title": "Imagina Audazmente, Nosotros lo Hacemos Realidad",
+      "description": "Sube fotos y transfórmalas en obras artísticas impresionantes",
+      "cta": "Subir Imagen"
+    },
+    "generator": {
+      "title": "Generador de Imágenes",
+      "mode": "Modo de Generación",
+      "imageToImage": "Imagen-a-Imagen",
+      "textToImage": "Texto-a-Imagen",
+      "uploadImage": "Subir Imagen",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Describe la imagen que quieres generar...",
+      "ratio": "Relación de Aspecto",
+      "numberOfImages": "Número de Imágenes",
+      "optimizePrompt": "Optimizar Prompt",
+      "generateImage": "Generar Imagen",
+      "cost": "Costo de Créditos",
+      "generating": "Generando...",
+      "uploading": "Subiendo..."
+    },
+    "myImages": {
+      "title": "Mis Imágenes",
+      "empty": "¡Aún no hay imágenes, crea tu primera!"
+    },
+    "examples": {
+      "title": "Imágenes de Ejemplo",
+      "subtitle": "Mira estos increíbles ejemplos de imágenes generadas por IA",
+      "createSimilar": "Crear Similar"
+    },
+    "optimize": {
+      "title": "Asistente de Optimización de Prompt IA",
+      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de imagen",
+      "originalPrompt": "Prompt Original",
+      "selectTemplate": "Seleccionar Plantilla de Optimización",
+      "optimize": "Optimizar Prompt",
+      "optimizing": "Optimizando...",
+      "optimizedPrompt": "Prompt Optimizado",
+      "copy": "Copiar Prompt",
+      "copySuccess": "Copiado al portapapeles",
+      "fillBack": "Rellenar de Vuelta al Generador",
+      "close": "Cerrar"
+    }
+  },
+  "aiVideo": {
+    "title": "Generador de Videos IA",
+    "subtitle": "Genera videos profesionales con tecnología IA potente de Veo 3.1 y Sora 2",
+    "hero": {
+      "title": "Convierte tus Ideas en Videos al Instante",
+      "description": "El Generador de Videos IA te ayuda a crear rápidamente videos de alta calidad desde texto e imágenes",
+      "cta": "Comenzar a Crear"
+    },
+    "generator": {
+      "title": "Generador de Videos",
+      "optimizePrompt": "Optimizar Prompt",
+      "generating": "Generando...",
+      "uploadImages": "Subir Imágenes",
+      "selectProvider": "Seleccionar Generador",
+      "selectModel": "Seleccionar Modelo",
+      "selectMode": "Modo de Generación",
+      "selectQuality": "Nivel de Calidad",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Describe el video que quieres crear...",
+      "aspectRatio": "Relación de Aspecto",
+      "duration": "Duración",
+      "removeWatermark": "Quitar Marca de Agua",
+      "removeWatermarkDesc": "Quitar marca de agua del video generado (recomendado)",
+      "cost": "Costo",
+      "credits": "créditos",
+      "generateVideo": "Generar Video",
+      "uploading": "Subiendo...",
+      "uploadHint": "Haz clic para subir imágenes",
+      "uploadDesc": "JPEG, PNG, WEBP, máx. 10MB",
+      "textToVideo": "Texto a Video",
+      "imageToVideo": "Imagen a Video",
+      "reference": "Referencia",
+      "storyboard": "Storyboard",
+      "watermarkRemover": "Removedor de Marca de Agua",
+      "veo31Fast": "Veo 3.1 Rápido",
+      "veo31Quality": "Veo 3.1 Calidad",
+      "sora2Basic": "Sora 2",
+      "sora2Pro": "Sora 2 Pro",
+      "standard": "Estándar",
+      "high": "Alta Calidad",
+      "portrait": "Retrato",
+      "landscape": "Paisaje",
+      "auto": "Auto"
+    },
+    "examples": {
+      "title": "Galería de Ejemplos",
+      "subtitle": "Mira estos increíbles ejemplos de videos generados por IA",
+      "createSimilar": "Crear Similar",
+      "noExamples": "No hay ejemplos disponibles"
+    },
+    "optimize": {
+      "title": "Optimizador de Prompt IA",
+      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de video",
+      "originalPrompt": "Prompt Original",
+      "selectTemplate": "Seleccionar Plantilla",
+      "optimize": "Optimizar Prompt",
+      "optimizing": "Optimizando...",
+      "optimizedPrompt": "Prompt Optimizado",
+      "copy": "Copiar Prompt",
+      "copySuccess": "Copiado al portapapeles",
+      "fillBack": "Rellenar al Generador",
+      "fillBackSuccess": "Prompt rellenado exitosamente",
+      "close": "Cerrar",
+      "templateCinematic": "Estilo Cinematográfico",
+      "templateCommercial": "Comercial/Publicidad",
+      "templateDocumentary": "Documental/Naturaleza",
+      "templateGeneral": "Video General"
+    }
+  },
+  "models": {
+    "image": {
+      "kie-nano-banana": {
+        "name": "Nano Banana",
+        "description": "Google Nano Banana - Generación de imágenes rápida y de alta calidad (texto a imagen)"
+      },
+      "kie-nano-banana-edit": {
+        "name": "Nano Banana Edit",
+        "description": "Google Nano Banana Edit - Modo imagen a imagen"
+      },
+      "kie-gpt4o-image": {
+        "name": "GPT-4o Image",
+        "description": "Generación de Imágenes OpenAI GPT-4o - Mejor comprensión (texto a imagen + imagen a imagen)"
+      }
+    },
+    "video": {
+      "veo3_fast": {
+        "name": "Veo 3.1 Rápido",
+        "displayName": "Veo 3.1 Rápido",
+        "description": "Generación de video rápida con buena calidad"
+      },
+      "veo3": {
+        "name": "Veo 3.1 Calidad",
+        "displayName": "Veo 3.1 Calidad",
+        "description": "Generación de video de alta calidad"
+      },
+      "sora-2-text-to-video": {
+        "name": "Sora 2 Texto a Video",
+        "displayName": "Sora 2 Texto a Video",
+        "description": "Generación de texto a video con Sora 2"
+      },
+      "sora-2-image-to-video": {
+        "name": "Sora 2 Imagen a Video",
+        "displayName": "Sora 2 Imagen a Video",
+        "description": "Generación de imagen a video con Sora 2"
+      },
+      "sora-2-pro-text-to-video": {
+        "name": "Sora 2 Pro Texto a Video",
+        "displayName": "Sora 2 Pro Texto a Video",
+        "description": "Generación profesional de texto a video"
+      },
+      "sora-2-pro-image-to-video": {
+        "name": "Sora 2 Pro Imagen a Video",
+        "displayName": "Sora 2 Pro Imagen a Video",
+        "description": "Generación profesional de imagen a video"
+      },
+      "sora-2-pro-storyboard": {
+        "name": "Sora 2 Pro Storyboard",
+        "displayName": "Sora 2 Pro Storyboard",
+        "description": "Generación de video de storyboard multi-escena"
+      },
+      "sora-watermark-remover": {
+        "name": "Sora Removedor de Marca de Agua",
+        "displayName": "Sora Removedor de Marca de Agua",
+        "description": "Eliminar marcas de agua de videos de Sora"
+      }
+    }
+  },
+  "generators": {
+    "common": {
+      "pleaseLogin": "Por favor inicia sesión primero",
+      "pleaseEnterPrompt": "Por favor ingresa un prompt",
+      "pleaseUploadImages": "Por favor sube imágenes",
+      "optimize": "Optimizar",
+      "cost": "Costo",
+      "credits": "créditos",
+      "uploading": "Subiendo...",
+      "generating": "Generando...",
+      "aiGenerating": "IA está generando...",
+      "estimatedTime": "Tiempo estimado",
+      "taskId": "ID de Tarea",
+      "browserNotSupport": "Tu navegador no soporta reproducción de video",
+      "regenerate": "Generar de Nuevo",
+      "download": "Descargar",
+      "generationResult": "Resultado de Generación",
+      "generationFailed": "Generación fallida",
+      "pleaseFillAllScenes": "Por favor completa todas las descripciones de escena",
+      "totalSceneDuration": "Duración total de escena",
+      "exceedsVideoDuration": "excede la duración del video",
+      "promptHint": "Descripciones detalladas producen mejores resultados. Usa IA para optimizar tu prompt"
+    },
+    "video": {
+      "generationMode": "Modo de Generación",
+      "qualityLevel": "Nivel de Calidad",
+      "standard": "Estándar",
+      "highQuality": "Alta Calidad",
+      "sceneList": "Lista de Escenas",
+      "total": "Total:",
+      "seconds": "s",
+      "addScene": "Agregar Escena",
+      "scene": "Escena",
+      "describeScene": "Describe esta escena...",
+      "duration": "Duración",
+      "textToVideo": "Texto a Video",
+      "imageToVideo": "Imagen a Video",
+      "reference": "Referencia"
+    },
+    "image": {
+      "imageToImage": "Edición de Imagen",
+      "textToImage": "Texto a Imagen",
+      "startGeneration": "Iniciar Generación",
+      "nanaBananaRatioHint": "Nano Banana soporta múltiples relaciones de aspecto, elige la que se adapte a tus necesidades"
+    },
+    "upload": {
+      "clickToUpload": "Haz clic para subir imágenes",
+      "supportedFormats": "JPEG, PNG, WEBP, máx 10MB"
+    },
+    "labels": {
+      "label": "Etiqueta",
+      "labelCn": "Etiqueta (CN)",
+      "generator": "Generador",
+      "aspectRatio": "Relación de Aspecto",
+      "duration": "Duración",
+      "quality": "Calidad",
+      "highQuality": "Alta",
+      "standard": "Estándar",
+      "watermark": "Marca de Agua",
+      "removed": "Eliminada",
+      "kept": "Conservada"
+    }
+  },
+  "promptTemplates": {
+    "image": {
+      "image-general": {
+        "name": "Imagen General",
+        "description": "Optimización de generación de imágenes de propósito general"
+      },
+      "image-professional-portrait": {
+        "name": "Retrato Profesional",
+        "description": "Optimización de retrato profesional"
+      },
+      "image-artistic-portrait": {
+        "name": "Retrato Artístico",
+        "description": "Optimización de retrato artístico"
+      },
+      "image-product": {
+        "name": "Fotografía de Producto",
+        "description": "Fotografía de producto e imágenes de comercio electrónico"
+      },
+      "image-landscape": {
+        "name": "Fotografía de Paisaje",
+        "description": "Paisajes naturales y fotografía arquitectónica"
+      }
+    },
+    "video": {
+      "video-cinematic": {
+        "name": "Estilo Cinematográfico",
+        "description": "Optimizar para narración cinematográfica con iluminación y composición dramáticas"
+      },
+      "video-commercial": {
+        "name": "Comercial/Publicidad",
+        "description": "Optimizar para presentación de productos y publicidad de marca"
+      },
+      "video-documentary": {
+        "name": "Documental/Naturaleza",
+        "description": "Optimizar para documental natural y estilo de vida silvestre"
+      },
+      "video-general": {
+        "name": "Video General",
+        "description": "Optimización de generación de video de propósito general"
+      }
+    }
+  },
+  "innovationLab": {
+    "title": "Laboratorio de Innovación",
+    "subtitle": "Explora las posibilidades infinitas de la creación con IA, ve ejemplos destacados y crea similares",
+    "createSimilar": "Crear Similar",
+    "viewTutorial": "Ver Tutorial",
+    "prompt": "Prompt",
+    "tutorial": "Tutorial",
+    "noExamples": "No hay ejemplos disponibles",
+    "loading": "Cargando...",
+    "imageExample": "Ejemplo de Imagen",
+    "videoExample": "Ejemplo de Video"
+  },
+  "about": {
+    "title": "About AI Town Lab",
+    "description": "AI Town Lab is operated by Velocentra CO, focusing on AI image and video generation technology",
+    "keywords": "AI Town Lab,Velocentra,AI image generation,AI video creation,about us",
+    "badge": "About Us",
+    "subtitle": "Operated by Velocentra CO",
+    "operatedBy": "AI Town Lab is an AI creative platform by Velocentra CO",
+    "intro": {
+      "title": "Company Introduction",
+      "content": "Velocentra CO is an AI technology company that values speed and power. Our name derives from 'Velocity' and 'Centra', representing our commitment to being the speed center in AI creation. Our product AI Town Lab focuses on AI image and video generation, providing creators with fast and professional AI creative tools."
+    },
+    "technology": {
+      "title": "Our Technology",
+      "models": {
+        "title": "Top AI Models",
+        "content": "Integrating industry-leading AI models including Google Veo 3.1, OpenAI Sora 2, Nano Banana, and GPT-4o to ensure professional-grade generation quality."
+      },
+      "image": {
+        "title": "Professional Image Generation",
+        "content": "Supporting various image generation scenarios, from professional avatars to creative design, offering high-quality and diverse image generation capabilities."
+      },
+      "video": {
+        "title": "High-Quality Video Creation",
+        "content": "Multiple modes including text-to-video and image-to-video, quickly generating high-quality video content to meet various creative needs."
+      }
+    },
+    "capabilities": {
+      "title": "Product Capabilities",
+      "avatars": {
+        "title": "AI Professional Avatars",
+        "content": "Quickly transform selfies into high-quality professional portraits, suitable for LinkedIn, resumes, ID photos, and more."
+      },
+      "images": {
+        "title": "AI Image Creation",
+        "content": "Powerful image generation capabilities supporting text-to-image and image-to-image modes, meeting needs from commercial design to personal creation."
+      },
+      "videos": {
+        "title": "AI Video Production",
+        "content": "Utilizing the latest AI video generation technology to quickly create high-quality video content with various aspect ratios and duration options."
+      },
+      "scenarios": {
+        "title": "Multi-Scenario Support",
+        "content": "Covering professional portraits, social media, creative design, marketing, and more application scenarios in one integrated platform."
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "Making AI creation accessible to everyone, empowering every creator. We believe technology should serve creativity, not limit it. Through continuous innovation, we're committed to breaking creative boundaries and making creative dreams achievable for everyone.",
+      "value1": "🚀 Lightning Fast",
+      "value2": "🎨 Professional Quality",
+      "value3": "💡 Innovation Driven"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions or suggestions, feel free to contact us anytime",
+      "email": "support@aitownlab.com"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "AI Town Lab Privacy Policy - Learn how we collect, use, and protect your personal information",
+    "badge": "Privacy Protection",
+    "subtitle": "AI Town Lab (operated by Velocentra CO)",
+    "lastUpdated": "Last Updated",
+    "intro": "Welcome to AI Town Lab. We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data. By using our services, you agree to the practices described in this policy.",
+    "collection": {
+      "title": "Information We Collect",
+      "intro": "To provide our services, we collect the following types of information:",
+      "account": {
+        "title": "Account Information",
+        "content": "Basic information such as email address and username provided during registration."
+      },
+      "uploads": {
+        "title": "Uploaded Content",
+        "content": "Images and video files you upload for AI generation."
+      },
+      "payment": {
+        "title": "Payment Information",
+        "content": "Payment data processed through Stripe. We do not directly store complete credit card information."
+      },
+      "usage": {
+        "title": "Usage Data",
+        "content": "Technical information including log files, IP addresses, browser type, and access times."
+      }
+    },
+    "usage": {
+      "title": "How We Use Your Information",
+      "service": "Provide, maintain, and improve AI image and video generation services",
+      "improvement": "Analyze usage patterns to optimize product features and user experience",
+      "payment": "Process payment transactions and manage subscriptions",
+      "communication": "Send service-related notifications, updates, and marketing information (opt-out available)",
+      "security": "Detect and prevent fraud, abuse, or security threats"
+    },
+    "storage": {
+      "title": "Data Storage & Security",
+      "platform": {
+        "title": "Storage Platform",
+        "content": "We use Supabase as our primary data storage platform with industry-standard security measures."
+      },
+      "retention": {
+        "title": "Uploaded Image Retention",
+        "content": "Original uploaded images are automatically deleted within 24 hours after AI processing."
+      },
+      "generated": {
+        "title": "Generated Content",
+        "content": "AI-generated images and videos are permanently saved in your account unless you choose to delete them."
+      },
+      "security": {
+        "title": "Security Measures",
+        "content": "All data transmission uses HTTPS encryption, and stored data is protected with encryption."
+      }
+    },
+    "thirdParty": {
+      "title": "Third-Party Services",
+      "intro": "We use the following third-party services to provide complete functionality:",
+      "stripe": "Securely processes payment transactions in compliance with PCI DSS standards",
+      "aiProviders": "Google (Veo), OpenAI (Sora), Replicate, and others provide AI model services",
+      "supabase": "Provides secure database and storage services"
+    },
+    "cookies": {
+      "title": "Cookie Usage",
+      "intro": "We use cookies and similar technologies to:",
+      "auth": "Maintain your login session and authentication",
+      "preferences": "Save your user preferences and language selection",
+      "analytics": "Analyze website usage to improve our services"
+    },
+    "rights": {
+      "title": "Your Rights (GDPR/CCPA)",
+      "intro": "Under privacy laws such as GDPR and CCPA, you have the following rights:",
+      "access": {
+        "title": "Right to Access",
+        "content": "Request to view your personal data we hold"
+      },
+      "deletion": {
+        "title": "Right to Deletion",
+        "content": "Request deletion of your account and related data"
+      },
+      "export": {
+        "title": "Data Portability",
+        "content": "Request to export a copy of your data"
+      },
+      "marketing": {
+        "title": "Marketing Opt-Out",
+        "content": "Unsubscribe from marketing emails at any time"
+      },
+      "rectification": {
+        "title": "Right to Rectification",
+        "content": "Request correction of inaccurate personal information"
+      }
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "content": "Our services are intended for users aged 18 and above. We do not knowingly collect personal information from individuals under 18. If we discover we have collected data from minors, we will delete it immediately."
+    },
+    "changes": {
+      "title": "Policy Changes",
+      "content": "We may update this Privacy Policy from time to time. Significant changes will be communicated via email or website announcement. Continued use of the service indicates acceptance of the updated policy."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about this Privacy Policy or wish to exercise your privacy rights, please contact:",
+      "email": "Email",
+      "company": "Company"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "AI Town Lab Terms of Service - Understand the rules and rights of using our services",
+    "badge": "Terms of Service",
+    "subtitle": "AI Town Lab (operated by Velocentra CO)",
+    "lastUpdated": "Last Updated",
+    "intro": "Welcome to AI Town Lab! These Terms of Service constitute a legally binding agreement between you and Velocentra CO. By using our services, you agree to comply with these terms. Please read carefully.",
+    "service": {
+      "title": "Service Description",
+      "description": "AI Town Lab provides the following services:",
+      "image": "AI image generation services including professional avatars, creative design, etc.",
+      "video": "AI video creation services supporting text-to-video and image-to-video",
+      "models": "Integration of multiple top-tier AI models (Google Veo, OpenAI Sora, Nano Banana, etc.)",
+      "availability": "Services are based on subscription and credit models. We do not guarantee 100% service availability"
+    },
+    "account": {
+      "title": "Account Responsibilities",
+      "age": "You must be at least 18 years old to use our services",
+      "security": "You are responsible for maintaining the security and confidentiality of your account",
+      "sharing": "Account credential sharing or allowing others to use your account is prohibited",
+      "accuracy": "You are responsible for ensuring the information provided is accurate and up-to-date"
+    },
+    "payment": {
+      "title": "Payment & Subscription",
+      "processor": {
+        "title": "Payment Processing",
+        "content": "All payments are securely processed through Stripe in compliance with PCI DSS standards"
+      },
+      "subscription": {
+        "title": "Automatic Renewal",
+        "content": "Subscription plans automatically renew unless canceled before the end of the billing cycle. You will receive renewal reminders"
+      },
+      "refund": {
+        "title": "Refund Policy",
+        "content": "Refund requests are handled on a case-by-case basis. Please contact customer service to discuss your specific situation"
+      },
+      "credits": {
+        "title": "Credits Rules",
+        "content": "Purchased credits never expire but are non-refundable. Credits can be used for all generation services"
+      }
+    },
+    "usage": {
+      "title": "Acceptable Use",
+      "intro": "You agree not to use the service for the following purposes:",
+      "illegal": "Generating illegal, violent, pornographic, or harmful content",
+      "impersonation": "Impersonating others or misleadingly representing relationships with others",
+      "infringement": "Infringing on others' copyrights, trademarks, portrait rights, or other intellectual property",
+      "abuse": "Abusing system resources or attempting to disrupt normal service operations",
+      "harmful": "Generating content that may cause discrimination, harassment, or harm"
+    },
+    "ownership": {
+      "title": "Content Ownership",
+      "uploads": {
+        "title": "Uploaded Content",
+        "content": "You retain all rights to your uploaded content"
+      },
+      "generated": {
+        "title": "Generated Content",
+        "content": "AI-generated content copyright belongs to you, and you are free to use it"
+      },
+      "commercial": {
+        "title": "Commercial Use",
+        "content": "You may use generated content for any commercial or personal purpose"
+      },
+      "showcase": {
+        "title": "Showcase Rights",
+        "content": "We reserve the right to showcase excellent works for marketing and product improvement (with your explicit consent)"
+      }
+    },
+    "changes": {
+      "title": "Service Changes and Termination",
+      "features": "We reserve the right to modify, suspend, or terminate any features or services at any time",
+      "pricing": "Prices and plans may be adjusted; significant changes will be communicated to existing users in advance",
+      "termination": "Accounts violating the terms of service may be suspended or terminated without notice"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "aiQuality": "AI generation quality may vary due to multiple factors; we do not guarantee perfect output",
+      "responsibility": "You are fully responsible for how you use generated content and its consequences",
+      "thirdParty": "Third-party AI service provider limitations may affect service performance",
+      "asIs": "Services are provided 'as is' without any express or implied warranties"
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by law, Velocentra CO shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data loss, or business interruption."
+    },
+    "dispute": {
+      "title": "Dispute Resolution",
+      "law": {
+        "title": "Governing Law",
+        "content": "These terms are governed by the laws of the relevant jurisdiction"
+      },
+      "negotiation": {
+        "title": "Negotiated Resolution",
+        "content": "Any disputes should first be resolved through amicable negotiation"
+      }
+    },
+    "termsChanges": {
+      "title": "Changes to Terms",
+      "content": "We may update these Terms of Service from time to time. Significant changes will be communicated via email or website announcement. Continued use of the service indicates acceptance of the updated terms."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about these Terms of Service, please contact:",
+      "email": "Email",
+      "company": "Company"
+    },
+    "acceptance": "By using AI Town Lab, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+  }
+}

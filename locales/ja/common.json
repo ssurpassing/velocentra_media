@@ -1,0 +1,1517 @@
+{
+  "app": {
+    "name": "Ai Town Lab",
+    "tagline": "AI搭載プロフェッショナルアバター生成ツール",
+    "description": "セルフィーを高品質なプロフェッショナル写真に変換"
+  },
+  "nav": {
+    "home": "ホーム",
+    "pricing": "料金",
+    "aiVideo": "AI動画",
+    "aiImage": "AI画像",
+    "generate": "生成",
+    "login": "ログイン",
+    "signup": "登録",
+    "logout": "ログアウト",
+    "createStudio": "ワークスペース"
+  },
+  "hero": {
+    "title": "60秒でプロフェッショナルアバター",
+    "subtitle": "セルフィーをアップロードして、AIが素晴らしいプロ写真を作成します",
+    "cta": "始める",
+    "ctaSecondary": "例を見る",
+    "badge": "AI搭載クリエイティブプラットフォーム",
+    "welcomeTo": "ようこそ",
+    "aiTownLab": "AI Town Lab",
+    "tagline": "ワンストップAIクリエイティブラボ、想像力を現実に",
+    "imageGen": "画像生成",
+    "videoGen": "動画作成",
+    "creativeDesign": "クリエイティブデザイン",
+    "startCreating": "作成を始める",
+    "viewShowcase": "ショーケースを見る",
+    "poweredBy": "提供:",
+    "imageLabel": "AI 画像",
+    "videoLabel": "AI 動画",
+    "quickBadge": "高速生成"
+  },
+  "quickGenerator": {
+    "title": "クイックアバター生成",
+    "subtitle": "写真をアップロードし、AIモデルを選択して、プロフェッショナルアバターを素早く生成",
+    "uploadPrompt": "写真をアップロード",
+    "uploadHint": "ドラッグ&ドロップまたはクリックして選択（最大5MB）",
+    "styleLabel": "スタイルを選択",
+    "generate": "アバターを生成",
+    "generating": "生成中...",
+    "selectStyle": "スタイルを選択してください",
+    "uploadImage": "画像をアップロードしてください",
+    "needLogin": "生成機能を使用するにはログインが必要です",
+    "pleaseLogin": "まずログインしてください",
+    "pleaseUploadImage": "まず画像をアップロードしてください",
+    "uploadSection": "画像をアップロード",
+    "selectModel": "AIモデルを選択",
+    "promptSection": "プロンプト（オプション）",
+    "promptPlaceholder": "例: 銀行員で、プロフェッショナルなLinkedInヘッドショットが必要です",
+    "startGeneration": "生成開始",
+    "uploading": "アップロード中...",
+    "generatingImage": "生成中...",
+    "resultSection": "生成結果",
+    "regenerate": "再生成",
+    "download": "ダウンロード",
+    "aiGenerating": "AIが生成中...",
+    "estimatedTime": "推定時間: 10-30秒",
+    "resultPlaceholder": "生成された画像はここに表示されます",
+    "usageTips": "💡 使用のヒント",
+    "tip1": "• 正面から撮影した鮮明な写真が最適です",
+    "tip2": "• プロンプトを追加すると、より正確な結果が得られます",
+    "tip3": "• 異なるAIモデルには異なるスタイル特性があります",
+    "tip4": "• 生成には通常10-30秒かかります",
+    "exploreMore": "もっとスタイルを探索 →",
+    "changeImage": "クリックして画像を変更",
+    "uploadDescription": "ドラッグ＆ドロップまたはクリックして選択",
+    "uploadFormats": "JPG、PNG、WebPをサポート（最大5MB）",
+    "badge": "クイックスタート",
+    "imageTab": "AI 画像",
+    "videoTab": "AI 動画",
+    "imageDesc": "画像生成",
+    "videoDesc": "動画作成",
+    "loginTitle": "AI創作を解放",
+    "loginSubtitle": "ログインしてすべてのAIモデルにアクセスし、クリエイティブな旅を始めましょう",
+    "login": "ログイン",
+    "signup": "登録",
+    "exploreImages": "もっと画像機能を探索",
+    "exploreImagesDesc": "すべての画像生成モデルと高度な機能を表示",
+    "exploreVideos": "もっと動画機能を探索",
+    "exploreVideosDesc": "すべての動画生成モデルと高度な機能を表示"
+  },
+  "examples": {
+    "title": "サンプルギャラリー",
+    "subtitle": "他のユーザーが生成したプロフェッショナルアバターをご覧ください"
+  },
+  "creative": {
+    "title": "AIアバター生成",
+    "subtitle": "スタイルを選択して、あなたの専用アバターの作成を始めましょう",
+    "exploreMore": "もっとスタイルを探索",
+    "tabs": {
+      "myPhotos": "私の作品",
+      "publicGallery": "公開ギャラリー"
+    },
+    "noPhotos": "まだ作品がありません。作成を始めましょう！",
+    "noPublicPhotos": "まだ公開作品がありません",
+    "loadMore": "もっと読み込む",
+    "loading": "読み込み中...",
+    "seo": {
+      "aboutTitle": "AIプロフェッショナルアバター生成について",
+      "aboutDescription": "先進的なAIパイプラインシステムを使用して、高品質なプロフェッショナルアバターを素早く生成します。プロパイプライン（7段階）と高速パイプライン（3段階）の2つのモードをサポートしています。",
+      "tutorialTitle": "チュートリアル",
+      "tutorial1": "写真をアップロード",
+      "tutorial2": "生成パイプラインを選択（プロフェッショナルまたは高速）",
+      "tutorial3": "生成をクリックしてAIの作成を待つ",
+      "tutorial4": "生成後、作品を公開するか選択できます",
+      "faqTitle": "よくある質問",
+      "faq1Question": "生成にはどのくらい時間がかかりますか？",
+      "faq1Answer": "高速パイプラインは約5-10秒、プロパイプラインは約15-25秒かかります。",
+      "faq2Question": "何枚生成できますか？",
+      "faq2Answer": "無料ユーザーは3回の無料生成機会があり、有料ユーザーはクレジットを購入して無制限に生成できます。",
+      "faq3Question": "生成された写真の著作権は誰に属しますか？",
+      "faq3Answer": "生成された写真の著作権はユーザーに属し、自由に使用できます。"
+    },
+    "actions": {
+      "publish": "公開",
+      "unpublish": "非公開",
+      "feature": "注目",
+      "unfeature": "注目解除",
+      "publishToGallery": "ギャラリーに公開",
+      "unpublishFromGallery": "ギャラリーから非公開"
+    },
+    "styles": {
+      "linkedin-professional": "プロフェッショナルLinkedIn写真",
+      "linkedin-pro-pipeline": "LinkedInプロフェッショナル写真",
+      "dating-app-photo": "デートアプリ写真",
+      "social-media-avatar": "ソーシャルメディアアバター",
+      "executive-portrait": "エグゼクティブポートレート",
+      "creative-artistic-portrait": "クリエイティブアーティスティックポートレート",
+      "official-id-photo": "公式ID写真"
+    },
+    "generator": {
+      "mode": "生成モード",
+      "qualityMode": "品質モード",
+      "simple": "シンプル高速",
+      "simpleDesc": "8-15秒・100クレジット",
+      "pro": "プロプロフェッショナル",
+      "proDesc": "15-25秒・150クレジット",
+      "imageToImage": "画像から画像",
+      "textToImage": "テキストから画像",
+      "uploadImage": "画像をアップロード",
+      "aiModel": "AIモデル",
+      "customPrompt": "カスタムプロンプト（オプション）",
+      "customPromptPlaceholder": "生成効果を高めるために追加の説明を追加...",
+      "startGeneration": "生成開始",
+      "uploading": "アップロード中...",
+      "generating": "生成中..."
+    },
+    "progress": {
+      "title": "生成進行状況",
+      "initializing": "初期化中",
+      "processing": "処理中",
+      "completed": "完了",
+      "failed": "生成失敗",
+      "estimatedTime": "推定残り時間",
+      "seconds": "秒"
+    },
+    "comparison": {
+      "original": "元画像",
+      "generated": "生成画像",
+      "viewOriginal": "元画像を見る",
+      "viewGenerated": "生成画像を見る"
+    }
+  },
+  "pricing": {
+    "title": "プランを選択",
+    "subtitle": "ニーズに合わせた柔軟な料金設定",
+    "free": "無料",
+    "popular": "人気",
+    "perMonth": "月額",
+    "perYear": "/年",
+    "save": "節約",
+    "getStarted": "始める",
+    "buyNow": "今すぐ購入",
+    "subscribe": "購読",
+    "monthly": "月額",
+    "yearly": "年額",
+    "credits": "クレジットパック",
+    "billedAnnually": "年間請求",
+    "plans": {
+      "subscription-monthly-1000": {
+        "name": "ベーシック月額",
+        "description": "月1000クレジット",
+        "features": [
+          "毎月1000クレジット",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "プレミアム会員アクセス"
+        ]
+      },
+      "subscription-monthly-5000": {
+        "name": "プロ月額",
+        "description": "月5000クレジット",
+        "features": [
+          "毎月5000クレジット",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "優先処理",
+          "プレミアム会員アクセス"
+        ]
+      },
+      "subscription-monthly-10000": {
+        "name": "プレミアム月額",
+        "description": "月10000クレジット",
+        "features": [
+          "毎月10000クレジット",
+          "最高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "優先処理",
+          "専用サポート",
+          "プレミアム会員アクセス"
+        ]
+      },
+      "subscription-yearly-1000": {
+        "name": "ベーシック年額",
+        "description": "月1000クレジット",
+        "features": [
+          "毎月1000クレジット",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "プレミアム会員アクセス",
+          "年$24節約"
+        ]
+      },
+      "subscription-yearly-5000": {
+        "name": "プロ年額",
+        "description": "月5000クレジット",
+        "features": [
+          "毎月5000クレジット",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "優先処理",
+          "プレミアム会員アクセス",
+          "年$120節約"
+        ]
+      },
+      "subscription-yearly-10000": {
+        "name": "プレミアム年額",
+        "description": "月10000クレジット",
+        "features": [
+          "毎月10000クレジット",
+          "最高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "優先処理",
+          "専用サポート",
+          "プレミアム会員アクセス",
+          "年$240節約"
+        ]
+      },
+      "credits-1000": {
+        "name": "スターターパック",
+        "description": "一回限りのクレジットパッケージ",
+        "features": [
+          "1000クレジット",
+          "期限なし",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存"
+        ]
+      },
+      "credits-5000": {
+        "name": "バリューパック",
+        "description": "一回限りのクレジットパッケージ",
+        "features": [
+          "5000クレジット",
+          "期限なし",
+          "高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "10%ボーナスクレジット"
+        ]
+      },
+      "credits-10000": {
+        "name": "アルティメットパック",
+        "description": "一回限りのクレジットパッケージ",
+        "features": [
+          "10000クレジット",
+          "期限なし",
+          "最高品質画像",
+          "全スタイル利用可能",
+          "永久保存",
+          "20%ボーナスクレジット"
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "bod_avatarsについて知っておくべきこと",
+    "q1": "bod_avatarsの使い方は？",
+    "a1": "セルフィーをアップロードし、お好みのスタイルを選択して生成をクリックするだけです。AIが数秒でプロフェッショナルなアバターを作成します。",
+    "q2": "サポートされている画像形式は？",
+    "a2": "JPEG、PNG、WebP形式をサポートしており、最大ファイルサイズは5MBです。",
+    "q3": "生成にどのくらい時間がかかりますか？",
+    "a3": "通常30〜60秒です。正確な時間は選択したモデルと現在のサーバー負荷によって異なります。",
+    "q4": "写真は保存されますか？",
+    "a4": "元の写真は24時間後に自動的に削除されます。生成されたアバターはアカウントに永続的に保存されます。",
+    "q5": "商用利用できますか？",
+    "a5": "はい、生成されたアバターを商用または個人用途で使用する完全な権利があります。"
+  },
+  "auth": {
+    "login": "ログイン",
+    "signup": "登録",
+    "email": "メール",
+    "password": "パスワード",
+    "confirmPassword": "パスワード確認",
+    "forgotPassword": "パスワードを忘れましたか？",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "signupNow": "今すぐ登録",
+    "loginNow": "今すぐログイン",
+    "or": "または",
+    "googleLogin": "Googleでログイン",
+    "emailSent": "確認メールを送信しました",
+    "checkEmail": "メールを確認して確認リンクをクリックしてください"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る",
+    "next": "次へ",
+    "finish": "完了",
+    "select": "選択してください",
+    "credits": "クレジット"
+  },
+  "seo": {
+    "home": {
+      "title": "AIプロフェッショナルアバター生成 - 60秒でヘッドショット作成",
+      "description": "AI技術を使ってセルフィーを高品質なプロフェッショナルヘッドショットに変換。LinkedIn、履歴書、証明写真などに最適。プロ品質で簡単に使用できます。",
+      "keywords": "AIアバター生成,プロフェッショナルヘッドショット,LinkedIn写真,証明写真,AI写真生成,アバター作成"
+    },
+    "pricing": {
+      "title": "料金プラン - 柔軟なアバター生成パッケージ",
+      "description": "ニーズに合ったアバター生成パッケージを選択。無料トライアルと複数の有料プランをご用意。従量課金制で隠れた料金はありません。"
+    },
+    "create": {
+      "title": "AIワークスペース - AI Town Lab",
+      "description": "画像生成と動画制作機能を統合したプロフェッショナルAI制作プラットフォーム。Nano Banana、GPT-4o、Google Veo、OpenAI Soraなど、さまざまなAIモデルをサポート。",
+      "keywords": "AI制作,画像生成,動画生成,AIワークスペース,クリエイティブプラットフォーム,Nano Banana,GPT-4o,Veo,Sora"
+    },
+    "creative": {
+      "title": "AIクリエイティブアバター生成 - 複数のスタイルを探索",
+      "description": "プロフェッショナルヘッドショット、デート写真、ソーシャルメディアアバター、アーティスティックポートレートなど、さまざまなAIアバター生成スタイルを探索。写真をアップロードして即座に生成。"
+    },
+    "aiVideo": {
+      "title": "AI動画生成器 - Veo 3.1 & Sora 2 | プロフェッショナル動画生成",
+      "description": "Google Veo 3.1とOpenAI Sora 2の強力なAI技術を使用して、テキストまたは画像から高品質なプロフェッショナル動画を生成します。複数のモードとアスペクト比をサポートし、素晴らしい動画コンテンツを素早く作成できます。",
+      "keywords": "AI動画生成,動画生成器,Veo 3.1,Sora 2,テキストから動画,画像から動画,AI動画作成"
+    },
+    "aiImage": {
+      "title": "AI画像生成器 - プロフェッショナルアバターと画像生成",
+      "description": "先進的なAI技術を使用してプロフェッショナル品質のアバターと画像を生成します。Nano BananaとGPT-4oモデルをサポートし、高品質なプロ写真とクリエイティブ画像を素早く生成できます。",
+      "keywords": "AI画像生成,アバター生成器,プロフェッショナル写真,Nano Banana,GPT-4o,AI画像作成"
+    }
+  },
+  "workflows": {
+    "linkedin": {
+      "name": "プロフェッショナルポートレート",
+      "description": "LinkedInや履歴書用のプロフェッショナル写真",
+      "fields": {
+        "name": {
+          "label": "名前",
+          "placeholder": "山田太郎"
+        },
+        "industry": {
+          "label": "業界",
+          "options": {
+            "tech": "テクノロジー/インターネット",
+            "finance": "金融/コンサルティング",
+            "education": "教育/研修",
+            "healthcare": "医療/ヘルスケア",
+            "legal": "法律/弁護士",
+            "creative": "クリエイティブ/デザイン",
+            "sales": "営業/マーケティング",
+            "other": "その他"
+          }
+        },
+        "position": {
+          "label": "役職レベル",
+          "options": {
+            "junior": "ジュニア",
+            "mid": "ミドル",
+            "senior": "シニア",
+            "manager": "マネージャー",
+            "executive": "エグゼクティブ"
+          }
+        },
+        "attire": {
+          "label": "服装",
+          "options": {
+            "formal": "フォーマルスーツ&ネクタイ",
+            "business_casual": "ビジネスカジュアル",
+            "smart_casual": "スマートカジュアル",
+            "creative_casual": "クリエイティブカジュアル"
+          }
+        },
+        "background": {
+          "label": "背景",
+          "options": {
+            "solid": "単色背景（グレー/ブルー）",
+            "modern_office": "モダンオフィス",
+            "minimal_workspace": "ミニマルワークスペース",
+            "natural_light": "窓際の自然光",
+            "bookshelf": "本棚背景"
+          }
+        }
+      }
+    },
+    "dating": {
+      "name": "デートアプリ写真",
+      "description": "Tinderやデートアプリ用の魅力的な写真",
+      "fields": {
+        "name": {
+          "label": "ニックネーム",
+          "placeholder": "アレックス"
+        },
+        "vibe": {
+          "label": "雰囲気",
+          "options": {
+            "energetic": "エネルギッシュで活気がある",
+            "mature": "成熟して魅力的",
+            "artistic": "芸術的で教養がある",
+            "athletic": "アスレチックで健康的",
+            "humorous": "ユーモラスで楽しい",
+            "gentle": "優しく親しみやすい"
+          }
+        },
+        "setting": {
+          "label": "設定",
+          "options": {
+            "outdoor": "屋外自然光",
+            "cafe": "居心地の良いカフェ",
+            "urban": "都会の街並み",
+            "home": "暖かい家",
+            "gym": "フィットネスジム",
+            "travel": "旅行先"
+          }
+        },
+        "style": {
+          "label": "スタイル",
+          "options": {
+            "casual": "カジュアルリラックス",
+            "trendy": "トレンディファッション",
+            "sporty": "スポーティアスレチック",
+            "artsy": "アーティスティッククリエイティブ",
+            "elegant": "エレガント洗練"
+          }
+        },
+        "mood": {
+          "label": "表情",
+          "options": {
+            "natural_smile": "自然な笑顔",
+            "laughing": "楽しい笑い",
+            "warm_gaze": "温かい視線",
+            "confident": "自信満々",
+            "playful": "遊び心"
+          }
+        }
+      }
+    },
+    "executive": {
+      "name": "エグゼクティブポートレート",
+      "description": "CEOや経営者向けの権威ある写真",
+      "fields": {
+        "name": {
+          "label": "名前",
+          "placeholder": "佐藤一郎"
+        },
+        "title": {
+          "label": "役職",
+          "placeholder": "CEO / 創業者 / 会長"
+        },
+        "company": {
+          "label": "企業タイプ",
+          "options": {
+            "tech": "テクノロジー",
+            "finance": "金融機関",
+            "manufacturing": "製造業",
+            "consulting": "コンサルティングファーム",
+            "startup": "スタートアップ",
+            "traditional": "伝統的企業"
+          }
+        },
+        "leadership": {
+          "label": "リーダーシップスタイル",
+          "options": {
+            "authoritative": "権威的でプロフェッショナル",
+            "innovative": "革新的でビジョナリー",
+            "approachable": "親しみやすく実用的",
+            "steady": "安定して信頼できる",
+            "decisive": "決断力がありコマンディング"
+          }
+        },
+        "background": {
+          "label": "背景",
+          "options": {
+            "black": "純粋な黒（高級）",
+            "office": "オフィスパノラマ",
+            "skyline": "都市のスカイライン",
+            "boardroom": "モダンボードルーム",
+            "corporate": "企業環境"
+          }
+        }
+      }
+    },
+    "social": {
+      "name": "ソーシャルメディアアバター",
+      "description": "Instagram、TikTok、ソーシャルメディア用のバイラル写真",
+      "fields": {
+        "name": {
+          "label": "ユーザー名",
+          "placeholder": "ヴィヴィ"
+        },
+        "niche": {
+          "label": "コンテンツニッチ",
+          "options": {
+            "fashion": "ファッション＆ビューティー",
+            "lifestyle": "ライフスタイル",
+            "travel": "旅行＆探検",
+            "food": "フード＆料理",
+            "fitness": "フィットネス＆ウェルネス",
+            "knowledge": "知識＆教育",
+            "creative": "アート＆クリエイティブ"
+          }
+        },
+        "aesthetic": {
+          "label": "美学",
+          "options": {
+            "fresh": "フレッシュ＆ナチュラル",
+            "luxury": "ハイエンドラグジュアリー",
+            "sweet": "スイート＆若々しい",
+            "edgy": "エッジー＆クール",
+            "cozy": "暖かく居心地の良い",
+            "vintage": "ヴィンテージレトロ",
+            "japanese": "ジャパニーズミニマル"
+          }
+        },
+        "color": {
+          "label": "カラームード",
+          "options": {
+            "bright": "明るく風通しの良い",
+            "warm": "暖かく柔らかい",
+            "vibrant": "鮮やか飽和",
+            "muted": "ミュートアース",
+            "film": "ヴィンテージフィルム",
+            "monochrome": "白黒"
+          }
+        },
+        "vibe": {
+          "label": "個性",
+          "options": {
+            "sunny": "明るく陽気",
+            "cool": "クールで遠い",
+            "sweet": "甘く愛らしい",
+            "elegant": "エレガントで洗練",
+            "bold": "大胆で自信満々",
+            "warm": "暖かく友好的"
+          }
+        }
+      }
+    },
+    "creative": {
+      "name": "クリエイティブアーティスティックポートレート",
+      "description": "アーティストやクリエイター向けの芸術的ポートレート",
+      "fields": {
+        "name": {
+          "label": "名前/芸名",
+          "placeholder": "ルナ"
+        },
+        "style": {
+          "label": "アートスタイル",
+          "options": {
+            "cyberpunk": "サイバーパンク",
+            "vaporwave": "ヴェイパーウェイブ",
+            "oil_painting": "油絵",
+            "watercolor": "夢のような水彩",
+            "pop_art": "ポップアート",
+            "surrealism": "シュルレアリスム",
+            "minimalism": "ミニマリズム",
+            "gothic": "ダークゴシック"
+          }
+        },
+        "color": {
+          "label": "カラースキーム",
+          "options": {
+            "neon": "ネオン鮮やか",
+            "black_gold": "黒＆金ラグジュアリー",
+            "pink_blue": "ピンク＆ブルーグラデーション",
+            "vintage": "ヴィンテージブラウン",
+            "contrast": "ハイコントラストボールド",
+            "monochrome_red": "白黒赤アクセント",
+            "rainbow": "虹多色"
+          }
+        },
+        "mood": {
+          "label": "ムード",
+          "options": {
+            "mysterious": "神秘的で夢のような",
+            "futuristic": "未来的アバンギャルド",
+            "romantic": "ロマンチックで優しい",
+            "powerful": "力強く爆発的",
+            "melancholic": "メランコリックで詩的",
+            "wild": "野性的で手に負えない",
+            "serene": "穏やかで禅"
+          }
+        },
+        "elements": {
+          "label": "ビジュアル要素",
+          "options": {
+            "light_shadow": "光と影のコントラスト",
+            "geometric": "幾何学模様",
+            "floral": "自然な花柄",
+            "neon_glow": "ネオングロー効果",
+            "smoke": "煙と霧",
+            "cosmic": "星空宇宙",
+            "abstract": "抽象線"
+          }
+        }
+      }
+    },
+    "official": {
+      "name": "公式ID写真",
+      "description": "パスポート、ビザ、IDに準拠した写真",
+      "fields": {
+        "name": {
+          "label": "名前",
+          "placeholder": "田中花子"
+        },
+        "type": {
+          "label": "ドキュメントタイプ",
+          "options": {
+            "passport": "パスポート/ビザ",
+            "id": "国民ID",
+            "driver": "運転免許証",
+            "resume": "履歴書ID写真",
+            "student": "学生証",
+            "work": "就労許可証"
+          }
+        },
+        "standard": {
+          "label": "国基準",
+          "options": {
+            "china": "中国基準",
+            "usa": "米国基準",
+            "eu": "EU基準",
+            "canada": "カナダ基準",
+            "australia": "オーストラリア基準",
+            "japan": "日本基準"
+          }
+        },
+        "background": {
+          "label": "背景色",
+          "options": {
+            "white": "白背景",
+            "blue": "青背景",
+            "red": "赤背景",
+            "gray": "灰色背景"
+          }
+        },
+        "attire": {
+          "label": "服装",
+          "options": {
+            "dark_suit": "ダークフォーマルスーツ",
+            "white_shirt": "白シャツ",
+            "business_casual": "ビジネスカジュアル",
+            "appropriate": "適切な服装"
+          }
+        }
+      }
+    },
+    "modal": {
+      "title": "スマートワークフロー",
+      "subtitle": "以下の情報を入力すると、AIがプロフェッショナルに最適化されたプロンプトを生成します",
+      "optimizing": "AIがプロンプトを最適化中...",
+      "generating": "プロフェッショナル画像を生成中...",
+      "generateButton": "プロフェッショナルアバターを生成",
+      "cancelButton": "キャンセル",
+      "required": "必須",
+      "optional": "任意"
+    }
+  },
+  "home": {
+    "simpleSteps": {
+      "title": "プロの写真を3つの簡単なステップで",
+      "subtitle": "写真家の予約不要、長時間の撮影不要",
+      "step1": {
+        "title": "写真をアップロード",
+        "description": "6〜12枚のセルフィーをアップロード、複数の角度が最適"
+      },
+      "step2": {
+        "title": "AI生成",
+        "description": "スタイルとシーンを選択、AIが作成を開始"
+      },
+      "step3": {
+        "title": "ダウンロードして使用",
+        "description": "40〜100枚のプロの写真を取得、自由に使用"
+      },
+      "cta": "今すぐ生成を開始",
+      "freeTrial": "⚡ 新規ユーザーは3回無料生成"
+    },
+    "videoShowcase": {
+      "badge": "AI動画作成技術",
+      "title": "動画作成をシンプルに",
+      "subtitle": "テキストから動画、画像からアニメーション、AIがすべてのアイデアを実現",
+      "examplePrompt": "プロンプト例：",
+      "videoPlaybackNotSupported": "お使いのブラウザは動画再生をサポートしていません",
+      "videoDuration": "⏱️ {duration}秒の動画",
+      "generateTime": "⚡ {time}分で生成",
+      "wideApplications": "幅広い用途",
+      "startCreating": "動画作成を開始",
+      "modelSupport": "🎉 Veo 3.1、Sora 2などの最先端AIモデルをサポート",
+      "multipleRatios": "横長、縦長、正方形など複数のアスペクト比でプラットフォームのニーズに対応",
+      "features": {
+        "textToVideo": {
+          "title": "テキストから動画",
+          "description": "テキストで説明、AIが自動で動画を生成",
+          "example": "月明かりの下で踊る子猫"
+        },
+        "imageToVideo": {
+          "title": "画像から動画",
+          "description": "静止画をアップロード、滑らかなアニメーションを生成",
+          "example": "写真の中の人物を動かす"
+        },
+        "reference": {
+          "title": "参照生成",
+          "description": "参照素材を提供、類似動画を作成",
+          "example": "スタイル画像に基づいて同じスタイルの動画を生成"
+        }
+      },
+      "useCases": {
+        "shortForm": {
+          "title": "ショート動画作成",
+          "description": "TikTok、Douyin、YouTube Shorts"
+        },
+        "branding": {
+          "title": "ブランドプロモーション",
+          "description": "企業動画、製品紹介動画"
+        },
+        "animation": {
+          "title": "アニメーションショート",
+          "description": "MGアニメ、キャラクターアニメ、エフェクト"
+        },
+        "advertising": {
+          "title": "広告クリエイティブ",
+          "description": "マーケティング動画、ソーシャルメディア広告"
+        }
+      }
+    },
+    "multiFunctionShowcase": {
+      "title": "アバター以上の可能性",
+      "subtitle": "画像生成＋動画作成、すべてのクリエイティブニーズに対応",
+      "videoDemo": "▶️ 動画デモ",
+      "createNow": "今すぐ作成",
+      "viewMore": "もっと見る",
+      "features": {
+        "aiGeneration": {
+          "title": "AIスマート生成",
+          "description": "専門スキル不要、AIが自動で作成"
+        },
+        "multipleStyles": {
+          "title": "複数のスタイル",
+          "description": "ビジネスからクリエイティブまで、さまざまなシーンに対応"
+        },
+        "highQuality": {
+          "title": "高品質出力",
+          "description": "プロフェッショナル品質、商用利用可能"
+        }
+      },
+      "useCases": {
+        "avatar": {
+          "name": "AIアバター",
+          "description": "プロフェッショナルポートレート、LinkedIn写真、証明写真"
+        },
+        "poster": {
+          "name": "ビジネスポスター",
+          "description": "広告デザイン、製品プロモーション、ソーシャルメディア"
+        },
+        "videoAd": {
+          "name": "動画広告",
+          "description": "ブランドプロモーション、製品デモ、ショート動画"
+        },
+        "animation": {
+          "name": "アニメーション",
+          "description": "MGアニメ、キャラクターアニメ、エフェクト制作"
+        }
+      },
+      "showcases": {
+        "avatar": {
+          "title": "LinkedInプロフェッショナルアバター",
+          "description": "ワンクリックで高品質なビジネスポートレートを生成",
+          "tags": "1:1,60秒,100枚"
+        },
+        "poster": {
+          "title": "製品広告ポスター",
+          "description": "AIが美しいマーケティング素材をデザイン",
+          "tags": "16:9,90秒,カスタム"
+        },
+        "videoAd": {
+          "title": "ブランドプロモーション動画",
+          "description": "テキスト説明からプロフェッショナル動画を生成",
+          "tags": "16:9,5秒,HD"
+        },
+        "animation": {
+          "title": "キャラクターアニメーションショート",
+          "description": "静止画から滑らかなアニメーションを生成",
+          "tags": "9:16,10秒,スムーズ"
+        }
+      }
+    }
+  },
+  "trustIndicators": {
+    "title": "プロフェッショナルAI作成プラットフォーム",
+    "models": "AIモデル",
+    "speed": "超高速",
+    "seconds": "秒",
+    "quality": "ウルトラHD品質",
+    "support": "24/7サポート",
+    "poweredBy": "AI技術提供"
+  },
+  "beforeAfterShowcase": {
+    "title": "AI変換",
+    "subtitle": "写真をアップロード、60秒でプロ作品を生成",
+    "uploadedPhoto": "アップロード写真",
+    "aiGenerated": "AI生成",
+    "example": "例",
+    "altBefore": "アップロードした写真",
+    "altAfter": "AI生成された写真"
+  },
+  "comparisonSlider": {
+    "beforeLabel": "オリジナル",
+    "afterLabel": "生成",
+    "dragToCompare": "ドラッグして比較"
+  },
+  "creativeGallery": {
+    "title": "クリエイティブショーケース",
+    "subtitle": "無限の可能性を探索、厳選された例からインスピレーションを得る",
+    "portrait": "ポートレートとアバター",
+    "commercial": "商業広告",
+    "animation": "アニメーションと動画",
+    "creative": "クリエイティブデザイン",
+    "allWorks": "すべての作品",
+    "imageWorks": "画像生成",
+    "videoWorks": "動画作成",
+    "createSimilar": "類似を作成",
+    "viewMore": "ギャラリー全体を表示",
+    "loading": "読み込み中...",
+    "untitled": "無題"
+  },
+  "errors": {
+    "api": {
+      "PRO_MODEL_REQUIRES_SUBSCRIPTION": "Sora 2 Proモデルは有料会員またはクレジットを持つユーザーのみ利用可能です。プランをアップグレードしてください。",
+      "PRO_MODEL_DURATION_LIMIT": "Sora 2 Proモデルは10秒と15秒のみサポート",
+      "INSUFFICIENT_CREDITS": "クレジット不足、チャージまたはプランをアップグレードしてください",
+      "INVALID_REQUEST": "リクエストパラメータが無効",
+      "UNAUTHORIZED": "まずログインしてください",
+      "INTERNAL_ERROR": "内部サーバーエラー、後でもう一度お試しください",
+      "NOT_FOUND": "リクエストされたリソースが見つかりません",
+      "FILE_TOO_LARGE": "ファイルサイズが制限を超えています",
+      "INVALID_FILE_TYPE": "サポートされていないファイルタイプ",
+      "GENERATION_FAILED": "生成に失敗しました、もう一度お試しください",
+      "TIMEOUT": "リクエストタイムアウト、後でもう一度お試しください"
+    }
+  },
+  "footer": {
+    "sections": {
+      "product": "製品",
+      "resources": "リソース",
+      "company": "会社",
+      "contact": "お問い合わせ"
+    },
+    "links": {
+      "generate": "アバター生成",
+      "pricing": "料金",
+      "examples": "例",
+      "faq": "FAQ",
+      "docs": "ドキュメント",
+      "blog": "ブログ",
+      "about": "私たちについて",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約"
+    },
+    "copyright": "© {year} Velocentra CO. All rights reserved.",
+    "operatedBy": "AI Town Lab is operated by Velocentra CO"
+  },
+  "company": {
+    "legalName": "Velocentra CO",
+    "legalNameCn": "维洛森",
+    "productBrand": "AI Town Lab"
+  },
+  "about": {
+    "title": "AI Town Labについて",
+    "description": "AI Town LabはVelocentra COが運営し、AI画像・動画生成技術に特化しています",
+    "keywords": "AI Town Lab,Velocentra,AI画像生成,AI動画制作,会社概要",
+    "badge": "会社概要",
+    "subtitle": "Velocentra CO 運営",
+    "operatedBy": "AI Town LabはVelocentra COのAIクリエイティブプラットフォームです",
+    "intro": {
+      "title": "会社紹介",
+      "content": "Velocentra COはスピードとパワーを重視するAI技術企業です。Velocity（速度）とCentra（中心）に由来する社名は、AI創作分野のスピードセンターになるという私たちの使命を表しています。AI Town Labは画像・動画生成に特化し、クリエイターに高速で専門的なAIツールを提供します。"
+    },
+    "technology": {
+      "title": "技術紹介",
+      "models": {
+        "title": "トップAIモデル",
+        "content": "Google Veo 3.1、OpenAI Sora 2、Nano Banana、GPT-4oなど業界トップのAIモデルを統合し、プロフェッショナル品質を保証します。"
+      },
+      "image": {
+        "title": "画像生成",
+        "content": "プロフェッショナルなアバターからクリエイティブデザインまで、多様な画像生成シーンに対応します。"
+      },
+      "video": {
+        "title": "動画制作",
+        "content": "テキストから動画、画像から動画など複数のモードで高品質な動画を迅速に生成します。"
+      }
+    },
+    "capabilities": {
+      "title": "製品機能",
+      "avatars": {
+        "title": "AIプロフェッショナルアバター",
+        "content": "自撮り写真を高品質なプロフェッショナルポートレートに変換。LinkedIn、履歴書、IDフォトなどに最適です。"
+      },
+      "images": {
+        "title": "AI画像生成",
+        "content": "テキストから画像、画像から画像の両モードをサポート。商業デザインから個人制作まで幅広く対応します。"
+      },
+      "videos": {
+        "title": "AI動画制作",
+        "content": "最新のAI動画生成技術で、様々なアスペクト比と長さの高品質動画を迅速に作成します。"
+      },
+      "scenarios": {
+        "title": "マルチシナリオ対応",
+        "content": "プロフェッショナルポートレート、ソーシャルメディア、クリエイティブデザイン、マーケティングなど多様な用途に対応します。"
+      }
+    },
+    "vision": {
+      "title": "ビジョン",
+      "content": "AI創作を誰もが利用できるようにし、すべてのクリエイターを支援します。技術は創造性を制限するのではなく、それを促進すべきだと考えています。継続的なイノベーションにより、創造の境界を押し広げ、誰もが創作の夢を実現できるようにします。",
+      "value1": "🚀 超高速",
+      "value2": "🎨 プロ品質",
+      "value3": "💡 革新駆動"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "content": "ご質問やご提案がございましたら、お気軽にご連絡ください",
+      "email": "support@aitownlab.com"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "description": "AI Town Labのプライバシーポリシー - 個人情報の収集、使用、保護について",
+    "badge": "プライバシー保護",
+    "subtitle": "AI Town Lab（Velocentra CO 運営）",
+    "lastUpdated": "最終更新",
+    "intro": "AI Town Labへようこそ。私たちはお客様のプライバシーを尊重し、個人情報の保護に努めています。本プライバシーポリシーは、データの収集、使用、保存、保護方法を説明します。本サービスの利用により、本ポリシーに記載された慣行に同意したものとみなされます。",
+    "collection": {
+      "title": "収集する情報",
+      "intro": "サービス提供のため、以下の情報を収集します：",
+      "account": {
+        "title": "アカウント情報",
+        "content": "登録時に提供されるメールアドレス、ユーザー名などの基本情報"
+      },
+      "uploads": {
+        "title": "アップロードコンテンツ",
+        "content": "AI生成のためにアップロードされた画像・動画ファイル"
+      },
+      "payment": {
+        "title": "支払い情報",
+        "content": "Stripeで処理される支払いデータ。完全なクレジットカード情報は直接保存しません"
+      },
+      "usage": {
+        "title": "使用データ",
+        "content": "ログファイル、IPアドレス、ブラウザタイプ、アクセス時間などの技術情報"
+      }
+    },
+    "usage": {
+      "title": "情報の使用方法",
+      "service": "AI画像・動画生成サービスの提供、維持、改善",
+      "improvement": "使用パターンを分析し、製品機能とユーザー体験を最適化",
+      "payment": "支払い取引の処理とサブスクリプション管理",
+      "communication": "サービス関連の通知、更新、マーケティング情報の送信（オプトアウト可能）",
+      "security": "詐欺、悪用、セキュリティ脅威の検出と防止"
+    },
+    "storage": {
+      "title": "データ保存とセキュリティ",
+      "platform": {
+        "title": "保存プラットフォーム",
+        "content": "業界標準のセキュリティ対策を備えたSupabaseを主要データ保存プラットフォームとして使用"
+      },
+      "retention": {
+        "title": "アップロード画像の保持",
+        "content": "アップロードされた元画像は、AI処理完了後24時間以内に自動削除されます"
+      },
+      "generated": {
+        "title": "生成コンテンツ",
+        "content": "AI生成された画像・動画は、削除を選択しない限りアカウントに永続的に保存されます"
+      },
+      "security": {
+        "title": "セキュリティ対策",
+        "content": "すべてのデータ転送はHTTPS暗号化を使用し、保存データは暗号化で保護されます"
+      }
+    },
+    "thirdParty": {
+      "title": "サードパーティサービス",
+      "intro": "完全な機能を提供するため、以下のサードパーティサービスを使用します：",
+      "stripe": "PCI DSS基準に準拠した安全な支払い処理",
+      "aiProviders": "Google（Veo）、OpenAI（Sora）、ReplicateなどがAIモデルサービスを提供",
+      "supabase": "安全なデータベースとストレージサービスを提供"
+    },
+    "cookies": {
+      "title": "Cookieの使用",
+      "intro": "以下の目的でCookieと類似技術を使用します：",
+      "auth": "ログインセッションと認証の維持",
+      "preferences": "ユーザー設定と言語選択の保存",
+      "analytics": "ウェブサイトの使用状況を分析しサービスを改善"
+    },
+    "rights": {
+      "title": "お客様の権利（GDPR/CCPA）",
+      "intro": "GDPRやCCPAなどのプライバシー法に基づき、以下の権利があります：",
+      "access": {
+        "title": "アクセス権",
+        "content": "当社が保有する個人データの閲覧を要求"
+      },
+      "deletion": {
+        "title": "削除権",
+        "content": "アカウントと関連データの削除を要求"
+      },
+      "export": {
+        "title": "データポータビリティ",
+        "content": "データのコピーのエクスポートを要求"
+      },
+      "marketing": {
+        "title": "マーケティングのオプトアウト",
+        "content": "いつでもマーケティングメールの配信停止が可能"
+      },
+      "rectification": {
+        "title": "訂正権",
+        "content": "不正確な個人情報の訂正を要求"
+      }
+    },
+    "children": {
+      "title": "未成年者のプライバシー",
+      "content": "当サービスは18歳以上のユーザーを対象としています。18歳未満の個人情報を故意に収集することはありません。未成年者のデータを収集したことが判明した場合、直ちに削除します。"
+    },
+    "changes": {
+      "title": "ポリシーの変更",
+      "content": "本プライバシーポリシーは随時更新される場合があります。重要な変更はメールまたはウェブサイトのお知らせでお知らせします。サービスの継続利用は、更新されたポリシーへの同意を示します。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "content": "本プライバシーポリシーについてご質問がある場合、またはプライバシー権を行使したい場合は、以下までご連絡ください：",
+      "email": "メール",
+      "company": "会社"
+    }
+  },
+  "terms": {
+    "title": "利用規約",
+    "description": "AI Town Lab利用規約 - サービス利用のルールと権利について",
+    "badge": "利用規約",
+    "subtitle": "AI Town Lab（Velocentra CO 運営）",
+    "lastUpdated": "最終更新",
+    "intro": "AI Town Labへようこそ！本利用規約は、お客様とVelocentra COとの間の法的拘束力のある契約を構成します。本サービスの利用により、これらの規約に従うことに同意したものとみなされます。よくお読みください。",
+    "service": {
+      "title": "サービス説明",
+      "description": "AI Town Labは以下のサービスを提供します：",
+      "image": "プロフェッショナルアバター、クリエイティブデザインなどのAI画像生成サービス",
+      "video": "テキストから動画、画像から動画をサポートするAI動画制作サービス",
+      "models": "複数のトップAIモデル（Google Veo、OpenAI Sora、Nano Bananaなど）の統合",
+      "availability": "サービスはサブスクリプションとクレジットモデルに基づいています。100%のサービス可用性は保証しません"
+    },
+    "account": {
+      "title": "アカウントの責任",
+      "age": "本サービスのご利用には18歳以上である必要があります",
+      "security": "アカウントのセキュリティと機密性の維持はお客様の責任です",
+      "sharing": "アカウント認証情報の共有や他者による使用は禁止されています",
+      "accuracy": "提供される情報が正確かつ最新であることを保証する責任があります"
+    },
+    "payment": {
+      "title": "支払いとサブスクリプション",
+      "processor": {
+        "title": "支払い処理",
+        "content": "すべての支払いはPCI DSS基準に準拠したStripeで安全に処理されます"
+      },
+      "subscription": {
+        "title": "自動更新",
+        "content": "サブスクリプションプランは、請求サイクル終了前にキャンセルしない限り自動更新されます。更新リマインダーを受け取ります"
+      },
+      "refund": {
+        "title": "返金ポリシー",
+        "content": "返金リクエストはケースバイケースで処理されます。具体的な状況についてはカスタマーサービスにご連絡ください"
+      },
+      "credits": {
+        "title": "クレジットルール",
+        "content": "購入されたクレジットは期限切れになりませんが、返金不可です。クレジットはすべての生成サービスで使用できます"
+      }
+    },
+    "usage": {
+      "title": "利用制限",
+      "intro": "以下の目的でサービスを使用しないことに同意します：",
+      "illegal": "違法、暴力的、ポルノグラフィック、有害なコンテンツの生成",
+      "impersonation": "他者のなりすましや他者との関係を誤解させる表現",
+      "infringement": "他者の著作権、商標、肖像権、その他の知的財産権の侵害",
+      "abuse": "システムリソースの悪用やサービスの正常な運用の妨害",
+      "harmful": "差別、嫌がらせ、危害を引き起こす可能性のあるコンテンツの生成"
+    },
+    "ownership": {
+      "title": "コンテンツの所有権",
+      "uploads": {
+        "title": "アップロードコンテンツ",
+        "content": "アップロードされたコンテンツのすべての権利を保持します"
+      },
+      "generated": {
+        "title": "生成コンテンツ",
+        "content": "AI生成コンテンツの著作権はお客様に帰属し、自由に使用できます"
+      },
+      "commercial": {
+        "title": "商業利用",
+        "content": "生成されたコンテンツは商業目的または個人目的で使用できます"
+      },
+      "showcase": {
+        "title": "展示権",
+        "content": "マーケティングと製品改善のため、優れた作品を展示する権利を留保します（明示的な同意が必要）"
+      }
+    },
+    "changes": {
+      "title": "サービスの変更と終了",
+      "features": "いつでも機能やサービスを変更、停止、または終了する権利を留保します",
+      "pricing": "価格とプランは調整される場合があります。重要な変更は既存ユーザーに事前通知されます",
+      "termination": "利用規約に違反したアカウントは予告なく停止または終了される場合があります"
+    },
+    "disclaimer": {
+      "title": "免責事項",
+      "aiQuality": "AI生成の品質は複数の要因により異なる場合があり、完璧な出力を保証しません",
+      "responsibility": "生成されたコンテンツの使用方法とその結果については全責任を負います",
+      "thirdParty": "サードパーティAIサービスプロバイダーの制限がサービスパフォーマンスに影響を与える場合があります",
+      "asIs": "サービスは「現状のまま」提供され、明示的または黙示的な保証はありません"
+    },
+    "liability": {
+      "title": "責任の制限",
+      "content": "法律で認められる最大限の範囲で、Velocentra COは、利益損失、データ損失、または事業中断を含むがこれらに限定されない、間接的、偶発的、特別、結果的、または懲罰的損害について責任を負いません。"
+    },
+    "dispute": {
+      "title": "紛争解決",
+      "law": {
+        "title": "準拠法",
+        "content": "これらの規約は関連する管轄区域の法律に準拠します"
+      },
+      "negotiation": {
+        "title": "協議による解決",
+        "content": "すべての紛争はまず友好的な協議によって解決されるべきです"
+      }
+    },
+    "termsChanges": {
+      "title": "規約の変更",
+      "content": "本利用規約は随時更新される場合があります。重要な変更はメールまたはウェブサイトのお知らせでお知らせします。サービスの継続利用は、更新された規約への同意を示します。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "content": "本利用規約についてご質問がある場合は、以下までご連絡ください：",
+      "email": "メール",
+      "company": "会社"
+    },
+    "acceptance": "AI Town Labを使用することにより、本利用規約を読み、理解し、これに拘束されることに同意したことを認めます。"
+  },
+  "createStudio": {
+    "title": "ワークスペース",
+    "subtitle": "AI駆動のクリエイティブプラットフォーム",
+    "loading": "読み込み中...",
+    "imageTab": "画像生成",
+    "videoTab": "動画制作",
+    "myWorks": "マイワーク",
+    "selectModel": "AIモデルを選択",
+    "imageModels": "画像生成モデル",
+    "videoModels": "動画生成モデル",
+    "recommended": "おすすめ",
+    "modelTip": "クリエイティブニーズに最適なAIモデルを選択",
+    "imageGen": "画像生成",
+    "videoGen": "動画制作",
+    "canvasTip": "パラメータを調整し、創造性を発揮して、AIに素晴らしいコンテンツを作成させましょう",
+    "generatorParams": "生成パラメータ",
+    "adjustParams": "以下のパラメータを調整して作成を開始",
+    "currentTasks": "進行中",
+    "completedTasks": "完了",
+    "noCurrentTasks": "進行中のタスクはありません",
+    "noCurrentTasksDesc": "左側でパラメータを入力して生成をクリックし、作成を開始しましょう！",
+    "noCompletedTasks": "完了した作品はありません",
+    "noCompletedTasksDesc": "あなたの作成履歴がここに表示されます",
+    "generating": "生成中...",
+    "pending": "待機中",
+    "processing": "処理中",
+    "download": "ダウンロード",
+    "clickToSwitch": "クリックして切り替え",
+    "aiImageGen": "AI画像生成",
+    "aiVideoGen": "AI動画",
+    "aiImageGeneration": "AI画像生成",
+    "aiVideoGeneration": "AI動画生成",
+    "noTasks": "タスクなし",
+    "noTasksDesc": "左側でモデルを選択し、説明を入力して作成を開始",
+    "inProgress": "進行中",
+    "history": "履歴",
+    "queueing": "キューイング中...",
+    "aiGenerating": "AI生成中...",
+    "mayTakeSomeTime": "10〜30秒かかる場合があります",
+    "generationFailed": "生成失敗",
+    "generationTask": "生成タスク",
+    "copyPrompt": "プロンプトをコピー",
+    "regenerate": "再生成",
+    "copied": "コピーしました",
+    "promptCopied": "プロンプトをクリップボードにコピーしました",
+    "failedNoDownload": "生成失敗、ダウンロードできません"
+  },
+  "aiImage": {
+    "title": "AI画像生成器",
+    "subtitle": "強力なAI技術でプロフェッショナル品質の画像を生成",
+    "hero": {
+      "title": "大胆に想像し、私たちが現実にします",
+      "description": "写真をアップロードして素晴らしい芸術作品に変換",
+      "cta": "画像をアップロード"
+    },
+    "generator": {
+      "title": "画像生成器",
+      "mode": "生成モード",
+      "imageToImage": "画像から画像",
+      "textToImage": "テキストから画像",
+      "uploadImage": "画像をアップロード",
+      "prompt": "プロンプト",
+      "promptPlaceholder": "生成したい画像を説明してください...",
+      "ratio": "アスペクト比",
+      "numberOfImages": "画像数",
+      "optimizePrompt": "プロンプトを最適化",
+      "generateImage": "画像を生成",
+      "cost": "クレジットコスト",
+      "generating": "生成中...",
+      "uploading": "アップロード中..."
+    },
+    "myImages": {
+      "title": "私の画像",
+      "empty": "まだ画像がありません。最初の一枚を作成しましょう！"
+    },
+    "examples": {
+      "title": "サンプル画像",
+      "subtitle": "これらの素晴らしいAI生成画像の例をチェックしてください",
+      "createSimilar": "類似を作成"
+    },
+    "optimize": {
+      "title": "AIプロンプト最適化アシスタント",
+      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い画像結果を得る",
+      "originalPrompt": "元のプロンプト",
+      "selectTemplate": "最適化テンプレートを選択",
+      "optimize": "プロンプトを最適化",
+      "optimizing": "最適化中...",
+      "optimizedPrompt": "最適化されたプロンプト",
+      "copy": "プロンプトをコピー",
+      "copySuccess": "クリップボードにコピーしました",
+      "fillBack": "生成器に戻す",
+      "close": "閉じる"
+    }
+  },
+  "aiVideo": {
+    "title": "AI動画生成器",
+    "subtitle": "強力なVeo 3.1とSora 2 AI技術でプロフェッショナル品質の動画を生成",
+    "hero": {
+      "title": "アイデアを瞬時に動画に変換",
+      "description": "AI動画生成器は、テキストと画像で高品質な動画を素早く作成するのに役立ちます",
+      "cta": "作成を開始"
+    },
+    "generator": {
+      "title": "動画生成器",
+      "optimizePrompt": "プロンプトを最適化",
+      "generating": "生成中...",
+      "uploadImages": "画像をアップロード",
+      "selectProvider": "生成器を選択",
+      "selectModel": "モデルを選択",
+      "selectMode": "生成モードを選択",
+      "selectQuality": "品質レベル",
+      "prompt": "プロンプト",
+      "promptPlaceholder": "作成したい動画コンテンツを説明してください...",
+      "aspectRatio": "アスペクト比",
+      "duration": "再生時間",
+      "removeWatermark": "透かしを削除",
+      "removeWatermarkDesc": "生成された動画から透かしを削除（推奨）",
+      "cost": "コスト",
+      "credits": "クレジット",
+      "generateVideo": "動画を生成",
+      "uploading": "アップロード中...",
+      "uploadHint": "画像をアップロードするにはクリック",
+      "uploadDesc": "JPEG、PNG、WEBP、最大10MB",
+      "textToVideo": "テキストから動画",
+      "imageToVideo": "画像から動画",
+      "reference": "参考",
+      "storyboard": "ストーリーボード",
+      "watermarkRemover": "透かし削除",
+      "veo31Fast": "Veo 3.1 高速",
+      "veo31Quality": "Veo 3.1 品質",
+      "sora2Basic": "Sora 2",
+      "sora2Pro": "Sora 2 Pro",
+      "standard": "標準",
+      "high": "高品質",
+      "portrait": "縦長",
+      "landscape": "横長",
+      "auto": "自動"
+    },
+    "examples": {
+      "title": "サンプルギャラリー",
+      "subtitle": "これらの素晴らしいAI生成動画の例をチェックしてください",
+      "createSimilar": "類似を作成",
+      "noExamples": "利用可能な例がありません"
+    },
+    "optimize": {
+      "title": "AIプロンプト最適化",
+      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い動画結果を得る",
+      "originalPrompt": "元のプロンプト",
+      "selectTemplate": "テンプレートを選択",
+      "optimize": "プロンプトを最適化",
+      "optimizing": "最適化中...",
+      "optimizedPrompt": "最適化されたプロンプト",
+      "copy": "プロンプトをコピー",
+      "copySuccess": "クリップボードにコピーしました",
+      "fillBack": "生成器に入力",
+      "fillBackSuccess": "プロンプトが正常に入力されました",
+      "close": "閉じる",
+      "templateCinematic": "映画スタイル",
+      "templateCommercial": "コマーシャル/広告",
+      "templateDocumentary": "ドキュメンタリー/自然",
+      "templateGeneral": "一般的な動画"
+    }
+  },
+  "models": {
+    "image": {
+      "kie-nano-banana": {
+        "name": "Nano Banana",
+        "description": "Google Nano Banana - Schnelle hochwertige Bildgenerierung (Text zu Bild)"
+      },
+      "kie-nano-banana-edit": {
+        "name": "Nano Banana Edit",
+        "description": "Google Nano Banana Edit - Bild-zu-Bild-Modus"
+      },
+      "kie-gpt4o-image": {
+        "name": "GPT-4o Image",
+        "description": "OpenAI GPT-4o 画像生成 - 最高の理解力（テキストから画像 + 画像から画像）"
+      }
+    },
+    "video": {
+      "veo3_fast": {
+        "name": "Veo 3.1 Schnell",
+        "displayName": "Veo 3.1 Schnell",
+        "description": "高品質な高速動画生成"
+      },
+      "veo3": {
+        "name": "Veo 3.1 品質",
+        "displayName": "Veo 3.1 品質",
+        "description": "Hochwertige Videogenerierung"
+      },
+      "sora-2-text-to-video": {
+        "name": "Sora 2 Text zu Video",
+        "displayName": "Sora 2 Text zu Video",
+        "description": "Text-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-image-to-video": {
+        "name": "Sora 2 Bild zu Video",
+        "displayName": "Sora 2 Bild zu Video",
+        "description": "Bild-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-pro-text-to-video": {
+        "name": "Sora 2 Pro Text zu Video",
+        "displayName": "Sora 2 Pro Text zu Video",
+        "description": "Professionelle Text-zu-Video-Generierung"
+      },
+      "sora-2-pro-image-to-video": {
+        "name": "Sora 2 Pro Bild zu Video",
+        "displayName": "Sora 2 Pro Bild zu Video",
+        "description": "Professionelle Bild-zu-Video-Generierung"
+      },
+      "sora-2-pro-storyboard": {
+        "name": "Sora 2 Pro Storyboard",
+        "displayName": "Sora 2 Pro Storyboard",
+        "description": "Mehrszeniges Storyboard-Video-Generierung"
+      },
+      "sora-watermark-remover": {
+        "name": "Sora Wasserzeichenentferner",
+        "displayName": "Sora Wasserzeichenentferner",
+        "description": "Wasserzeichen aus Sora-Videos entfernen"
+      }
+    }
+  },
+  "generators": {
+    "common": {
+      "pleaseLogin": "まずログインしてください",
+      "pleaseEnterPrompt": "プロンプトを入力してください",
+      "pleaseUploadImages": "画像をアップロードしてください",
+      "optimize": "最適化",
+      "cost": "コスト",
+      "credits": "クレジット",
+      "uploading": "アップロード中...",
+      "generating": "生成中...",
+      "aiGenerating": "AI生成中...",
+      "estimatedTime": "推定時間",
+      "taskId": "タスクID",
+      "browserNotSupport": "お使いのブラウザは動画再生に対応していません",
+      "regenerate": "再生成",
+      "download": "ダウンロード",
+      "generationResult": "生成結果",
+      "generationFailed": "生成に失敗しました",
+      "pleaseFillAllScenes": "すべてのシーン説明を入力してください",
+      "totalSceneDuration": "シーン合計時間",
+      "exceedsVideoDuration": "動画時間を超過",
+      "promptHint": "詳細な説明でより良い結果が得られます。AIを使用してプロンプトを最適化してください"
+    },
+    "video": {
+      "generationMode": "生成モード",
+      "qualityLevel": "品質レベル",
+      "standard": "標準",
+      "highQuality": "高品質",
+      "sceneList": "シーンリスト",
+      "total": "合計:",
+      "seconds": "s",
+      "addScene": "シーンを追加",
+      "scene": "シーン",
+      "describeScene": "このシーンを説明してください...",
+      "duration": "時間",
+      "textToVideo": "テキストから動画",
+      "imageToVideo": "画像から動画",
+      "reference": "参照"
+    },
+    "image": {
+      "imageToImage": "画像編集",
+      "textToImage": "テキストから画像",
+      "startGeneration": "生成開始",
+      "nanaBananaRatioHint": "Nano Bananaは複数のアスペクト比をサポートしています。ニーズに合ったものを選択してください"
+    },
+    "upload": {
+      "clickToUpload": "クリックして画像をアップロード",
+      "supportedFormats": "JPEG、PNG、WEBP、最大10MB"
+    },
+    "labels": {
+      "label": "ラベル",
+      "labelCn": "ラベル (CN)",
+      "generator": "ジェネレーター",
+      "aspectRatio": "アスペクト比",
+      "duration": "時間",
+      "quality": "品質",
+      "highQuality": "高",
+      "standard": "標準",
+      "watermark": "透かし",
+      "removed": "削除済み",
+      "kept": "保持"
+    }
+  },
+  "promptTemplates": {
+    "image": {
+      "image-general": {
+        "name": "一般画像",
+        "description": "一般的な画像生成最適化"
+      },
+      "image-professional-portrait": {
+        "name": "プロフェッショナルポートレート",
+        "description": "プロフェッショナルポートレート最適化"
+      },
+      "image-artistic-portrait": {
+        "name": "アーティスティックポートレート",
+        "description": "アーティスティックポートレート最適化"
+      },
+      "image-product": {
+        "name": "商品撮影",
+        "description": "商品撮影とEコマース画像"
+      },
+      "image-landscape": {
+        "name": "風景写真",
+        "description": "自然風景と建築写真"
+      }
+    },
+    "video": {
+      "video-cinematic": {
+        "name": "映画スタイル",
+        "description": "ドラマチックな照明と構成による映画的なストーリーテリングの最適化"
+      },
+      "video-commercial": {
+        "name": "コマーシャル/広告",
+        "description": "製品プレゼンテーションとブランド広告の最適化"
+      },
+      "video-documentary": {
+        "name": "ドキュメンタリー/自然",
+        "description": "自然ドキュメンタリーと野生動物スタイルの最適化"
+      },
+      "video-general": {
+        "name": "一般動画",
+        "description": "一般的な動画生成最適化"
+      }
+    }
+  },
+  "innovationLab": {
+    "title": "イノベーションラボ",
+    "subtitle": "AI創作の無限の可能性を探索し、注目の例を表示して類似のものを作成",
+    "createSimilar": "類似のものを作成",
+    "viewTutorial": "チュートリアルを見る",
+    "prompt": "プロンプト",
+    "tutorial": "チュートリアル",
+    "noExamples": "例がありません",
+    "loading": "読み込み中...",
+    "imageExample": "画像例",
+    "videoExample": "動画例"
+  }
+}
