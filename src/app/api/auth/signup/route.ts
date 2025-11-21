@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
   try {
     const supabase = await createServerSupabaseClient();
     const body = await request.json();
-    const { email, password } = body;
+    const { nickname, email, password } = body;
 
     if (!email || !password) {
       return NextResponse.json(
@@ -21,6 +21,9 @@ export async function POST(request: NextRequest) {
       password,
       options: {
         emailRedirectTo: `${process.env.NEXT_PUBLIC_APP_URL}/auth/callback`,
+        data: {
+          nickname: nickname || email.split('@')[0],
+        },
       },
     });
 
@@ -31,11 +34,13 @@ export async function POST(request: NextRequest) {
     // 创建用户配置记录（使用 admin 客户端绕过 RLS）
     if (data.user) {
       const adminSupabase = createAdminClient();
+      const userNickname = nickname || email.split('@')[0];
       const { error: profileError } = await adminSupabase
         .from('user_profiles')
         .insert({
           id: data.user.id,
           email: data.user.email,
+          nickname: userNickname,
           full_name: null,
           avatar_url: null,
           locale: 'zh',

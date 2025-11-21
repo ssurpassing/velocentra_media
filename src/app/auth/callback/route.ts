@@ -1,6 +1,6 @@
 /**
  * Auth Callback API Route
- * 处理 Supabase 邮箱确认后的服务端回调
+ * 处理 Supabase OAuth 回调（包括 Google OAuth 和邮箱确认）
  * 这个路由在根目录，不在 [locale] 下，因为 Supabase 的回调 URL 是固定的
  */
 
@@ -10,22 +10,35 @@ import { createServerSupabaseClient } from '@/infrastructure/database/server-cli
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
+  const error = requestUrl.searchParams.get('error');
+  const errorDescription = requestUrl.searchParams.get('error_description');
+
+  // 处理 OAuth 错误
+  if (error) {
+    console.error('OAuth error:', error, errorDescription);
+    const locale = requestUrl.searchParams.get('locale') || 'zh';
+    return NextResponse.redirect(
+      new URL(`/${locale}?error=${encodeURIComponent(errorDescription || error)}`, requestUrl.origin)
+    );
+  }
 
   if (code) {
     const supabase = await createServerSupabaseClient();
     
     // 交换 code 获取 session
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
     
-    if (error) {
-      console.error('Exchange code error:', error);
-      // 重定向到错误页面
-      return NextResponse.redirect(new URL('/auth/login?error=auth_failed', requestUrl.origin));
+    if (exchangeError) {
+      console.error('Exchange code error:', exchangeError);
+      const locale = requestUrl.searchParams.get('locale') || 'zh';
+      return NextResponse.redirect(
+        new URL(`/${locale}?error=auth_failed`, requestUrl.origin)
+      );
     }
   }
 
-  // 成功后重定向到首页（带上 locale）
+  // 成功后重定向到 dashboard
   const locale = requestUrl.searchParams.get('locale') || 'zh';
-  return NextResponse.redirect(new URL(`/${locale}`, requestUrl.origin));
+  return NextResponse.redirect(new URL(`/${locale}/dashboard`, requestUrl.origin));
 }
 

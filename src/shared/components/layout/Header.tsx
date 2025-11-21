@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Sparkles, Wand2 } from 'lucide-react';
 import { Button } from '@/shared/components/ui/Button';
@@ -7,13 +8,15 @@ import { useAuth } from '@/shared/contexts/AuthContext';
 import { http } from '@/infrastructure/http/client';
 import { LanguageSwitcher } from '@/shared/components/ui/LanguageSwitcher';
 import { Link, usePathname, useRouter } from '@/navigation';
+import { LoginModal } from '@/shared/components/modals/LoginModal';
 
 export function Header() {
   const t = useTranslations('nav');
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
-  const { user, refreshAuth, loading } = useAuth();
+  const { user, profile, refreshAuth, loading } = useAuth();
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
   
   // 调试日志
   console.log('🎯 Header locale:', locale, 'pathname:', pathname);
@@ -98,7 +101,7 @@ export function Header() {
           ) : user ? (
             <div className="flex items-center space-x-2 animate-in fade-in duration-200">
               <span className="text-sm text-muted-foreground">
-                {user.email}
+                {profile?.nickname || user.email?.split('@')[0] || user.email}
               </span>
               <Button variant="outline" size="sm" onClick={handleSignOut} className="border-primary/30 hover:bg-primary/10">
                 {t('logout')}
@@ -106,8 +109,13 @@ export function Header() {
             </div>
           ) : (
             <div className="flex items-center space-x-2 animate-in fade-in duration-200">
-              <Button variant="ghost" size="sm" asChild className="hover:bg-primary/10">
-                <Link href="/auth/login">{t('login')}</Link>
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                onClick={() => setLoginModalOpen(true)}
+                className="hover:bg-primary/10"
+              >
+                {t('login')}
               </Button>
               <Button size="sm" asChild className="gradient-primary">
                 <Link href="/auth/signup">{t('signup')}</Link>
@@ -116,6 +124,9 @@ export function Header() {
           )}
         </div>
       </div>
+      
+      {/* Login Modal */}
+      <LoginModal open={loginModalOpen} onOpenChange={setLoginModalOpen} />
     </header>
   );
 }

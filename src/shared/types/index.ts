@@ -2,6 +2,7 @@
 export interface UserProfile {
   id: string;
   email: string;
+  nickname?: string;
   full_name?: string;
   avatar_url?: string;
   locale: string;

@@ -14,6 +14,7 @@ export default function SignupPage() {
   const locale = useLocale();
   const router = useRouter();
   const { refreshAuth } = useAuth();
+  const [nickname, setNickname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -40,6 +41,7 @@ export default function SignupPage() {
 
     try {
       const response = await http.post('/auth/signup', {
+        nickname,
         email,
         password,
       });
@@ -99,6 +101,22 @@ export default function SignupPage() {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <label htmlFor="nickname" className="text-sm font-medium">
+                  昵称
+                </label>
+                <Input
+                  id="nickname"
+                  type="text"
+                  placeholder="请输入昵称"
+                  value={nickname}
+                  onChange={(e) => setNickname(e.target.value)}
+                  required
+                  disabled={loading}
+                  maxLength={50}
+                />
+              </div>
+
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium">
                   邮箱
