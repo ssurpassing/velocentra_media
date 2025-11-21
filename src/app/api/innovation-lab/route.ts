@@ -9,10 +9,30 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const locale = searchParams.get('locale') || 'zh';
     const limit = parseInt(searchParams.get('limit') || '20');
-    const mediaType = searchParams.get('media_type'); // 'video', 'image', or undefined for all
-    const displayLocation = searchParams.get('display_location'); // 'homepage', 'ai-image', 'ai-video'
+    const mediaType = searchParams.get('mediaType'); // 注意：修改为 camelCase
+    const displayLocation = searchParams.get('displayLocation'); // 注意：修改为 camelCase
 
-    const supabase = getPublicDataClient();
+    // 验证环境变量
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      console.error('Missing Supabase environment variables');
+      return NextResponse.json({
+        success: true,
+        data: [],
+        message: 'Database configuration missing',
+      });
+    }
+
+    let supabase;
+    try {
+      supabase = getPublicDataClient();
+    } catch (error: any) {
+      console.error('Failed to create Supabase client:', error);
+      return NextResponse.json({
+        success: true,
+        data: [],
+        message: 'Database connection failed',
+      });
+    }
 
     // 构建查询 - 从 generation_tasks 获取展示任务
     let query = supabase
@@ -48,7 +68,13 @@ export async function GET(request: NextRequest) {
     const { data: tasks, error: tasksError } = await query;
 
     if (tasksError) {
-      throw tasksError;
+      console.error('Database query error:', tasksError);
+      // 返回空数据而不是抛出错误
+      return NextResponse.json({
+        success: true,
+        data: [],
+        message: 'No showcase data available',
+      });
     }
 
 
@@ -62,25 +88,39 @@ export async function GET(request: NextRequest) {
     // 获取这些任务的媒体文件
     const taskIds = tasks.map(task => task.id);
     
-    const { data: mediaFiles, error: mediaError } = await supabase
-      .from('media_files')
-      .select('*')
-      .in('task_id', taskIds)
-      .order('result_index', { ascending: true });
+    let mediaFiles = [];
+    try {
+      const { data, error: mediaError } = await supabase
+        .from('media_files')
+        .select('*')
+        .in('task_id', taskIds)
+        .order('result_index', { ascending: true });
 
-    if (mediaError) {
-      // 即使媒体文件获取失败，也返回基础数据
+      if (mediaError) {
+        console.warn('Failed to fetch media files:', mediaError);
+      } else if (data) {
+        mediaFiles = data;
+      }
+    } catch (error) {
+      console.warn('Media files query exception:', error);
     }
 
     // 获取国际化翻译
-    const { data: translations, error: translationsError } = await supabase
-      .from('generation_tasks_i18n')
-      .select('*')
-      .in('task_id', taskIds)
-      .eq('locale', locale);
+    let translations = [];
+    try {
+      const { data, error: translationsError } = await supabase
+        .from('generation_tasks_i18n')
+        .select('*')
+        .in('task_id', taskIds)
+        .eq('locale', locale);
 
-    if (translationsError) {
-      // 即使翻译失败，也返回基础数据
+      if (translationsError) {
+        console.warn('Failed to fetch translations:', translationsError);
+      } else if (data) {
+        translations = data;
+      }
+    } catch (error) {
+      console.warn('Translations query exception:', error);
     }
 
     // 构建媒体文件映射
@@ -143,14 +183,18 @@ export async function GET(request: NextRequest) {
       count: result.length,
     });
   } catch (error: any) {
-    console.error('Innovation lab API error:', error);
-    return NextResponse.json(
-      { 
-        success: false, 
-        error: error.message || 'Failed to fetch innovation lab examples',
-        data: [],
-      },
-      { status: 500 }
-    );
+    console.error('Innovation lab API error:', {
+      message: error.message,
+      details: error.stack || error.toString(),
+      hint: error.hint || '',
+      code: error.code || '',
+    });
+    
+    // 即使出错也返回成功状态和空数据，避免前端报错
+    return NextResponse.json({
+      success: true,
+      data: [],
+      message: 'Service temporarily unavailable',
+    });
   }
 }

@@ -4,7 +4,6 @@ import { BeforeAfterShowcase } from './components/BeforeAfterShowcase';
 import { MultiFunctionShowcase } from './components/MultiFunctionShowcase';
 import { VideoShowcase } from './components/VideoShowcase';
 import { CreativeGallery } from './components/CreativeGallery';
-import { PricingSection } from './components/PricingSection';
 import { FAQSection } from './components/FAQSection';
 
 interface InnovationExample {
@@ -50,10 +49,7 @@ export function HomePage({ innovationExamples }: HomePageProps) {
       {/* 🖼️ 第六屏：创意作品画廊（替代创新实验室） */}
       <CreativeGallery />
       
-      {/* 💰 第七屏：定价方案 */}
-      <PricingSection />
-      
-      {/* ❓ 第九屏：常见问题 */}
+      {/* ❓ 第七屏：常见问题 */}
       <FAQSection />
     </main>
   );

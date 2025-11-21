@@ -1546,6 +1546,46 @@
       "company": "Company"
     },
     "acceptance": "By using AI Town Lab, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+  },
+  "payment": {
+    "success": {
+      "title": "Payment Successful!",
+      "description": "Thank you for your purchase. Your credits have been added to your account.",
+      "whatNext": "What's Next?",
+      "creditsAdded": "Credits have been added to your account",
+      "receiptSent": "Receipt has been sent to your email",
+      "readyToUse": "You can start creating immediately",
+      "goToDashboard": "Go to Dashboard",
+      "startCreating": "Start Creating",
+      "needHelp": "Need help?",
+      "contactSupport": "Contact Support"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}!",
+    "credits": "Credits",
+    "availableCredits": "Available credits",
+    "images": "Images",
+    "videos": "Videos",
+    "totalGenerated": "Total generated",
+    "subscription": "Subscription",
+    "active": "Active",
+    "inactive": "Inactive",
+    "noSubscription": "No subscription",
+    "quickActions": "Quick Actions",
+    "quickActionsDesc": "Start creating quickly",
+    "generateImage": "Generate Image",
+    "generateVideo": "Generate Video",
+    "buyCredits": "Buy Credits",
+    "accountInfo": "Account Information",
+    "accountInfoDesc": "Your account details",
+    "email": "Email",
+    "memberSince": "Member since",
+    "subscriptionEnds": "Subscription ends",
+    "recentActivity": "Recent Activity",
+    "recentActivityDesc": "Your recent creations",
+    "noRecentActivity": "No recent activity"
   }
 }
 

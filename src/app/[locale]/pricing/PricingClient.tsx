@@ -24,13 +24,13 @@ export function PricingClient() {
     }
 
     const plan = PRICING_PLANS.find((p) => p.id === planId);
-    if (!plan || !plan.stripePriceId) return;
+    if (!plan) return;
 
     try {
       setLoading(planId);
       
       const response = await http.post('/payment/create-checkout', {
-        priceId: plan.stripePriceId,
+        planId: planId,
         type: plan.interval ? 'subscription' : 'payment',
       });
 

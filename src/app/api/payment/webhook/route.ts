@@ -9,14 +9,18 @@ export async function POST(request: NextRequest) {
     const signature = request.headers.get('stripe-signature');
 
     if (!signature) {
+      console.error('[Webhook] No signature provided');
       return NextResponse.json({ error: 'No signature' }, { status: 400 });
     }
 
     const event = constructWebhookEvent(body, signature);
 
     if (!event) {
+      console.error('[Webhook] Invalid signature');
       return NextResponse.json({ error: 'Invalid signature' }, { status: 400 });
     }
+
+    console.log(`[Webhook] Received event: ${event.type}, ID: ${event.id}`);
 
     const supabase = createAdminClient();
 
@@ -25,72 +29,182 @@ export async function POST(request: NextRequest) {
       case 'checkout.session.completed': {
         const session = event.data.object as Stripe.Checkout.Session;
         const userId = session.client_reference_id;
+        const sessionId = session.id;
 
-        if (!userId) break;
+        console.log(`[Webhook] Processing checkout.session.completed for user: ${userId}, session: ${sessionId}`);
+
+        if (!userId) {
+          console.error('[Webhook] No userId in session');
+          break;
+        }
+
+        // 幂等性检查：检查是否已经处理过这个 session
+        const { data: existingTransaction } = await supabase
+          .from('transactions')
+          .select('id')
+          .eq('stripe_session_id', sessionId)
+          .single();
+
+        if (existingTransaction) {
+          console.log(`[Webhook] Session ${sessionId} already processed, skipping`);
+          break;
+        }
 
         // 判断是积分购买还是订阅
         if (session.mode === 'payment') {
           // 积分购买
-          const creditsAmount = session.metadata?.credits ? parseInt(session.metadata.credits) : 100;
+          const creditsAmount = session.metadata?.credits ? parseInt(session.metadata.credits) : 0;
+          const planId = session.metadata?.planId || '';
+          const planName = session.metadata?.planName || 'Unknown Plan';
+
+          console.log(`[Webhook] Credit purchase: ${creditsAmount} credits for user ${userId}`);
+
+          if (creditsAmount === 0) {
+            console.error('[Webhook] Invalid credits amount: 0');
+            break;
+          }
 
           // 创建交易记录
-          await supabase.from('transactions').insert({
+          const { error: transactionError } = await supabase.from('transactions').insert({
             user_id: userId,
             type: 'credit_purchase',
             amount_cents: session.amount_total || 0,
             credits_amount: creditsAmount,
             currency: session.currency?.toUpperCase() || 'USD',
             stripe_payment_id: session.payment_intent as string,
+            stripe_session_id: sessionId,
+            plan_id: planId,
+            plan_name: planName,
             status: 'completed',
           });
 
+          if (transactionError) {
+            console.error('[Webhook] Failed to create transaction:', transactionError);
+            throw transactionError;
+          }
+
+          console.log('[Webhook] Transaction record created');
+
           // 增加用户积分
-          const { data: profile } = await supabase
+          const { data: profile, error: profileFetchError } = await supabase
             .from('user_profiles')
             .select('credits')
             .eq('id', userId)
             .single();
 
-          const newCredits = (profile?.credits || 0) + creditsAmount;
+          if (profileFetchError) {
+            console.error('[Webhook] Failed to fetch user profile:', profileFetchError);
+            throw profileFetchError;
+          }
 
-          await supabase
+          const oldCredits = profile?.credits || 0;
+          const newCredits = oldCredits + creditsAmount;
+
+          console.log(`[Webhook] Updating credits: ${oldCredits} -> ${newCredits}`);
+
+          const { error: updateError } = await supabase
             .from('user_profiles')
             .update({
               credits: newCredits,
               membership_tier: 'credits',
+              updated_at: new Date().toISOString(),
             })
             .eq('id', userId);
 
+          if (updateError) {
+            console.error('[Webhook] Failed to update user credits:', updateError);
+            throw updateError;
+          }
+
+          console.log('[Webhook] User credits updated successfully');
+
+          // 更新支付意图状态为 completed
+          await supabase
+            .from('payment_intents')
+            .update({
+              status: 'completed',
+              completed_at: new Date().toISOString(),
+              stripe_payment_intent_id: session.payment_intent as string,
+            })
+            .eq('stripe_session_id', sessionId);
+
           // 记录积分历史
-          await supabase.from('credit_history').insert({
+          const { error: historyError } = await supabase.from('credit_history').insert({
             user_id: userId,
             amount: creditsAmount,
             type: 'purchase',
             balance_after: newCredits,
-            description: `Purchased ${creditsAmount} credits`,
+            description: `Purchased ${creditsAmount} credits - ${planName}`,
+            metadata: {
+              sessionId,
+              planId,
+              planName,
+            },
           });
+
+          if (historyError) {
+            console.error('[Webhook] Failed to create credit history:', historyError);
+            // 不抛出错误，因为积分已经添加成功
+          } else {
+            console.log('[Webhook] Credit history recorded');
+          }
+
+          console.log(`[Webhook] ✅ Credit purchase completed successfully for user ${userId}`);
         } else if (session.mode === 'subscription') {
           // 订阅
-          await supabase.from('transactions').insert({
+          const planId = session.metadata?.planId || '';
+          const planName = session.metadata?.planName || 'Unknown Plan';
+          const creditsPerMonth = session.metadata?.credits ? parseInt(session.metadata.credits) : 0;
+
+          console.log(`[Webhook] Subscription: ${planName} for user ${userId}`);
+
+          const { error: transactionError } = await supabase.from('transactions').insert({
             user_id: userId,
             type: 'subscription',
             amount_cents: session.amount_total || 0,
             currency: session.currency?.toUpperCase() || 'USD',
             stripe_subscription_id: session.subscription as string,
+            stripe_session_id: sessionId,
+            plan_id: planId,
+            plan_name: planName,
             status: 'completed',
           });
+
+          if (transactionError) {
+            console.error('[Webhook] Failed to create subscription transaction:', transactionError);
+            throw transactionError;
+          }
 
           // 更新用户订阅状态
           const subscriptionEndDate = new Date();
           subscriptionEndDate.setMonth(subscriptionEndDate.getMonth() + 1);
 
-          await supabase
+          const { error: updateError } = await supabase
             .from('user_profiles')
             .update({
               membership_tier: 'subscription',
               subscription_end_date: subscriptionEndDate.toISOString(),
+              credits: creditsPerMonth, // 订阅首月积分
+              updated_at: new Date().toISOString(),
             })
             .eq('id', userId);
+
+          if (updateError) {
+            console.error('[Webhook] Failed to update subscription status:', updateError);
+            throw updateError;
+          }
+
+          // 更新支付意图状态为 completed
+          await supabase
+            .from('payment_intents')
+            .update({
+              status: 'completed',
+              completed_at: new Date().toISOString(),
+              stripe_subscription_id: session.subscription as string,
+            })
+            .eq('stripe_session_id', sessionId);
+
+          console.log(`[Webhook] ✅ Subscription activated successfully for user ${userId}`);
         }
         break;
       }

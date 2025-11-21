@@ -11,6 +11,9 @@ export async function createCheckoutSession(params: {
   quantity?: number;
   successUrl: string;
   cancelUrl: string;
+  planId?: string;
+  planName?: string;
+  credits?: number;
 }): Promise<{ success: boolean; sessionId?: string; url?: string; error?: string }> {
   try {
     const session = await stripe.checkout.sessions.create({
@@ -26,6 +29,10 @@ export async function createCheckoutSession(params: {
       client_reference_id: params.userId,
       metadata: {
         userId: params.userId,
+        planId: params.planId || '',
+        planName: params.planName || '',
+        credits: params.credits?.toString() || '0',
+        type: 'credit_purchase',
       },
     });
 
@@ -49,6 +56,9 @@ export async function createSubscriptionSession(params: {
   priceId: string;
   successUrl: string;
   cancelUrl: string;
+  planId?: string;
+  planName?: string;
+  credits?: number;
 }): Promise<{ success: boolean; sessionId?: string; url?: string; error?: string }> {
   try {
     const session = await stripe.checkout.sessions.create({
@@ -64,6 +74,10 @@ export async function createSubscriptionSession(params: {
       client_reference_id: params.userId,
       metadata: {
         userId: params.userId,
+        planId: params.planId || '',
+        planName: params.planName || '',
+        credits: params.credits?.toString() || '0',
+        type: 'subscription',
       },
     });
 

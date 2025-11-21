@@ -1598,6 +1598,46 @@
       "company": "公司"
     },
     "acceptance": "使用 AI Town Lab 即表示您已阅读、理解并同意受这些服务条款的约束。"
+  },
+  "payment": {
+    "success": {
+      "title": "支付成功！",
+      "description": "感谢您的购买。积分已添加到您的账户。",
+      "whatNext": "接下来做什么？",
+      "creditsAdded": "积分已添加到您的账户",
+      "receiptSent": "收据已发送到您的邮箱",
+      "readyToUse": "您现在可以立即开始创作",
+      "goToDashboard": "前往控制台",
+      "startCreating": "开始创作",
+      "needHelp": "需要帮助？",
+      "contactSupport": "联系客服"
+    }
+  },
+  "dashboard": {
+    "title": "控制台",
+    "welcome": "欢迎回来，{name}！",
+    "credits": "积分余额",
+    "availableCredits": "可用积分",
+    "images": "图片",
+    "videos": "视频",
+    "totalGenerated": "总生成数",
+    "subscription": "订阅状态",
+    "active": "已激活",
+    "inactive": "未激活",
+    "noSubscription": "暂无订阅",
+    "quickActions": "快速操作",
+    "quickActionsDesc": "快速开始创作",
+    "generateImage": "生成图片",
+    "generateVideo": "生成视频",
+    "buyCredits": "购买积分",
+    "accountInfo": "账户信息",
+    "accountInfoDesc": "您的账户详情",
+    "email": "邮箱",
+    "memberSince": "注册时间",
+    "subscriptionEnds": "订阅到期",
+    "recentActivity": "最近活动",
+    "recentActivityDesc": "您最近的创作记录",
+    "noRecentActivity": "暂无最近活动"
   }
 }
 

@@ -31,7 +31,19 @@ export async function getInnovationLabExamples(
       return { success: true, data: cached.data };
     }
 
-    const supabase = getPublicDataClient();
+    // 验证环境变量
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      console.warn('Supabase credentials not configured');
+      return { success: true, data: [] };
+    }
+
+    let supabase;
+    try {
+      supabase = getPublicDataClient();
+    } catch (error) {
+      console.error('Failed to create Supabase client:', error);
+      return { success: true, data: [] };
+    }
 
     // 构建查询
     let query = supabase
@@ -65,7 +77,8 @@ export async function getInnovationLabExamples(
     const { data: tasks, error: tasksError } = await query;
 
     if (tasksError) {
-      throw tasksError;
+      console.error('Database query error:', tasksError);
+      return { success: true, data: [] };
     }
 
     if (!tasks || tasks.length === 0) {
@@ -74,18 +87,36 @@ export async function getInnovationLabExamples(
 
     // 获取媒体文件
     const taskIds = tasks.map(task => task.id);
-    const { data: mediaFiles } = await supabase
-      .from('media_files')
-      .select('*')
-      .in('task_id', taskIds)
-      .order('result_index', { ascending: true });
+    let mediaFiles = [];
+    try {
+      const { data, error } = await supabase
+        .from('media_files')
+        .select('*')
+        .in('task_id', taskIds)
+        .order('result_index', { ascending: true });
+      
+      if (!error && data) {
+        mediaFiles = data;
+      }
+    } catch (error) {
+      console.warn('Failed to fetch media files:', error);
+    }
 
     // 获取翻译
-    const { data: translations } = await supabase
-      .from('generation_tasks_i18n')
-      .select('*')
-      .in('task_id', taskIds)
-      .eq('locale', locale);
+    let translations = [];
+    try {
+      const { data, error } = await supabase
+        .from('generation_tasks_i18n')
+        .select('*')
+        .in('task_id', taskIds)
+        .eq('locale', locale);
+      
+      if (!error && data) {
+        translations = data;
+      }
+    } catch (error) {
+      console.warn('Failed to fetch translations:', error);
+    }
 
     // 构建映射
     const mediaMap = new Map();
@@ -137,8 +168,13 @@ export async function getInnovationLabExamples(
 
     return { success: true, data: result };
   } catch (error: any) {
-    console.error('Innovation lab fetch error:', error);
-    return { success: false, error: error.message, data: [] };
+    console.error('Innovation lab fetch error:', {
+      message: error.message,
+      stack: error.stack,
+      code: error.code,
+    });
+    // 返回空数据而不是错误，避免页面崩溃
+    return { success: true, data: [] };
   }
 }
 
