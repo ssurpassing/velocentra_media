@@ -6,8 +6,10 @@
   },
   "nav": {
     "home": "Accueil",
-    "createStudio": "Espace de Travail",
+    "createStudio": "Espace de travail",
     "pricing": "Tarifs",
+    "dashboard": "Tableau de bord",
+    "buyCredits": "Acheter des crédits",
     "aiVideo": "Vidéo IA",
     "aiImage": "Image IA",
     "generate": "Générer",
@@ -47,6 +49,21 @@
     "exploreImagesDesc": "Voir tous les modèles de génération d'images et fonctionnalités avancées",
     "exploreVideos": "Explorer Plus de Fonctionnalités Vidéo",
     "exploreVideosDesc": "Voir tous les modèles de génération vidéo et fonctionnalités avancées"
+  },
+  "upgradeModal": {
+    "title": "Passer à la version professionnelle",
+    "description": "Débloquez toutes les fonctionnalités avancées et profitez d'une expérience de création illimitée",
+    "featureRequiresPro": "{feature} nécessite un abonnement professionnel",
+    "benefits": "Avantages de l'abonnement professionnel",
+    "unlimitedGeneration": "Génération illimitée d'images et de vidéos",
+    "priorityQueue": "File d'attente prioritaire pour une génération plus rapide",
+    "higherQuality": "Utiliser des modèles Pro de haute qualité",
+    "advancedFeatures": "Débloquer toutes les fonctionnalités et paramètres avancés",
+    "noWatermark": "Sortie sans filigrane",
+    "specialOffer": "Offre limitée",
+    "offerDescription": "Passez à la version supérieure maintenant et bénéficiez de 20% de réduction le premier mois",
+    "maybeLater": "Peut-être plus tard",
+    "upgradeNow": "Mettre à niveau maintenant"
   },
   "innovationLab": {
     "title": "Laboratoire d'Innovation",

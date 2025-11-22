@@ -8,6 +8,8 @@
     "home": "ホーム",
     "createStudio": "ワークスペース",
     "pricing": "料金",
+    "dashboard": "ダッシュボード",
+    "buyCredits": "クレジット購入",
     "aiVideo": "AI動画",
     "aiImage": "AI画像",
     "generate": "生成",
@@ -47,6 +49,21 @@
     "exploreImagesDesc": "すべての画像生成モデルと高度な機能を表示",
     "exploreVideos": "もっと動画機能を探索",
     "exploreVideosDesc": "すべての動画生成モデルと高度な機能を表示"
+  },
+  "upgradeModal": {
+    "title": "プロフェッショナルにアップグレード",
+    "description": "すべての高度な機能をアンロックし、無制限の創作体験をお楽しみください",
+    "featureRequiresPro": "{feature}にはプロフェッショナル会員が必要です",
+    "benefits": "プロフェッショナル会員の特典",
+    "unlimitedGeneration": "画像と動画の無制限生成",
+    "priorityQueue": "優先処理キューでより速く生成",
+    "higherQuality": "高品質なProモデルを使用",
+    "advancedFeatures": "すべての高度な機能とパラメータをアンロック",
+    "noWatermark": "透かしなし出力",
+    "specialOffer": "期間限定オファー",
+    "offerDescription": "今すぐアップグレードして初月20%オフ",
+    "maybeLater": "後で",
+    "upgradeNow": "今すぐアップグレード"
   },
   "innovationLab": {
     "title": "イノベーションラボ",

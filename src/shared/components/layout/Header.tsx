@@ -123,16 +123,16 @@ export function Header() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={() => router.push('/dashboard')}>
                   <LayoutDashboard className="mr-2 h-4 w-4" />
-                  <span>Dashboard</span>
+                  <span>{t('dashboard')}</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => router.push('/pricing')}>
                   <CreditCard className="mr-2 h-4 w-4" />
-                  <span>购买积分</span>
+                  <span>{t('buyCredits')}</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={handleSignOut} className="text-red-600 focus:text-red-600">
                   <LogOut className="mr-2 h-4 w-4" />
-                  <span>退出登录</span>
+                  <span>{t('logout')}</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

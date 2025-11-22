@@ -8,6 +8,8 @@
     "home": "홈",
     "createStudio": "워크스페이스",
     "pricing": "가격",
+    "dashboard": "대시보드",
+    "buyCredits": "크레딧 구매",
     "aiVideo": "AI 동영상",
     "aiImage": "AI 이미지",
     "generate": "생성",
@@ -47,6 +49,21 @@
     "exploreImagesDesc": "모든 이미지 생성 모델 및 고급 기능 보기",
     "exploreVideos": "더 많은 동영상 기능 탐색",
     "exploreVideosDesc": "모든 동영상 생성 모델 및 고급 기능 보기"
+  },
+  "upgradeModal": {
+    "title": "프로페셔널로 업그레이드",
+    "description": "모든 고급 기능을 잠금 해제하고 무제한 창작 경험을 즐기세요",
+    "featureRequiresPro": "{feature}는 프로페셔널 멤버십이 필요합니다",
+    "benefits": "프로페셔널 멤버십 혜택",
+    "unlimitedGeneration": "이미지 및 동영상 무제한 생성",
+    "priorityQueue": "우선 처리 대기열로 더 빠른 생성",
+    "higherQuality": "고품질 Pro 모델 사용",
+    "advancedFeatures": "모든 고급 기능 및 매개변수 잠금 해제",
+    "noWatermark": "워터마크 없는 출력",
+    "specialOffer": "기간 한정 혜택",
+    "offerDescription": "지금 업그레이드하고 첫 달 20% 할인 받기",
+    "maybeLater": "나중에",
+    "upgradeNow": "지금 업그레이드"
   },
   "innovationLab": {
     "title": "혁신 연구소",

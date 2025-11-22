@@ -6,8 +6,10 @@
   },
   "nav": {
     "home": "Startseite",
-    "createStudio": "Workspace",
+    "createStudio": "Arbeitsbereich",
     "pricing": "Preise",
+    "dashboard": "Dashboard",
+    "buyCredits": "Credits kaufen",
     "aiVideo": "KI-Video",
     "aiImage": "KI-Bild",
     "generate": "Generieren",
@@ -47,6 +49,21 @@
     "exploreImagesDesc": "Alle Bildgenerierungsmodelle und erweiterte Funktionen anzeigen",
     "exploreVideos": "Mehr Videofunktionen entdecken",
     "exploreVideosDesc": "Alle Videogenerierungsmodelle und erweiterte Funktionen anzeigen"
+  },
+  "upgradeModal": {
+    "title": "Auf Professional upgraden",
+    "description": "Schalten Sie alle erweiterten Funktionen frei und genießen Sie unbegrenzte Kreativität",
+    "featureRequiresPro": "{feature} erfordert Professional-Mitgliedschaft",
+    "benefits": "Vorteile der Professional-Mitgliedschaft",
+    "unlimitedGeneration": "Unbegrenzte Bild- und Videogenerierung",
+    "priorityQueue": "Prioritätswarteschlange für schnellere Generierung",
+    "higherQuality": "Hochwertige Pro-Modelle verwenden",
+    "advancedFeatures": "Alle erweiterten Funktionen und Parameter freischalten",
+    "noWatermark": "Ausgabe ohne Wasserzeichen",
+    "specialOffer": "Zeitlich begrenztes Angebot",
+    "offerDescription": "Jetzt upgraden und 20% Rabatt im ersten Monat erhalten",
+    "maybeLater": "Vielleicht später",
+    "upgradeNow": "Jetzt upgraden"
   },
   "innovationLab": {
     "title": "Innovationslabor",

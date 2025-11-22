@@ -8,12 +8,14 @@
     "home": "首页",
     "createStudio": "工作空间",
     "pricing": "定价",
+    "dashboard": "控制台",
+    "buyCredits": "购买积分",
     "aiVideo": "AI 视频",
     "aiImage": "AI 图片",
     "generate": "头像生成",
     "login": "登录",
     "signup": "注册",
-    "logout": "退出"
+    "logout": "退出登录"
   },
   "hero": {
     "badge": "AI 驱动的创意平台",
