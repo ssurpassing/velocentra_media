@@ -6,23 +6,20 @@
   },
   "nav": {
     "home": "Startseite",
+    "createStudio": "Workspace",
     "pricing": "Preise",
     "aiVideo": "KI-Video",
     "aiImage": "KI-Bild",
     "generate": "Generieren",
     "login": "Anmelden",
     "signup": "Registrieren",
-    "logout": "Abmelden",
-    "createStudio": "Workspace"
+    "logout": "Abmelden"
   },
   "hero": {
-    "title": "Professionelle Avatare in 60 Sekunden",
-    "subtitle": "Laden Sie ein Selfie hoch und lassen Sie KI beeindruckende professionelle Porträts für Sie erstellen",
-    "cta": "Jetzt starten",
-    "ctaSecondary": "Beispiele ansehen",
     "badge": "KI-gestützte Kreativplattform",
     "welcomeTo": "Willkommen bei",
     "aiTownLab": "AI Town Lab",
+    "subtitle": "Laden Sie ein Selfie hoch und lassen Sie KI beeindruckende professionelle Porträts für Sie erstellen",
     "tagline": "Ein-Stop AI Kreativlabor, Verwandeln Sie Ihre Vorstellungskraft in Realität",
     "imageGen": "Bildgenerierung",
     "videoGen": "Videoerstellung",
@@ -35,53 +32,33 @@
     "quickBadge": "Schnellgenerierung"
   },
   "quickGenerator": {
+    "badge": "Schnellstart",
     "title": "Schneller Avatar-Generator",
     "subtitle": "Laden Sie Ihr Foto hoch, wählen Sie ein KI-Modell und generieren Sie schnell professionelle Avatare",
-    "uploadPrompt": "Foto hochladen",
-    "uploadHint": "Ziehen & Ablegen oder Klicken zum Auswählen (max. 5MB)",
-    "styleLabel": "Stil auswählen",
-    "generate": "Avatar generieren",
-    "generating": "Wird generiert...",
-    "selectStyle": "Bitte wählen Sie einen Stil",
-    "uploadImage": "Bitte laden Sie ein Bild hoch",
-    "needLogin": "Anmeldung erforderlich, um Generierungsfunktionen zu nutzen",
-    "pleaseLogin": "Bitte melden Sie sich zuerst an",
-    "pleaseUploadImage": "Bitte laden Sie zuerst ein Bild hoch",
-    "uploadSection": "Bild hochladen",
-    "selectModel": "KI-Modell auswählen",
-    "promptSection": "Prompt (Optional)",
-    "promptPlaceholder": "Z.B.: Ich bin ein Bankangestellter und brauche ein professionelles LinkedIn-Porträt",
-    "startGeneration": "Generierung starten",
-    "uploading": "Wird hochgeladen...",
-    "generatingImage": "Wird generiert...",
-    "resultSection": "Generiertes Ergebnis",
-    "regenerate": "Neu generieren",
-    "download": "Herunterladen",
-    "aiGenerating": "KI generiert...",
-    "estimatedTime": "Geschätzte Zeit: 10-30 Sekunden",
-    "resultPlaceholder": "Das generierte Bild wird hier angezeigt",
-    "usageTips": "💡 Nutzungstipps",
-    "tip1": "• Beste Ergebnisse mit klaren frontalen Fotos",
-    "tip2": "• Fügen Sie Prompts für präzisere Ergebnisse hinzu",
-    "tip3": "• Verschiedene KI-Modelle haben unterschiedliche Stilmerkmale",
-    "tip4": "• Die Generierung dauert normalerweise 10-30 Sekunden",
-    "exploreMore": "Mehr Stile erkunden →",
-    "changeImage": "Klicken zum Ändern des Bildes",
-    "uploadDescription": "Ziehen & Ablegen oder Klicken zum Auswählen",
-    "uploadFormats": "Unterstützt JPG, PNG, WebP (max. 5MB)",
-    "badge": "Schnellstart",
-    "imageTab": "AI Bild",
-    "videoTab": "AI Video",
-    "imageDesc": "Bildgenerierung",
-    "videoDesc": "Videoerstellung",
     "loginTitle": "KI-Erstellung freischalten",
     "loginSubtitle": "Melden Sie sich an, um auf alle KI-Modelle zuzugreifen und Ihre Kreativreise zu beginnen",
     "login": "Anmelden",
     "signup": "Registrieren",
+    "imageTab": "AI Bild",
+    "imageDesc": "Bildgenerierung",
+    "videoTab": "AI Video",
+    "videoDesc": "Videoerstellung",
     "exploreImages": "Mehr Bildfunktionen entdecken",
     "exploreImagesDesc": "Alle Bildgenerierungsmodelle und erweiterte Funktionen anzeigen",
     "exploreVideos": "Mehr Videofunktionen entdecken",
     "exploreVideosDesc": "Alle Videogenerierungsmodelle und erweiterte Funktionen anzeigen"
+  },
+  "innovationLab": {
+    "title": "Innovationslabor",
+    "subtitle": "Erkunden Sie die unbegrenzten Möglichkeiten der KI-Kreation, sehen Sie sich Beispiele an und erstellen Sie ähnliche",
+    "createSimilar": "Ähnliches erstellen",
+    "viewTutorial": "Tutorial ansehen",
+    "prompt": "Prompt",
+    "tutorial": "Tutorial",
+    "noExamples": "Keine Beispiele verfügbar",
+    "loading": "Wird geladen...",
+    "imageExample": "Bildbeispiel",
+    "videoExample": "Videobeispiel"
   },
   "pricing": {
     "title": "Wählen Sie Ihren Plan",
@@ -90,6 +67,7 @@
     "popular": "Am beliebtesten",
     "perMonth": "pro Monat",
     "perYear": "/Jahr",
+    "billedAnnually": "Jährlich abgerechnet",
     "save": "Sparen",
     "getStarted": "Loslegen",
     "buyNow": "Jetzt kaufen",
@@ -97,7 +75,6 @@
     "monthly": "Monatlich",
     "yearly": "Jährlich",
     "credits": "Credits",
-    "billedAnnually": "Jährlich abgerechnet",
     "plans": {
       "subscription-monthly-1000": {
         "name": "Basis Monatlich",
@@ -223,7 +200,13 @@
     "q4": "Werden meine Fotos gespeichert?",
     "a4": "Originalfotos werden nach 24 Stunden automatisch gelöscht. Generierte Avatare werden dauerhaft in Ihrem Konto gespeichert.",
     "q5": "Kann ich sie kommerziell nutzen?",
-    "a5": "Ja, Sie haben volle Rechte zur Nutzung der generierten Avatare für kommerzielle oder persönliche Zwecke."
+    "a5": "Ja, Sie haben volle Rechte zur Nutzung der generierten Avatare für kommerzielle oder persönliche Zwecke.",
+    "q6": "Welche KI-Modelle werden unterstützt? Was sind ihre Funktionen?",
+    "a6": "Die Bildgenerierung unterstützt Google Nano Banana (schnell und hochwertig) und GPT-4o (bestes Verständnis). Die Videogenerierung unterstützt Google Veo 3.1 (Schnell-/Qualitätsmodi) und OpenAI Sora 2/Sora 2 Pro (Kinoqualität). Verschiedene Modelle eignen sich für verschiedene kreative Szenarien.",
+    "q7": "Was ist der Unterschied zwischen Credits und Abonnements?",
+    "a7": "Abonnements verlängern sich automatisch monatlich/jährlich mit festen Credits pro Monat, ideal für langfristige Nutzung. Credit-Pakete sind einmalige Käufe, die nie ablaufen, flexibler für bedarfsgerechte Nutzung. Beide bieten Zugang zu allen KI-Modellen und Premium-Funktionen.",
+    "q8": "Wie erstellt man virale Kurzvideos und KI-Werbung?",
+    "a8": "Verwenden Sie unseren KI-Videogenerator, geben Sie kreativen Text ein oder laden Sie Produktbilder hoch, wählen Sie das passende Seitenverhältnis (9:16 Hochformat für TikTok/Douyin, 16:9 Querformat für YouTube), und die KI generiert automatisch professionelle Videos. Unterstützt Prompt-Optimierung, perfekt für E-Commerce-Anzeigen, Markenförderung und Social-Media-Marketing."
   },
   "auth": {
     "login": "Anmelden",
@@ -266,11 +249,6 @@
       "title": "Preispläne - Flexible Avatar-Generierungspakete",
       "description": "Wählen Sie das Avatar-Generierungspaket, das Ihren Anforderungen entspricht. Kostenlose Testversion und mehrere Bezahlpläne verfügbar. Zahlen Sie nach Verbrauch ohne versteckte Gebühren."
     },
-    "create": {
-      "title": "KI Arbeitsbereich - AI Town Lab",
-      "description": "Professionelle KI-Erstellungsplattform mit integrierten Bildgenerierungs- und Videoerstellungsfunktionen. Unterstützt verschiedene KI-Modelle, darunter Nano Banana, GPT-4o, Google Veo, OpenAI Sora und mehr.",
-      "keywords": "KI-Erstellung,Bildgenerierung,Videogenerierung,KI-Arbeitsbereich,Kreativplattform,Nano Banana,GPT-4o,Veo,Sora"
-    },
     "creative": {
       "title": "KI-Kreative Avatar-Generierung - Mehrere Stile erkunden",
       "description": "Erkunden Sie verschiedene KI-Avatar-Generierungsstile: professionelle Porträts, Dating-Fotos, Social-Media-Avatare, künstlerische Porträts und mehr. Laden Sie Ihr Foto hoch und generieren Sie sofort."
@@ -284,6 +262,271 @@
       "title": "KI-Bild-Generator - Professionelle Avatar- & Bilderstellung",
       "description": "Generieren Sie professionelle Avatare und Bilder mit fortschrittlicher KI-Technologie. Unterstützt Nano Banana und GPT-4o Modelle für schnelle hochwertige Foto- und Kreativbild-Generierung.",
       "keywords": "KI-Bildgenerierung,Avatar-Generator,professionelles Foto,Nano Banana,GPT-4o,KI-Bilderstellung"
+    },
+    "create": {
+      "title": "KI Arbeitsbereich - AI Town Lab",
+      "description": "Professionelle KI-Erstellungsplattform mit integrierten Bildgenerierungs- und Videoerstellungsfunktionen. Unterstützt verschiedene KI-Modelle, darunter Nano Banana, GPT-4o, Google Veo, OpenAI Sora und mehr.",
+      "keywords": "KI-Erstellung,Bildgenerierung,Videogenerierung,KI-Arbeitsbereich,Kreativplattform,Nano Banana,GPT-4o,Veo,Sora"
+    }
+  },
+  "aiImage": {
+    "title": "KI-Bild-Generator",
+    "subtitle": "Generieren Sie professionelle Bilder mit leistungsstarker KI-Technologie",
+    "hero": {
+      "title": "Stellen Sie sich kühn vor, wir machen es wahr",
+      "description": "Laden Sie Fotos hoch und verwandeln Sie diese in beeindruckende künstlerische Werke",
+      "cta": "Bild hochladen"
+    },
+    "generator": {
+      "title": "Bild-Generator",
+      "mode": "Generierungsmodus",
+      "imageToImage": "Bild-zu-Bild",
+      "textToImage": "Text-zu-Bild",
+      "uploadImage": "Bild hochladen",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Beschreiben Sie das Bild, das Sie generieren möchten...",
+      "ratio": "Seitenverhältnis",
+      "numberOfImages": "Anzahl der Bilder",
+      "optimizePrompt": "Prompt optimieren",
+      "generateImage": "Bild generieren",
+      "cost": "Credits-Kosten",
+      "generating": "Wird generiert...",
+      "uploading": "Wird hochgeladen..."
+    },
+    "myImages": {
+      "title": "Meine Bilder",
+      "empty": "Noch keine Bilder, erstellen Sie Ihr erstes!"
+    },
+    "examples": {
+      "title": "Beispielbilder",
+      "subtitle": "Sehen Sie sich diese beeindruckenden KI-generierten Bildbeispiele an",
+      "createSimilar": "Ähnliches erstellen",
+      "noExamples": "Keine Beispiele verfügbar"
+    },
+    "optimize": {
+      "title": "KI-Prompt-Optimierungs-Assistent",
+      "subtitle": "Wählen Sie eine Vorlage zur Optimierung Ihres Prompts für bessere Bildergebnisse",
+      "originalPrompt": "Original-Prompt",
+      "selectTemplate": "Optimierungsvorlage auswählen",
+      "optimize": "Prompt optimieren",
+      "optimizing": "Wird optimiert...",
+      "optimizedPrompt": "Optimierter Prompt",
+      "copy": "Prompt kopieren",
+      "copySuccess": "In Zwischenablage kopiert",
+      "fillBack": "Zurück zum Generator füllen",
+      "close": "Schließen"
+    }
+  },
+  "aiVideo": {
+    "title": "KI-Video-Generator",
+    "subtitle": "Generieren Sie professionelle Videos mit leistungsstarker Veo 3.1 und Sora 2 KI-Technologie",
+    "hero": {
+      "title": "Verwandeln Sie Ihre Ideen sofort in Videos",
+      "description": "KI-Video-Generator hilft Ihnen, schnell hochwertige Videos aus Text und Bildern zu erstellen",
+      "cta": "Erstellung beginnen"
+    },
+    "generator": {
+      "title": "Video-Generator",
+      "optimizePrompt": "Prompt optimieren",
+      "generating": "Wird generiert...",
+      "uploadImages": "Bilder hochladen",
+      "selectProvider": "Generator auswählen",
+      "selectModel": "Modell auswählen",
+      "selectMode": "Generierungsmodus",
+      "selectQuality": "Qualitätsstufe",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Beschreiben Sie das Video, das Sie erstellen möchten...",
+      "aspectRatio": "Seitenverhältnis",
+      "duration": "Dauer",
+      "removeWatermark": "Wasserzeichen entfernen",
+      "removeWatermarkDesc": "Wasserzeichen aus generiertem Video entfernen (empfohlen)",
+      "cost": "Kosten",
+      "credits": "Credits",
+      "generateVideo": "Video generieren",
+      "uploading": "Wird hochgeladen...",
+      "uploadHint": "Klicken zum Hochladen von Bildern",
+      "uploadDesc": "JPEG, PNG, WEBP, max 10MB",
+      "textToVideo": "Text zu Video",
+      "imageToVideo": "Bild zu Video",
+      "reference": "Referenz",
+      "storyboard": "Storyboard",
+      "watermarkRemover": "Wasserzeichenentferner",
+      "veo31Fast": "Veo 3.1 Schnell",
+      "veo31Quality": "Veo 3.1 Qualität",
+      "sora2Basic": "Sora 2",
+      "sora2Pro": "Sora 2 Pro",
+      "standard": "Standard",
+      "high": "Hohe Qualität",
+      "portrait": "Hochformat",
+      "landscape": "Querformat",
+      "auto": "Auto"
+    },
+    "examples": {
+      "title": "Beispielgalerie",
+      "subtitle": "Sehen Sie sich diese beeindruckenden KI-generierten Video-Beispiele an",
+      "createSimilar": "Ähnliches erstellen",
+      "noExamples": "Keine Beispiele verfügbar"
+    },
+    "optimize": {
+      "title": "KI-Prompt-Optimierer",
+      "subtitle": "Wählen Sie eine Vorlage zur Optimierung Ihres Prompts für bessere Videoergebnisse",
+      "originalPrompt": "Original-Prompt",
+      "selectTemplate": "Vorlage auswählen",
+      "optimize": "Prompt optimieren",
+      "optimizing": "Wird optimiert...",
+      "optimizedPrompt": "Optimierter Prompt",
+      "copy": "Prompt kopieren",
+      "copySuccess": "In Zwischenablage kopiert",
+      "fillBack": "Zum Generator füllen",
+      "fillBackSuccess": "Prompt erfolgreich ausgefüllt",
+      "close": "Schließen",
+      "templateCinematic": "Filmischer Stil",
+      "templateCommercial": "Werbung/Werbespot",
+      "templateDocumentary": "Dokumentation/Natur",
+      "templateGeneral": "Allgemeines Video"
+    }
+  },
+  "trustIndicators": {
+    "title": "Professionelle KI-Erstellungsplattform",
+    "models": "KI-Modelle",
+    "speed": "Blitzschnell",
+    "seconds": "Sek.",
+    "quality": "Ultra-HD-Qualität",
+    "support": "24/7 Support",
+    "poweredBy": "Angetrieben von KI"
+  },
+  "beforeAfterShowcase": {
+    "title": "KI-gestützte Transformation",
+    "subtitle": "Fotos hochladen, professionelle Werke in 60 Sekunden generieren",
+    "uploadedPhoto": "Hochgeladenes Foto",
+    "aiGenerated": "KI-generiert",
+    "example": "Beispiel",
+    "altBefore": "Hochgeladenes Foto",
+    "altAfter": "KI-generiertes Foto"
+  },
+  "comparisonSlider": {
+    "beforeLabel": "Original",
+    "afterLabel": "Generiert",
+    "dragToCompare": "Ziehen zum Vergleichen"
+  },
+  "creativeGallery": {
+    "title": "Kreative Vitrine",
+    "subtitle": "Erkunden Sie endlose Möglichkeiten, lassen Sie sich von diesen kuratierten Beispielen inspirieren",
+    "portrait": "Portrait & Avatar",
+    "commercial": "Werbung & Anzeigen",
+    "animation": "Animation & Video",
+    "creative": "Kreatives Design",
+    "allWorks": "Alle Werke",
+    "imageWorks": "Bildgenerierung",
+    "videoWorks": "Videoerstellung",
+    "createSimilar": "Ähnliches erstellen",
+    "viewMore": "Vollständige Galerie anzeigen",
+    "loading": "Wird geladen...",
+    "untitled": "Ohne Titel"
+  },
+  "createStudio": {
+    "title": "Arbeitsbereich",
+    "subtitle": "KI-gestützte Kreativplattform",
+    "loading": "Wird geladen...",
+    "imageTab": "Bildgenerierung",
+    "videoTab": "Videoerstellung",
+    "myWorks": "Meine Werke",
+    "selectModel": "KI-Modell auswählen",
+    "imageModels": "Bildgenerierungsmodelle",
+    "videoModels": "Videoerstellungsmodelle",
+    "recommended": "Empfohlen",
+    "modelTip": "Wählen Sie das beste KI-Modell für Ihre kreativen Bedürfnisse",
+    "imageGen": "Bildgenerierung",
+    "videoGen": "Videoerstellung",
+    "canvasTip": "Parameter anpassen, Kreativität entfesseln, KI erstellt erstaunliche Inhalte für Sie",
+    "generatorParams": "Generator-Parameter",
+    "adjustParams": "Passen Sie die Parameter unten an, um mit der Erstellung zu beginnen",
+    "currentTasks": "In Bearbeitung",
+    "completedTasks": "Abgeschlossen",
+    "noCurrentTasks": "Keine Aufgaben in Bearbeitung",
+    "noCurrentTasksDesc": "Füllen Sie die Parameter links aus und klicken Sie auf Generieren, um zu beginnen!",
+    "noCompletedTasks": "Keine abgeschlossenen Werke",
+    "noCompletedTasksDesc": "Ihr Erstellungsverlauf wird hier angezeigt",
+    "generating": "Wird generiert...",
+    "pending": "Ausstehend",
+    "processing": "Wird verarbeitet",
+    "download": "Herunterladen",
+    "clickToSwitch": "Zum Wechseln klicken",
+    "aiImageGen": "KI-Bildgenerierung",
+    "aiVideoGen": "KI-Video",
+    "aiImageGeneration": "KI-Bildgenerierung",
+    "aiVideoGeneration": "KI-Videogenerierung",
+    "noTasks": "Keine Aufgaben",
+    "noTasksDesc": "Wählen Sie links ein Modell aus und geben Sie eine Beschreibung ein, um zu beginnen",
+    "inProgress": "In Bearbeitung",
+    "history": "Verlauf",
+    "queueing": "In der Warteschlange...",
+    "aiGenerating": "KI generiert...",
+    "mayTakeSomeTime": "Dies kann 10-30 Sekunden dauern",
+    "generationFailed": "Generierung fehlgeschlagen",
+    "generationTask": "Generierungsaufgabe",
+    "copyPrompt": "Prompt kopieren",
+    "regenerate": "Neu generieren",
+    "copied": "Kopiert",
+    "promptCopied": "Prompt in Zwischenablage kopiert",
+    "failedNoDownload": "Generierung fehlgeschlagen, kann nicht heruntergeladen werden"
+  },
+  "models": {
+    "image": {
+      "kie-nano-banana": {
+        "name": "Nano Banana",
+        "description": "Google Nano Banana - Schnelle hochwertige Bildgenerierung (Text zu Bild)"
+      },
+      "kie-nano-banana-edit": {
+        "name": "Nano Banana Edit",
+        "description": "Google Nano Banana Edit - Bild-zu-Bild-Modus"
+      },
+      "kie-gpt4o-image": {
+        "name": "GPT-4o Image",
+        "description": "OpenAI GPT-4o Bildgenerierung - Beste Verständnis (Text zu Bild + Bild zu Bild)"
+      }
+    },
+    "video": {
+      "veo3_fast": {
+        "name": "Veo 3.1 Schnell",
+        "displayName": "Veo 3.1 Schnell",
+        "description": "Schnelle Videogenerierung mit guter Qualität"
+      },
+      "veo3": {
+        "name": "Veo 3.1 Qualität",
+        "displayName": "Veo 3.1 Qualität",
+        "description": "Hochwertige Videogenerierung"
+      },
+      "sora-2-text-to-video": {
+        "name": "Sora 2 Text zu Video",
+        "displayName": "Sora 2 Text zu Video",
+        "description": "Text-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-image-to-video": {
+        "name": "Sora 2 Bild zu Video",
+        "displayName": "Sora 2 Bild zu Video",
+        "description": "Bild-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-pro-text-to-video": {
+        "name": "Sora 2 Pro Text zu Video",
+        "displayName": "Sora 2 Pro Text zu Video",
+        "description": "Professionelle Text-zu-Video-Generierung"
+      },
+      "sora-2-pro-image-to-video": {
+        "name": "Sora 2 Pro Bild zu Video",
+        "displayName": "Sora 2 Pro Bild zu Video",
+        "description": "Professionelle Bild-zu-Video-Generierung"
+      },
+      "sora-2-pro-storyboard": {
+        "name": "Sora 2 Pro Storyboard",
+        "displayName": "Sora 2 Pro Storyboard",
+        "description": "Mehrszeniges Storyboard-Video-Generierung"
+      },
+      "sora-watermark-remover": {
+        "name": "Sora Wasserzeichenentferner",
+        "displayName": "Sora Wasserzeichenentferner",
+        "description": "Wasserzeichen aus Sora-Videos entfernen"
+      }
     }
   },
   "home": {
@@ -415,44 +658,6 @@
       }
     }
   },
-  "trustIndicators": {
-    "title": "Professionelle KI-Erstellungsplattform",
-    "models": "KI-Modelle",
-    "speed": "Blitzschnell",
-    "seconds": "Sek.",
-    "quality": "Ultra-HD-Qualität",
-    "support": "24/7 Support",
-    "poweredBy": "Angetrieben von KI"
-  },
-  "beforeAfterShowcase": {
-    "title": "KI-gestützte Transformation",
-    "subtitle": "Fotos hochladen, professionelle Werke in 60 Sekunden generieren",
-    "uploadedPhoto": "Hochgeladenes Foto",
-    "aiGenerated": "KI-generiert",
-    "example": "Beispiel",
-    "altBefore": "Hochgeladenes Foto",
-    "altAfter": "KI-generiertes Foto"
-  },
-  "comparisonSlider": {
-    "beforeLabel": "Original",
-    "afterLabel": "Generiert",
-    "dragToCompare": "Ziehen zum Vergleichen"
-  },
-  "creativeGallery": {
-    "title": "Kreative Vitrine",
-    "subtitle": "Erkunden Sie endlose Möglichkeiten, lassen Sie sich von diesen kuratierten Beispielen inspirieren",
-    "portrait": "Portrait & Avatar",
-    "commercial": "Werbung & Anzeigen",
-    "animation": "Animation & Video",
-    "creative": "Kreatives Design",
-    "allWorks": "Alle Werke",
-    "imageWorks": "Bildgenerierung",
-    "videoWorks": "Videoerstellung",
-    "createSimilar": "Ähnliches erstellen",
-    "viewMore": "Vollständige Galerie anzeigen",
-    "loading": "Wird geladen...",
-    "untitled": "Ohne Titel"
-  },
   "errors": {
     "api": {
       "PRO_MODEL_REQUIRES_SUBSCRIPTION": "Sora 2 Pro-Modelle sind nur für zahlende Abonnenten oder Benutzer mit Credits verfügbar. Bitte upgraden Sie Ihren Plan.",
@@ -466,6 +671,126 @@
       "INVALID_FILE_TYPE": "Nicht unterstützter Dateityp",
       "GENERATION_FAILED": "Generierung fehlgeschlagen, bitte erneut versuchen",
       "TIMEOUT": "Anfrage-Timeout, bitte später erneut versuchen"
+    }
+  },
+  "generators": {
+    "common": {
+      "pleaseLogin": "Bitte zuerst anmelden",
+      "pleaseEnterPrompt": "Bitte geben Sie einen Prompt ein",
+      "pleaseUploadImages": "Bitte laden Sie Bilder hoch",
+      "optimize": "Optimieren",
+      "cost": "Kosten",
+      "credits": "Credits",
+      "uploading": "Wird hochgeladen...",
+      "generating": "Wird generiert...",
+      "aiGenerating": "KI generiert...",
+      "estimatedTime": "Geschätzte Zeit",
+      "taskId": "Aufgaben-ID",
+      "browserNotSupport": "Ihr Browser unterstützt keine Videowiedergabe",
+      "regenerate": "Erneut generieren",
+      "download": "Herunterladen",
+      "generationResult": "Generierungsergebnis",
+      "generationFailed": "Generierung fehlgeschlagen",
+      "pleaseFillAllScenes": "Bitte füllen Sie alle Szenenbeschreibungen aus",
+      "totalSceneDuration": "Gesamtszenendauer",
+      "exceedsVideoDuration": "überschreitet Videodauer",
+      "promptHint": "Detaillierte Beschreibungen ergeben bessere Ergebnisse. Verwenden Sie KI, um Ihren Prompt zu optimieren",
+      "model": "Modell",
+      "prompt": "Generation Prompt",
+      "images": "Image",
+      "aspectRatio": "Ratio",
+      "seed": "Seed",
+      "optional": "Optional",
+      "seedPlaceholder": "Please input seed"
+    },
+    "video": {
+      "generationMode": "Generierungsmodus",
+      "qualityLevel": "Qualitätsstufe",
+      "standard": "Standard",
+      "highQuality": "Hohe Qualität",
+      "sceneList": "Szenenliste",
+      "total": "Gesamt:",
+      "seconds": "s",
+      "addScene": "Szene hinzufügen",
+      "scene": "Szene",
+      "describeScene": "Beschreiben Sie diese Szene...",
+      "duration": "Dauer",
+      "textToVideo": "Text zu Video",
+      "imageToVideo": "Bild zu Video",
+      "reference": "Referenz",
+      "generationType": "Generierungstyp",
+      "startFrame": "Startframe",
+      "endFrame": "Endframe",
+      "promptPlaceholder": "Beschreiben Sie das Video, das Sie generieren möchten...",
+      "promptHint": "Je detaillierter die Eingabeaufforderung, desto besser die Videoqualität",
+      "generateButton": "Video generieren",
+      "generationTimeHint": "Die Veo 3.1 Videogenerierung dauert normalerweise 2-5 Minuten, bitte haben Sie Geduld",
+      "videoPreview": "Videovorschau",
+      "videoPreviewHint": "Das Video wird hier nach der Generierung angezeigt"
+    },
+    "image": {
+      "imageToImage": "Bildbearbeitung",
+      "textToImage": "Text zu Bild",
+      "startGeneration": "Generierung starten",
+      "nanaBananaRatioHint": "Nano Banana unterstützt mehrere Seitenverhältnisse, wählen Sie das für Sie passende"
+    },
+    "upload": {
+      "clickToUpload": "Klicken zum Hochladen von Bildern",
+      "supportedFormats": "JPEG, PNG, WEBP, max 10MB",
+      "uploading": "Bilder werden hochgeladen...",
+      "maxImages": "Maximal {max} Bilder"
+    },
+    "labels": {
+      "label": "Label",
+      "labelCn": "Label (CN)",
+      "generator": "Generator",
+      "aspectRatio": "Seitenverhältnis"
+    }
+  },
+  "promptTemplates": {
+    "image": {
+      "image-general": {
+        "name": "Allgemeines Bild",
+        "description": "Allgemeine Bildgenerierungsoptimierung"
+      },
+      "image-professional-portrait": {
+        "name": "Professionelles Portrait",
+        "description": "Professionelle Portraitoptimierung"
+      },
+      "image-artistic-portrait": {
+        "name": "Künstlerisches Portrait",
+        "description": "Künstlerische Portraitoptimierung"
+      },
+      "image-product": {
+        "name": "Produktfotografie",
+        "description": "Produktfotografie und E-Commerce-Bilder"
+      },
+      "image-landscape": {
+        "name": "Landschaftsfotografie",
+        "description": "Natürliche Landschaften und Architekturfotografie"
+      },
+      "image-anime": {
+        "name": "Anime",
+        "description": "Anime style optimization"
+      }
+    },
+    "video": {
+      "video-cinematic": {
+        "name": "Filmischer Stil",
+        "description": "Optimierung für filmisches Storytelling mit dramatischer Beleuchtung und Komposition"
+      },
+      "video-commercial": {
+        "name": "Werbung/Werbespot",
+        "description": "Optimierung für Produktpräsentation und Markenwerbung"
+      },
+      "video-documentary": {
+        "name": "Dokumentation/Natur",
+        "description": "Optimierung für natürliche Dokumentation und Wildlife-Stil"
+      },
+      "video-general": {
+        "name": "Allgemeines Video",
+        "description": "Allgemeine Videogenerierungsoptimierung"
+      }
     }
   },
   "footer": {
@@ -768,342 +1093,44 @@
     },
     "acceptance": "Durch die Nutzung von AI Town Lab bestätigen Sie, dass Sie diese Nutzungsbedingungen gelesen, verstanden haben und sich damit einverstanden erklären, daran gebunden zu sein."
   },
-  "createStudio": {
-    "title": "Arbeitsbereich",
-    "subtitle": "KI-gestützte Kreativplattform",
-    "loading": "Wird geladen...",
-    "imageTab": "Bildgenerierung",
-    "videoTab": "Videoerstellung",
-    "myWorks": "Meine Werke",
-    "selectModel": "KI-Modell auswählen",
-    "imageModels": "Bildgenerierungsmodelle",
-    "videoModels": "Videoerstellungsmodelle",
-    "recommended": "Empfohlen",
-    "modelTip": "Wählen Sie das beste KI-Modell für Ihre kreativen Bedürfnisse",
-    "imageGen": "Bildgenerierung",
-    "videoGen": "Videoerstellung",
-    "canvasTip": "Parameter anpassen, Kreativität entfesseln, KI erstellt erstaunliche Inhalte für Sie",
-    "generatorParams": "Generator-Parameter",
-    "adjustParams": "Passen Sie die Parameter unten an, um mit der Erstellung zu beginnen",
-    "currentTasks": "In Bearbeitung",
-    "completedTasks": "Abgeschlossen",
-    "noCurrentTasks": "Keine Aufgaben in Bearbeitung",
-    "noCurrentTasksDesc": "Füllen Sie die Parameter links aus und klicken Sie auf Generieren, um zu beginnen!",
-    "noCompletedTasks": "Keine abgeschlossenen Werke",
-    "noCompletedTasksDesc": "Ihr Erstellungsverlauf wird hier angezeigt",
-    "generating": "Wird generiert...",
-    "pending": "Ausstehend",
-    "processing": "Wird verarbeitet",
-    "download": "Herunterladen",
-    "clickToSwitch": "Zum Wechseln klicken",
-    "aiImageGen": "KI-Bildgenerierung",
-    "aiVideoGen": "KI-Video",
-    "aiImageGeneration": "KI-Bildgenerierung",
-    "aiVideoGeneration": "KI-Videogenerierung",
-    "noTasks": "Keine Aufgaben",
-    "noTasksDesc": "Wählen Sie links ein Modell aus und geben Sie eine Beschreibung ein, um zu beginnen",
-    "inProgress": "In Bearbeitung",
-    "history": "Verlauf",
-    "queueing": "In der Warteschlange...",
-    "aiGenerating": "KI generiert...",
-    "mayTakeSomeTime": "Dies kann 10-30 Sekunden dauern",
-    "generationFailed": "Generierung fehlgeschlagen",
-    "generationTask": "Generierungsaufgabe",
-    "copyPrompt": "Prompt kopieren",
-    "regenerate": "Neu generieren",
-    "copied": "Kopiert",
-    "promptCopied": "Prompt in Zwischenablage kopiert",
-    "failedNoDownload": "Generierung fehlgeschlagen, kann nicht heruntergeladen werden"
-  },
-  "aiImage": {
-    "title": "KI-Bild-Generator",
-    "subtitle": "Generieren Sie professionelle Bilder mit leistungsstarker KI-Technologie",
-    "hero": {
-      "title": "Stellen Sie sich kühn vor, wir machen es wahr",
-      "description": "Laden Sie Fotos hoch und verwandeln Sie diese in beeindruckende künstlerische Werke",
-      "cta": "Bild hochladen"
-    },
-    "generator": {
-      "title": "Bild-Generator",
-      "mode": "Generierungsmodus",
-      "imageToImage": "Bild-zu-Bild",
-      "textToImage": "Text-zu-Bild",
-      "uploadImage": "Bild hochladen",
-      "prompt": "Prompt",
-      "promptPlaceholder": "Beschreiben Sie das Bild, das Sie generieren möchten...",
-      "ratio": "Seitenverhältnis",
-      "numberOfImages": "Anzahl der Bilder",
-      "optimizePrompt": "Prompt optimieren",
-      "generateImage": "Bild generieren",
-      "cost": "Credits-Kosten",
-      "generating": "Wird generiert...",
-      "uploading": "Wird hochgeladen..."
-    },
-    "myImages": {
-      "title": "Meine Bilder",
-      "empty": "Noch keine Bilder, erstellen Sie Ihr erstes!"
-    },
-    "examples": {
-      "title": "Beispielbilder",
-      "subtitle": "Sehen Sie sich diese beeindruckenden KI-generierten Bildbeispiele an",
-      "createSimilar": "Ähnliches erstellen"
-    },
-    "optimize": {
-      "title": "KI-Prompt-Optimierungs-Assistent",
-      "subtitle": "Wählen Sie eine Vorlage zur Optimierung Ihres Prompts für bessere Bildergebnisse",
-      "originalPrompt": "Original-Prompt",
-      "selectTemplate": "Optimierungsvorlage auswählen",
-      "optimize": "Prompt optimieren",
-      "optimizing": "Wird optimiert...",
-      "optimizedPrompt": "Optimierter Prompt",
-      "copy": "Prompt kopieren",
-      "copySuccess": "In Zwischenablage kopiert",
-      "fillBack": "Zurück zum Generator füllen",
-      "close": "Schließen"
+  "payment": {
+    "success": {
+      "title": "Zahlung erfolgreich!",
+      "description": "Thank you for your purchase. Your credits have been added to your account.",
+      "whatNext": "Was kommt als Nächstes?",
+      "creditsAdded": "Credits have been added to your account",
+      "receiptSent": "Receipt has been sent to your email",
+      "readyToUse": "You can start creating immediately",
+      "goToDashboard": "Zum Dashboard",
+      "startCreating": "Erstellen beginnen",
+      "needHelp": "Brauchen Sie Hilfe?",
+      "contactSupport": "Support kontaktieren"
     }
   },
-  "aiVideo": {
-    "title": "KI-Video-Generator",
-    "subtitle": "Generieren Sie professionelle Videos mit leistungsstarker Veo 3.1 und Sora 2 KI-Technologie",
-    "hero": {
-      "title": "Verwandeln Sie Ihre Ideen sofort in Videos",
-      "description": "KI-Video-Generator hilft Ihnen, schnell hochwertige Videos aus Text und Bildern zu erstellen",
-      "cta": "Erstellung beginnen"
-    },
-    "generator": {
-      "title": "Video-Generator",
-      "optimizePrompt": "Prompt optimieren",
-      "generating": "Wird generiert...",
-      "uploadImages": "Bilder hochladen",
-      "selectProvider": "Generator auswählen",
-      "selectModel": "Modell auswählen",
-      "selectMode": "Generierungsmodus",
-      "selectQuality": "Qualitätsstufe",
-      "prompt": "Prompt",
-      "promptPlaceholder": "Beschreiben Sie das Video, das Sie erstellen möchten...",
-      "aspectRatio": "Seitenverhältnis",
-      "duration": "Dauer",
-      "removeWatermark": "Wasserzeichen entfernen",
-      "removeWatermarkDesc": "Wasserzeichen aus generiertem Video entfernen (empfohlen)",
-      "cost": "Kosten",
-      "credits": "Credits",
-      "generateVideo": "Video generieren",
-      "uploading": "Wird hochgeladen...",
-      "uploadHint": "Klicken zum Hochladen von Bildern",
-      "uploadDesc": "JPEG, PNG, WEBP, max 10MB",
-      "textToVideo": "Text zu Video",
-      "imageToVideo": "Bild zu Video",
-      "reference": "Referenz",
-      "storyboard": "Storyboard",
-      "watermarkRemover": "Wasserzeichenentferner",
-      "veo31Fast": "Veo 3.1 Schnell",
-      "veo31Quality": "Veo 3.1 Qualität",
-      "sora2Basic": "Sora 2",
-      "sora2Pro": "Sora 2 Pro",
-      "standard": "Standard",
-      "high": "Hohe Qualität",
-      "portrait": "Hochformat",
-      "landscape": "Querformat",
-      "auto": "Auto"
-    },
-    "examples": {
-      "title": "Beispielgalerie",
-      "subtitle": "Sehen Sie sich diese beeindruckenden KI-generierten Video-Beispiele an",
-      "createSimilar": "Ähnliches erstellen",
-      "noExamples": "Keine Beispiele verfügbar"
-    },
-    "optimize": {
-      "title": "KI-Prompt-Optimierer",
-      "subtitle": "Wählen Sie eine Vorlage zur Optimierung Ihres Prompts für bessere Videoergebnisse",
-      "originalPrompt": "Original-Prompt",
-      "selectTemplate": "Vorlage auswählen",
-      "optimize": "Prompt optimieren",
-      "optimizing": "Wird optimiert...",
-      "optimizedPrompt": "Optimierter Prompt",
-      "copy": "Prompt kopieren",
-      "copySuccess": "In Zwischenablage kopiert",
-      "fillBack": "Zum Generator füllen",
-      "fillBackSuccess": "Prompt erfolgreich ausgefüllt",
-      "close": "Schließen",
-      "templateCinematic": "Filmischer Stil",
-      "templateCommercial": "Werbung/Werbespot",
-      "templateDocumentary": "Dokumentation/Natur",
-      "templateGeneral": "Allgemeines Video"
-    }
-  },
-  "models": {
-    "image": {
-      "kie-nano-banana": {
-        "name": "Nano Banana",
-        "description": "Google Nano Banana - Schnelle hochwertige Bildgenerierung (Text zu Bild)"
-      },
-      "kie-nano-banana-edit": {
-        "name": "Nano Banana Edit",
-        "description": "Google Nano Banana Edit - Bild-zu-Bild-Modus"
-      },
-      "kie-gpt4o-image": {
-        "name": "GPT-4o Image",
-        "description": "OpenAI GPT-4o Bildgenerierung - Beste Verständnis (Text zu Bild + Bild zu Bild)"
-      }
-    },
-    "video": {
-      "veo3_fast": {
-        "name": "Veo 3.1 Schnell",
-        "displayName": "Veo 3.1 Schnell",
-        "description": "Schnelle Videogenerierung mit guter Qualität"
-      },
-      "veo3": {
-        "name": "Veo 3.1 Qualität",
-        "displayName": "Veo 3.1 Qualität",
-        "description": "Hochwertige Videogenerierung"
-      },
-      "sora-2-text-to-video": {
-        "name": "Sora 2 Text zu Video",
-        "displayName": "Sora 2 Text zu Video",
-        "description": "Text-zu-Video-Generierung mit Sora 2"
-      },
-      "sora-2-image-to-video": {
-        "name": "Sora 2 Bild zu Video",
-        "displayName": "Sora 2 Bild zu Video",
-        "description": "Bild-zu-Video-Generierung mit Sora 2"
-      },
-      "sora-2-pro-text-to-video": {
-        "name": "Sora 2 Pro Text zu Video",
-        "displayName": "Sora 2 Pro Text zu Video",
-        "description": "Professionelle Text-zu-Video-Generierung"
-      },
-      "sora-2-pro-image-to-video": {
-        "name": "Sora 2 Pro Bild zu Video",
-        "displayName": "Sora 2 Pro Bild zu Video",
-        "description": "Professionelle Bild-zu-Video-Generierung"
-      },
-      "sora-2-pro-storyboard": {
-        "name": "Sora 2 Pro Storyboard",
-        "displayName": "Sora 2 Pro Storyboard",
-        "description": "Mehrszeniges Storyboard-Video-Generierung"
-      },
-      "sora-watermark-remover": {
-        "name": "Sora Wasserzeichenentferner",
-        "displayName": "Sora Wasserzeichenentferner",
-        "description": "Wasserzeichen aus Sora-Videos entfernen"
-      }
-    }
-  },
-  "generators": {
-    "common": {
-      "pleaseLogin": "Bitte zuerst anmelden",
-      "pleaseEnterPrompt": "Bitte geben Sie einen Prompt ein",
-      "pleaseUploadImages": "Bitte laden Sie Bilder hoch",
-      "optimize": "Optimieren",
-      "cost": "Kosten",
-      "credits": "Credits",
-      "uploading": "Wird hochgeladen...",
-      "generating": "Wird generiert...",
-      "aiGenerating": "KI generiert...",
-      "estimatedTime": "Geschätzte Zeit",
-      "taskId": "Aufgaben-ID",
-      "browserNotSupport": "Ihr Browser unterstützt keine Videowiedergabe",
-      "regenerate": "Erneut generieren",
-      "download": "Herunterladen",
-      "generationResult": "Generierungsergebnis",
-      "generationFailed": "Generierung fehlgeschlagen",
-      "pleaseFillAllScenes": "Bitte füllen Sie alle Szenenbeschreibungen aus",
-      "totalSceneDuration": "Gesamtszenendauer",
-      "exceedsVideoDuration": "überschreitet Videodauer",
-      "promptHint": "Detaillierte Beschreibungen ergeben bessere Ergebnisse. Verwenden Sie KI, um Ihren Prompt zu optimieren"
-    },
-    "video": {
-      "generationMode": "Generierungsmodus",
-      "qualityLevel": "Qualitätsstufe",
-      "standard": "Standard",
-      "highQuality": "Hohe Qualität",
-      "sceneList": "Szenenliste",
-      "total": "Gesamt:",
-      "seconds": "s",
-      "addScene": "Szene hinzufügen",
-      "scene": "Szene",
-      "describeScene": "Beschreiben Sie diese Szene...",
-      "duration": "Dauer",
-      "textToVideo": "Text zu Video",
-      "imageToVideo": "Bild zu Video",
-      "reference": "Referenz"
-    },
-    "image": {
-      "imageToImage": "Bildbearbeitung",
-      "textToImage": "Text zu Bild",
-      "startGeneration": "Generierung starten",
-      "nanaBananaRatioHint": "Nano Banana unterstützt mehrere Seitenverhältnisse, wählen Sie das für Sie passende"
-    },
-    "upload": {
-      "clickToUpload": "Klicken zum Hochladen von Bildern",
-      "supportedFormats": "JPEG, PNG, WEBP, max 10MB"
-    },
-    "labels": {
-      "label": "Label",
-      "labelCn": "Label (CN)",
-      "generator": "Generator",
-      "aspectRatio": "Seitenverhältnis",
-      "duration": "Dauer",
-      "quality": "Qualität",
-      "highQuality": "Hoch",
-      "standard": "Standard",
-      "watermark": "Wasserzeichen",
-      "removed": "Entfernt",
-      "kept": "Behalten"
-    }
-  },
-  "promptTemplates": {
-    "image": {
-      "image-general": {
-        "name": "Allgemeines Bild",
-        "description": "Allgemeine Bildgenerierungsoptimierung"
-      },
-      "image-professional-portrait": {
-        "name": "Professionelles Portrait",
-        "description": "Professionelle Portraitoptimierung"
-      },
-      "image-artistic-portrait": {
-        "name": "Künstlerisches Portrait",
-        "description": "Künstlerische Portraitoptimierung"
-      },
-      "image-product": {
-        "name": "Produktfotografie",
-        "description": "Produktfotografie und E-Commerce-Bilder"
-      },
-      "image-landscape": {
-        "name": "Landschaftsfotografie",
-        "description": "Natürliche Landschaften und Architekturfotografie"
-      }
-    },
-    "video": {
-      "video-cinematic": {
-        "name": "Filmischer Stil",
-        "description": "Optimierung für filmisches Storytelling mit dramatischer Beleuchtung und Komposition"
-      },
-      "video-commercial": {
-        "name": "Werbung/Werbespot",
-        "description": "Optimierung für Produktpräsentation und Markenwerbung"
-      },
-      "video-documentary": {
-        "name": "Dokumentation/Natur",
-        "description": "Optimierung für natürliche Dokumentation und Wildlife-Stil"
-      },
-      "video-general": {
-        "name": "Allgemeines Video",
-        "description": "Allgemeine Videogenerierungsoptimierung"
-      }
-    }
-  },
-  "innovationLab": {
-    "title": "Innovationslabor",
-    "subtitle": "Erkunden Sie die unbegrenzten Möglichkeiten der KI-Kreation, sehen Sie sich Beispiele an und erstellen Sie ähnliche",
-    "createSimilar": "Ähnliches erstellen",
-    "viewTutorial": "Tutorial ansehen",
-    "prompt": "Prompt",
-    "tutorial": "Tutorial",
-    "noExamples": "Keine Beispiele verfügbar",
-    "loading": "Wird geladen...",
-    "imageExample": "Bildbeispiel",
-    "videoExample": "Videobeispiel"
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Willkommen zurück, {name}!",
+    "credits": "Credits",
+    "availableCredits": "Available credits",
+    "images": "Bilder",
+    "videos": "Videos",
+    "totalGenerated": "Total generated",
+    "subscription": "Subscription",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "noSubscription": "No subscription",
+    "quickActions": "Schnellaktionen",
+    "quickActionsDesc": "Schnell mit der Erstellung beginnen",
+    "generateImage": "Bild generieren",
+    "generateVideo": "Video generieren",
+    "buyCredits": "Credits kaufen",
+    "accountInfo": "Kontoinformationen",
+    "accountInfoDesc": "Ihre Kontodetails",
+    "email": "E-Mail",
+    "memberSince": "Member since",
+    "subscriptionEnds": "Subscription ends",
+    "recentActivity": "Letzte Aktivität",
+    "recentActivityDesc": "Ihre letzten Kreationen",
+    "noRecentActivity": "Keine kürzliche Aktivität"
   }
 }

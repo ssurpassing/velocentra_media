@@ -6,23 +6,20 @@
   },
   "nav": {
     "home": "ホーム",
+    "createStudio": "ワークスペース",
     "pricing": "料金",
     "aiVideo": "AI動画",
     "aiImage": "AI画像",
     "generate": "生成",
     "login": "ログイン",
     "signup": "登録",
-    "logout": "ログアウト",
-    "createStudio": "ワークスペース"
+    "logout": "ログアウト"
   },
   "hero": {
-    "title": "60秒でプロフェッショナルアバター",
-    "subtitle": "セルフィーをアップロードして、AIが素晴らしいプロ写真を作成します",
-    "cta": "始める",
-    "ctaSecondary": "例を見る",
     "badge": "AI搭載クリエイティブプラットフォーム",
     "welcomeTo": "ようこそ",
     "aiTownLab": "AI Town Lab",
+    "subtitle": "セルフィーをアップロードして、AIが素晴らしいプロ写真を作成します",
     "tagline": "ワンストップAIクリエイティブラボ、想像力を現実に",
     "imageGen": "画像生成",
     "videoGen": "動画作成",
@@ -35,131 +32,33 @@
     "quickBadge": "高速生成"
   },
   "quickGenerator": {
+    "badge": "クイックスタート",
     "title": "クイックアバター生成",
     "subtitle": "写真をアップロードし、AIモデルを選択して、プロフェッショナルアバターを素早く生成",
-    "uploadPrompt": "写真をアップロード",
-    "uploadHint": "ドラッグ&ドロップまたはクリックして選択（最大5MB）",
-    "styleLabel": "スタイルを選択",
-    "generate": "アバターを生成",
-    "generating": "生成中...",
-    "selectStyle": "スタイルを選択してください",
-    "uploadImage": "画像をアップロードしてください",
-    "needLogin": "生成機能を使用するにはログインが必要です",
-    "pleaseLogin": "まずログインしてください",
-    "pleaseUploadImage": "まず画像をアップロードしてください",
-    "uploadSection": "画像をアップロード",
-    "selectModel": "AIモデルを選択",
-    "promptSection": "プロンプト（オプション）",
-    "promptPlaceholder": "例: 銀行員で、プロフェッショナルなLinkedInヘッドショットが必要です",
-    "startGeneration": "生成開始",
-    "uploading": "アップロード中...",
-    "generatingImage": "生成中...",
-    "resultSection": "生成結果",
-    "regenerate": "再生成",
-    "download": "ダウンロード",
-    "aiGenerating": "AIが生成中...",
-    "estimatedTime": "推定時間: 10-30秒",
-    "resultPlaceholder": "生成された画像はここに表示されます",
-    "usageTips": "💡 使用のヒント",
-    "tip1": "• 正面から撮影した鮮明な写真が最適です",
-    "tip2": "• プロンプトを追加すると、より正確な結果が得られます",
-    "tip3": "• 異なるAIモデルには異なるスタイル特性があります",
-    "tip4": "• 生成には通常10-30秒かかります",
-    "exploreMore": "もっとスタイルを探索 →",
-    "changeImage": "クリックして画像を変更",
-    "uploadDescription": "ドラッグ＆ドロップまたはクリックして選択",
-    "uploadFormats": "JPG、PNG、WebPをサポート（最大5MB）",
-    "badge": "クイックスタート",
-    "imageTab": "AI 画像",
-    "videoTab": "AI 動画",
-    "imageDesc": "画像生成",
-    "videoDesc": "動画作成",
     "loginTitle": "AI創作を解放",
     "loginSubtitle": "ログインしてすべてのAIモデルにアクセスし、クリエイティブな旅を始めましょう",
     "login": "ログイン",
     "signup": "登録",
+    "imageTab": "AI 画像",
+    "imageDesc": "画像生成",
+    "videoTab": "AI 動画",
+    "videoDesc": "動画作成",
     "exploreImages": "もっと画像機能を探索",
     "exploreImagesDesc": "すべての画像生成モデルと高度な機能を表示",
     "exploreVideos": "もっと動画機能を探索",
     "exploreVideosDesc": "すべての動画生成モデルと高度な機能を表示"
   },
-  "creative": {
-    "title": "AIアバター生成",
-    "subtitle": "スタイルを選択して、あなたの専用アバターの作成を始めましょう",
-    "exploreMore": "もっとスタイルを探索",
-    "tabs": {
-      "myPhotos": "私の作品",
-      "publicGallery": "公開ギャラリー"
-    },
-    "noPhotos": "まだ作品がありません。作成を始めましょう！",
-    "noPublicPhotos": "まだ公開作品がありません",
-    "loadMore": "もっと読み込む",
+  "innovationLab": {
+    "title": "イノベーションラボ",
+    "subtitle": "AI創作の無限の可能性を探索し、注目の例を表示して類似のものを作成",
+    "createSimilar": "類似のものを作成",
+    "viewTutorial": "チュートリアルを見る",
+    "prompt": "プロンプト",
+    "tutorial": "チュートリアル",
+    "noExamples": "例がありません",
     "loading": "読み込み中...",
-    "seo": {
-      "aboutTitle": "AIプロフェッショナルアバター生成について",
-      "aboutDescription": "先進的なAIパイプラインシステムを使用して、高品質なプロフェッショナルアバターを素早く生成します。プロパイプライン（7段階）と高速パイプライン（3段階）の2つのモードをサポートしています。",
-      "tutorialTitle": "チュートリアル",
-      "tutorial1": "写真をアップロード",
-      "tutorial2": "生成パイプラインを選択（プロフェッショナルまたは高速）",
-      "tutorial3": "生成をクリックしてAIの作成を待つ",
-      "tutorial4": "生成後、作品を公開するか選択できます",
-      "faqTitle": "よくある質問",
-      "faq1Question": "生成にはどのくらい時間がかかりますか？",
-      "faq1Answer": "高速パイプラインは約5-10秒、プロパイプラインは約15-25秒かかります。",
-      "faq2Question": "何枚生成できますか？",
-      "faq2Answer": "無料ユーザーは3回の無料生成機会があり、有料ユーザーはクレジットを購入して無制限に生成できます。",
-      "faq3Question": "生成された写真の著作権は誰に属しますか？",
-      "faq3Answer": "生成された写真の著作権はユーザーに属し、自由に使用できます。"
-    },
-    "actions": {
-      "publish": "公開",
-      "unpublish": "非公開",
-      "feature": "注目",
-      "unfeature": "注目解除",
-      "publishToGallery": "ギャラリーに公開",
-      "unpublishFromGallery": "ギャラリーから非公開"
-    },
-    "styles": {
-      "linkedin-professional": "プロフェッショナルLinkedIn写真",
-      "linkedin-pro-pipeline": "LinkedInプロフェッショナル写真",
-      "dating-app-photo": "デートアプリ写真",
-      "social-media-avatar": "ソーシャルメディアアバター",
-      "executive-portrait": "エグゼクティブポートレート",
-      "creative-artistic-portrait": "クリエイティブアーティスティックポートレート",
-      "official-id-photo": "公式ID写真"
-    },
-    "generator": {
-      "mode": "生成モード",
-      "qualityMode": "品質モード",
-      "simple": "シンプル高速",
-      "simpleDesc": "8-15秒・100クレジット",
-      "pro": "プロプロフェッショナル",
-      "proDesc": "15-25秒・150クレジット",
-      "imageToImage": "画像から画像",
-      "textToImage": "テキストから画像",
-      "uploadImage": "画像をアップロード",
-      "aiModel": "AIモデル",
-      "customPrompt": "カスタムプロンプト（オプション）",
-      "customPromptPlaceholder": "生成効果を高めるために追加の説明を追加...",
-      "startGeneration": "生成開始",
-      "uploading": "アップロード中...",
-      "generating": "生成中..."
-    },
-    "progress": {
-      "title": "生成進行状況",
-      "initializing": "初期化中",
-      "processing": "処理中",
-      "completed": "完了",
-      "failed": "生成失敗",
-      "estimatedTime": "推定残り時間",
-      "seconds": "秒"
-    },
-    "comparison": {
-      "original": "元画像",
-      "generated": "生成画像",
-      "viewOriginal": "元画像を見る",
-      "viewGenerated": "生成画像を見る"
-    }
+    "imageExample": "画像例",
+    "videoExample": "動画例"
   },
   "pricing": {
     "title": "プランを選択",
@@ -168,6 +67,7 @@
     "popular": "人気",
     "perMonth": "月額",
     "perYear": "/年",
+    "billedAnnually": "年間請求",
     "save": "節約",
     "getStarted": "始める",
     "buyNow": "今すぐ購入",
@@ -175,7 +75,6 @@
     "monthly": "月額",
     "yearly": "年額",
     "credits": "クレジットパック",
-    "billedAnnually": "年間請求",
     "plans": {
       "subscription-monthly-1000": {
         "name": "ベーシック月額",
@@ -301,7 +200,13 @@
     "q4": "写真は保存されますか？",
     "a4": "元の写真は24時間後に自動的に削除されます。生成されたアバターはアカウントに永続的に保存されます。",
     "q5": "商用利用できますか？",
-    "a5": "はい、生成されたアバターを商用または個人用途で使用する完全な権利があります。"
+    "a5": "はい、生成されたアバターを商用または個人用途で使用する完全な権利があります。",
+    "q6": "どのAIモデルがサポートされていますか？その特徴は？",
+    "a6": "画像生成はGoogle Nano Banana（高速・高品質）とGPT-4o（最高の理解力）をサポート。動画生成はGoogle Veo 3.1（高速/品質モード）とOpenAI Sora 2/Sora 2 Pro（映画品質）をサポート。異なるモデルは異なる創作シナリオに適しています。",
+    "q7": "クレジットとサブスクリプションの違いは？",
+    "a7": "サブスクリプションは毎月/毎年自動更新され、毎月固定クレジットが付与されます。長期利用に最適。クレジットパックは一度の購入で永久に有効、オンデマンド利用により柔軟。両方とも全AIモデルとプレミアム機能にアクセス可能。",
+    "q8": "バイラルショート動画とAI広告の作成方法は？",
+    "a8": "AIビデオジェネレーターを使用し、クリエイティブなテキストを入力するか製品画像をアップロード、適切なアスペクト比を選択（TikTok/Douyinは9:16縦型、YouTubeは16:9横型）すると、AIが自動的にプロフェッショナルな動画を生成。プロンプト最適化をサポート、Eコマース広告、ブランドプロモーション、SNSマーケティングに最適。"
   },
   "auth": {
     "login": "ログイン",
@@ -344,11 +249,6 @@
       "title": "料金プラン - 柔軟なアバター生成パッケージ",
       "description": "ニーズに合ったアバター生成パッケージを選択。無料トライアルと複数の有料プランをご用意。従量課金制で隠れた料金はありません。"
     },
-    "create": {
-      "title": "AIワークスペース - AI Town Lab",
-      "description": "画像生成と動画制作機能を統合したプロフェッショナルAI制作プラットフォーム。Nano Banana、GPT-4o、Google Veo、OpenAI Soraなど、さまざまなAIモデルをサポート。",
-      "keywords": "AI制作,画像生成,動画生成,AIワークスペース,クリエイティブプラットフォーム,Nano Banana,GPT-4o,Veo,Sora"
-    },
     "creative": {
       "title": "AIクリエイティブアバター生成 - 複数のスタイルを探索",
       "description": "プロフェッショナルヘッドショット、デート写真、ソーシャルメディアアバター、アーティスティックポートレートなど、さまざまなAIアバター生成スタイルを探索。写真をアップロードして即座に生成。"
@@ -362,6 +262,271 @@
       "title": "AI画像生成器 - プロフェッショナルアバターと画像生成",
       "description": "先進的なAI技術を使用してプロフェッショナル品質のアバターと画像を生成します。Nano BananaとGPT-4oモデルをサポートし、高品質なプロ写真とクリエイティブ画像を素早く生成できます。",
       "keywords": "AI画像生成,アバター生成器,プロフェッショナル写真,Nano Banana,GPT-4o,AI画像作成"
+    },
+    "create": {
+      "title": "AIワークスペース - AI Town Lab",
+      "description": "画像生成と動画制作機能を統合したプロフェッショナルAI制作プラットフォーム。Nano Banana、GPT-4o、Google Veo、OpenAI Soraなど、さまざまなAIモデルをサポート。",
+      "keywords": "AI制作,画像生成,動画生成,AIワークスペース,クリエイティブプラットフォーム,Nano Banana,GPT-4o,Veo,Sora"
+    }
+  },
+  "aiImage": {
+    "title": "AI画像生成器",
+    "subtitle": "強力なAI技術でプロフェッショナル品質の画像を生成",
+    "hero": {
+      "title": "大胆に想像し、私たちが現実にします",
+      "description": "写真をアップロードして素晴らしい芸術作品に変換",
+      "cta": "画像をアップロード"
+    },
+    "generator": {
+      "title": "画像生成器",
+      "mode": "生成モード",
+      "imageToImage": "画像から画像",
+      "textToImage": "テキストから画像",
+      "uploadImage": "画像をアップロード",
+      "prompt": "プロンプト",
+      "promptPlaceholder": "生成したい画像を説明してください...",
+      "ratio": "アスペクト比",
+      "numberOfImages": "画像数",
+      "optimizePrompt": "プロンプトを最適化",
+      "generateImage": "画像を生成",
+      "cost": "クレジットコスト",
+      "generating": "生成中...",
+      "uploading": "アップロード中..."
+    },
+    "myImages": {
+      "title": "私の画像",
+      "empty": "まだ画像がありません。最初の一枚を作成しましょう！"
+    },
+    "examples": {
+      "title": "サンプル画像",
+      "subtitle": "これらの素晴らしいAI生成画像の例をチェックしてください",
+      "createSimilar": "類似を作成",
+      "noExamples": "利用可能な例がありません"
+    },
+    "optimize": {
+      "title": "AIプロンプト最適化アシスタント",
+      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い画像結果を得る",
+      "originalPrompt": "元のプロンプト",
+      "selectTemplate": "最適化テンプレートを選択",
+      "optimize": "プロンプトを最適化",
+      "optimizing": "最適化中...",
+      "optimizedPrompt": "最適化されたプロンプト",
+      "copy": "プロンプトをコピー",
+      "copySuccess": "クリップボードにコピーしました",
+      "fillBack": "生成器に戻す",
+      "close": "閉じる"
+    }
+  },
+  "aiVideo": {
+    "title": "AI動画生成器",
+    "subtitle": "強力なVeo 3.1とSora 2 AI技術でプロフェッショナル品質の動画を生成",
+    "hero": {
+      "title": "アイデアを瞬時に動画に変換",
+      "description": "AI動画生成器は、テキストと画像で高品質な動画を素早く作成するのに役立ちます",
+      "cta": "作成を開始"
+    },
+    "generator": {
+      "title": "動画生成器",
+      "optimizePrompt": "プロンプトを最適化",
+      "generating": "生成中...",
+      "uploadImages": "画像をアップロード",
+      "selectProvider": "生成器を選択",
+      "selectModel": "モデルを選択",
+      "selectMode": "生成モードを選択",
+      "selectQuality": "品質レベル",
+      "prompt": "プロンプト",
+      "promptPlaceholder": "作成したい動画コンテンツを説明してください...",
+      "aspectRatio": "アスペクト比",
+      "duration": "再生時間",
+      "removeWatermark": "透かしを削除",
+      "removeWatermarkDesc": "生成された動画から透かしを削除（推奨）",
+      "cost": "コスト",
+      "credits": "クレジット",
+      "generateVideo": "動画を生成",
+      "uploading": "アップロード中...",
+      "uploadHint": "画像をアップロードするにはクリック",
+      "uploadDesc": "JPEG、PNG、WEBP、最大10MB",
+      "textToVideo": "テキストから動画",
+      "imageToVideo": "画像から動画",
+      "reference": "参考",
+      "storyboard": "ストーリーボード",
+      "watermarkRemover": "透かし削除",
+      "veo31Fast": "Veo 3.1 高速",
+      "veo31Quality": "Veo 3.1 品質",
+      "sora2Basic": "Sora 2",
+      "sora2Pro": "Sora 2 Pro",
+      "standard": "標準",
+      "high": "高品質",
+      "portrait": "縦長",
+      "landscape": "横長",
+      "auto": "自動"
+    },
+    "examples": {
+      "title": "サンプルギャラリー",
+      "subtitle": "これらの素晴らしいAI生成動画の例をチェックしてください",
+      "createSimilar": "類似を作成",
+      "noExamples": "利用可能な例がありません"
+    },
+    "optimize": {
+      "title": "AIプロンプト最適化",
+      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い動画結果を得る",
+      "originalPrompt": "元のプロンプト",
+      "selectTemplate": "テンプレートを選択",
+      "optimize": "プロンプトを最適化",
+      "optimizing": "最適化中...",
+      "optimizedPrompt": "最適化されたプロンプト",
+      "copy": "プロンプトをコピー",
+      "copySuccess": "クリップボードにコピーしました",
+      "fillBack": "生成器に入力",
+      "fillBackSuccess": "プロンプトが正常に入力されました",
+      "close": "閉じる",
+      "templateCinematic": "映画スタイル",
+      "templateCommercial": "コマーシャル/広告",
+      "templateDocumentary": "ドキュメンタリー/自然",
+      "templateGeneral": "一般的な動画"
+    }
+  },
+  "trustIndicators": {
+    "title": "プロフェッショナルAI作成プラットフォーム",
+    "models": "AIモデル",
+    "speed": "超高速",
+    "seconds": "秒",
+    "quality": "ウルトラHD品質",
+    "support": "24/7サポート",
+    "poweredBy": "AI技術提供"
+  },
+  "beforeAfterShowcase": {
+    "title": "AI変換",
+    "subtitle": "写真をアップロード、60秒でプロ作品を生成",
+    "uploadedPhoto": "アップロード写真",
+    "aiGenerated": "AI生成",
+    "example": "例",
+    "altBefore": "アップロードした写真",
+    "altAfter": "AI生成された写真"
+  },
+  "comparisonSlider": {
+    "beforeLabel": "オリジナル",
+    "afterLabel": "生成",
+    "dragToCompare": "ドラッグして比較"
+  },
+  "creativeGallery": {
+    "title": "クリエイティブショーケース",
+    "subtitle": "無限の可能性を探索、厳選された例からインスピレーションを得る",
+    "portrait": "ポートレートとアバター",
+    "commercial": "商業広告",
+    "animation": "アニメーションと動画",
+    "creative": "クリエイティブデザイン",
+    "allWorks": "すべての作品",
+    "imageWorks": "画像生成",
+    "videoWorks": "動画作成",
+    "createSimilar": "類似を作成",
+    "viewMore": "ギャラリー全体を表示",
+    "loading": "読み込み中...",
+    "untitled": "無題"
+  },
+  "createStudio": {
+    "title": "ワークスペース",
+    "subtitle": "AI駆動のクリエイティブプラットフォーム",
+    "loading": "読み込み中...",
+    "imageTab": "画像生成",
+    "videoTab": "動画制作",
+    "myWorks": "マイワーク",
+    "selectModel": "AIモデルを選択",
+    "imageModels": "画像生成モデル",
+    "videoModels": "動画生成モデル",
+    "recommended": "おすすめ",
+    "modelTip": "クリエイティブニーズに最適なAIモデルを選択",
+    "imageGen": "画像生成",
+    "videoGen": "動画制作",
+    "canvasTip": "パラメータを調整し、創造性を発揮して、AIに素晴らしいコンテンツを作成させましょう",
+    "generatorParams": "生成パラメータ",
+    "adjustParams": "以下のパラメータを調整して作成を開始",
+    "currentTasks": "進行中",
+    "completedTasks": "完了",
+    "noCurrentTasks": "進行中のタスクはありません",
+    "noCurrentTasksDesc": "左側でパラメータを入力して生成をクリックし、作成を開始しましょう！",
+    "noCompletedTasks": "完了した作品はありません",
+    "noCompletedTasksDesc": "あなたの作成履歴がここに表示されます",
+    "generating": "生成中...",
+    "pending": "待機中",
+    "processing": "処理中",
+    "download": "ダウンロード",
+    "clickToSwitch": "クリックして切り替え",
+    "aiImageGen": "AI画像生成",
+    "aiVideoGen": "AI動画",
+    "aiImageGeneration": "AI画像生成",
+    "aiVideoGeneration": "AI動画生成",
+    "noTasks": "タスクなし",
+    "noTasksDesc": "左側でモデルを選択し、説明を入力して作成を開始",
+    "inProgress": "進行中",
+    "history": "履歴",
+    "queueing": "キューイング中...",
+    "aiGenerating": "AI生成中...",
+    "mayTakeSomeTime": "10〜30秒かかる場合があります",
+    "generationFailed": "生成失敗",
+    "generationTask": "生成タスク",
+    "copyPrompt": "プロンプトをコピー",
+    "regenerate": "再生成",
+    "copied": "コピーしました",
+    "promptCopied": "プロンプトをクリップボードにコピーしました",
+    "failedNoDownload": "生成失敗、ダウンロードできません"
+  },
+  "models": {
+    "image": {
+      "kie-nano-banana": {
+        "name": "Nano Banana",
+        "description": "Google Nano Banana - Schnelle hochwertige Bildgenerierung (Text zu Bild)"
+      },
+      "kie-nano-banana-edit": {
+        "name": "Nano Banana Edit",
+        "description": "Google Nano Banana Edit - Bild-zu-Bild-Modus"
+      },
+      "kie-gpt4o-image": {
+        "name": "GPT-4o Image",
+        "description": "OpenAI GPT-4o 画像生成 - 最高の理解力（テキストから画像 + 画像から画像）"
+      }
+    },
+    "video": {
+      "veo3_fast": {
+        "name": "Veo 3.1 Schnell",
+        "displayName": "Veo 3.1 Schnell",
+        "description": "高品質な高速動画生成"
+      },
+      "veo3": {
+        "name": "Veo 3.1 品質",
+        "displayName": "Veo 3.1 品質",
+        "description": "Hochwertige Videogenerierung"
+      },
+      "sora-2-text-to-video": {
+        "name": "Sora 2 Text zu Video",
+        "displayName": "Sora 2 Text zu Video",
+        "description": "Text-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-image-to-video": {
+        "name": "Sora 2 Bild zu Video",
+        "displayName": "Sora 2 Bild zu Video",
+        "description": "Bild-zu-Video-Generierung mit Sora 2"
+      },
+      "sora-2-pro-text-to-video": {
+        "name": "Sora 2 Pro Text zu Video",
+        "displayName": "Sora 2 Pro Text zu Video",
+        "description": "Professionelle Text-zu-Video-Generierung"
+      },
+      "sora-2-pro-image-to-video": {
+        "name": "Sora 2 Pro Bild zu Video",
+        "displayName": "Sora 2 Pro Bild zu Video",
+        "description": "Professionelle Bild-zu-Video-Generierung"
+      },
+      "sora-2-pro-storyboard": {
+        "name": "Sora 2 Pro Storyboard",
+        "displayName": "Sora 2 Pro Storyboard",
+        "description": "Mehrszeniges Storyboard-Video-Generierung"
+      },
+      "sora-watermark-remover": {
+        "name": "Sora Wasserzeichenentferner",
+        "displayName": "Sora Wasserzeichenentferner",
+        "description": "Wasserzeichen aus Sora-Videos entfernen"
+      }
     }
   },
   "home": {
@@ -493,44 +658,6 @@
       }
     }
   },
-  "trustIndicators": {
-    "title": "プロフェッショナルAI作成プラットフォーム",
-    "models": "AIモデル",
-    "speed": "超高速",
-    "seconds": "秒",
-    "quality": "ウルトラHD品質",
-    "support": "24/7サポート",
-    "poweredBy": "AI技術提供"
-  },
-  "beforeAfterShowcase": {
-    "title": "AI変換",
-    "subtitle": "写真をアップロード、60秒でプロ作品を生成",
-    "uploadedPhoto": "アップロード写真",
-    "aiGenerated": "AI生成",
-    "example": "例",
-    "altBefore": "アップロードした写真",
-    "altAfter": "AI生成された写真"
-  },
-  "comparisonSlider": {
-    "beforeLabel": "オリジナル",
-    "afterLabel": "生成",
-    "dragToCompare": "ドラッグして比較"
-  },
-  "creativeGallery": {
-    "title": "クリエイティブショーケース",
-    "subtitle": "無限の可能性を探索、厳選された例からインスピレーションを得る",
-    "portrait": "ポートレートとアバター",
-    "commercial": "商業広告",
-    "animation": "アニメーションと動画",
-    "creative": "クリエイティブデザイン",
-    "allWorks": "すべての作品",
-    "imageWorks": "画像生成",
-    "videoWorks": "動画作成",
-    "createSimilar": "類似を作成",
-    "viewMore": "ギャラリー全体を表示",
-    "loading": "読み込み中...",
-    "untitled": "無題"
-  },
   "errors": {
     "api": {
       "PRO_MODEL_REQUIRES_SUBSCRIPTION": "Sora 2 Proモデルは有料会員またはクレジットを持つユーザーのみ利用可能です。プランをアップグレードしてください。",
@@ -544,6 +671,126 @@
       "INVALID_FILE_TYPE": "サポートされていないファイルタイプ",
       "GENERATION_FAILED": "生成に失敗しました、もう一度お試しください",
       "TIMEOUT": "リクエストタイムアウト、後でもう一度お試しください"
+    }
+  },
+  "generators": {
+    "common": {
+      "pleaseLogin": "まずログインしてください",
+      "pleaseEnterPrompt": "プロンプトを入力してください",
+      "pleaseUploadImages": "画像をアップロードしてください",
+      "optimize": "最適化",
+      "cost": "コスト",
+      "credits": "クレジット",
+      "uploading": "アップロード中...",
+      "generating": "生成中...",
+      "aiGenerating": "AI生成中...",
+      "estimatedTime": "推定時間",
+      "taskId": "タスクID",
+      "browserNotSupport": "お使いのブラウザは動画再生に対応していません",
+      "regenerate": "再生成",
+      "download": "ダウンロード",
+      "generationResult": "生成結果",
+      "generationFailed": "生成に失敗しました",
+      "pleaseFillAllScenes": "すべてのシーン説明を入力してください",
+      "totalSceneDuration": "シーン合計時間",
+      "exceedsVideoDuration": "動画時間を超過",
+      "promptHint": "詳細な説明でより良い結果が得られます。AIを使用してプロンプトを最適化してください",
+      "model": "モデル",
+      "prompt": "Generation Prompt",
+      "images": "Image",
+      "aspectRatio": "Ratio",
+      "seed": "シード",
+      "optional": "オプション",
+      "seedPlaceholder": "Please input seed"
+    },
+    "video": {
+      "generationMode": "生成モード",
+      "qualityLevel": "品質レベル",
+      "standard": "標準",
+      "highQuality": "高品質",
+      "sceneList": "シーンリスト",
+      "total": "合計:",
+      "seconds": "s",
+      "addScene": "シーンを追加",
+      "scene": "シーン",
+      "describeScene": "このシーンを説明してください...",
+      "duration": "時間",
+      "textToVideo": "テキストから動画",
+      "imageToVideo": "画像から動画",
+      "reference": "参照",
+      "generationType": "生成タイプ",
+      "startFrame": "開始フレーム",
+      "endFrame": "終了フレーム",
+      "promptPlaceholder": "生成したい動画を説明してください...",
+      "promptHint": "プロンプトが詳細であるほど、動画の品質が向上します",
+      "generateButton": "動画を生成",
+      "generationTimeHint": "Veo 3.1の動画生成は通常2〜5分かかります。お待ちください",
+      "videoPreview": "動画プレビュー",
+      "videoPreviewHint": "生成後、動画がここに表示されます"
+    },
+    "image": {
+      "imageToImage": "画像編集",
+      "textToImage": "テキストから画像",
+      "startGeneration": "生成開始",
+      "nanaBananaRatioHint": "Nano Bananaは複数のアスペクト比をサポートしています。ニーズに合ったものを選択してください"
+    },
+    "upload": {
+      "clickToUpload": "クリックして画像をアップロード",
+      "supportedFormats": "JPEG、PNG、WEBP、最大10MB",
+      "uploading": "画像をアップロード中...",
+      "maxImages": "最大{max}枚の画像"
+    },
+    "labels": {
+      "label": "ラベル",
+      "labelCn": "ラベル (CN)",
+      "generator": "ジェネレーター",
+      "aspectRatio": "アスペクト比"
+    }
+  },
+  "promptTemplates": {
+    "image": {
+      "image-general": {
+        "name": "一般画像",
+        "description": "一般的な画像生成最適化"
+      },
+      "image-professional-portrait": {
+        "name": "プロフェッショナルポートレート",
+        "description": "プロフェッショナルポートレート最適化"
+      },
+      "image-artistic-portrait": {
+        "name": "アーティスティックポートレート",
+        "description": "アーティスティックポートレート最適化"
+      },
+      "image-product": {
+        "name": "商品撮影",
+        "description": "商品撮影とEコマース画像"
+      },
+      "image-landscape": {
+        "name": "風景写真",
+        "description": "自然風景と建築写真"
+      },
+      "image-anime": {
+        "name": "Anime",
+        "description": "Anime style optimization"
+      }
+    },
+    "video": {
+      "video-cinematic": {
+        "name": "映画スタイル",
+        "description": "ドラマチックな照明と構成による映画的なストーリーテリングの最適化"
+      },
+      "video-commercial": {
+        "name": "コマーシャル/広告",
+        "description": "製品プレゼンテーションとブランド広告の最適化"
+      },
+      "video-documentary": {
+        "name": "ドキュメンタリー/自然",
+        "description": "自然ドキュメンタリーと野生動物スタイルの最適化"
+      },
+      "video-general": {
+        "name": "一般動画",
+        "description": "一般的な動画生成最適化"
+      }
     }
   },
   "footer": {
@@ -846,342 +1093,44 @@
     },
     "acceptance": "AI Town Labを使用することにより、本利用規約を読み、理解し、これに拘束されることに同意したことを認めます。"
   },
-  "createStudio": {
-    "title": "ワークスペース",
-    "subtitle": "AI駆動のクリエイティブプラットフォーム",
-    "loading": "読み込み中...",
-    "imageTab": "画像生成",
-    "videoTab": "動画制作",
-    "myWorks": "マイワーク",
-    "selectModel": "AIモデルを選択",
-    "imageModels": "画像生成モデル",
-    "videoModels": "動画生成モデル",
-    "recommended": "おすすめ",
-    "modelTip": "クリエイティブニーズに最適なAIモデルを選択",
-    "imageGen": "画像生成",
-    "videoGen": "動画制作",
-    "canvasTip": "パラメータを調整し、創造性を発揮して、AIに素晴らしいコンテンツを作成させましょう",
-    "generatorParams": "生成パラメータ",
-    "adjustParams": "以下のパラメータを調整して作成を開始",
-    "currentTasks": "進行中",
-    "completedTasks": "完了",
-    "noCurrentTasks": "進行中のタスクはありません",
-    "noCurrentTasksDesc": "左側でパラメータを入力して生成をクリックし、作成を開始しましょう！",
-    "noCompletedTasks": "完了した作品はありません",
-    "noCompletedTasksDesc": "あなたの作成履歴がここに表示されます",
-    "generating": "生成中...",
-    "pending": "待機中",
-    "processing": "処理中",
-    "download": "ダウンロード",
-    "clickToSwitch": "クリックして切り替え",
-    "aiImageGen": "AI画像生成",
-    "aiVideoGen": "AI動画",
-    "aiImageGeneration": "AI画像生成",
-    "aiVideoGeneration": "AI動画生成",
-    "noTasks": "タスクなし",
-    "noTasksDesc": "左側でモデルを選択し、説明を入力して作成を開始",
-    "inProgress": "進行中",
-    "history": "履歴",
-    "queueing": "キューイング中...",
-    "aiGenerating": "AI生成中...",
-    "mayTakeSomeTime": "10〜30秒かかる場合があります",
-    "generationFailed": "生成失敗",
-    "generationTask": "生成タスク",
-    "copyPrompt": "プロンプトをコピー",
-    "regenerate": "再生成",
-    "copied": "コピーしました",
-    "promptCopied": "プロンプトをクリップボードにコピーしました",
-    "failedNoDownload": "生成失敗、ダウンロードできません"
-  },
-  "aiImage": {
-    "title": "AI画像生成器",
-    "subtitle": "強力なAI技術でプロフェッショナル品質の画像を生成",
-    "hero": {
-      "title": "大胆に想像し、私たちが現実にします",
-      "description": "写真をアップロードして素晴らしい芸術作品に変換",
-      "cta": "画像をアップロード"
-    },
-    "generator": {
-      "title": "画像生成器",
-      "mode": "生成モード",
-      "imageToImage": "画像から画像",
-      "textToImage": "テキストから画像",
-      "uploadImage": "画像をアップロード",
-      "prompt": "プロンプト",
-      "promptPlaceholder": "生成したい画像を説明してください...",
-      "ratio": "アスペクト比",
-      "numberOfImages": "画像数",
-      "optimizePrompt": "プロンプトを最適化",
-      "generateImage": "画像を生成",
-      "cost": "クレジットコスト",
-      "generating": "生成中...",
-      "uploading": "アップロード中..."
-    },
-    "myImages": {
-      "title": "私の画像",
-      "empty": "まだ画像がありません。最初の一枚を作成しましょう！"
-    },
-    "examples": {
-      "title": "サンプル画像",
-      "subtitle": "これらの素晴らしいAI生成画像の例をチェックしてください",
-      "createSimilar": "類似を作成"
-    },
-    "optimize": {
-      "title": "AIプロンプト最適化アシスタント",
-      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い画像結果を得る",
-      "originalPrompt": "元のプロンプト",
-      "selectTemplate": "最適化テンプレートを選択",
-      "optimize": "プロンプトを最適化",
-      "optimizing": "最適化中...",
-      "optimizedPrompt": "最適化されたプロンプト",
-      "copy": "プロンプトをコピー",
-      "copySuccess": "クリップボードにコピーしました",
-      "fillBack": "生成器に戻す",
-      "close": "閉じる"
+  "payment": {
+    "success": {
+      "title": "Payment Successful!",
+      "description": "Thank you for your purchase. Your credits have been added to your account.",
+      "whatNext": "次は？",
+      "creditsAdded": "Credits have been added to your account",
+      "receiptSent": "Receipt has been sent to your email",
+      "readyToUse": "You can start creating immediately",
+      "goToDashboard": "ダッシュボードへ",
+      "startCreating": "作成を開始",
+      "needHelp": "ヘルプが必要ですか？",
+      "contactSupport": "サポートに連絡"
     }
   },
-  "aiVideo": {
-    "title": "AI動画生成器",
-    "subtitle": "強力なVeo 3.1とSora 2 AI技術でプロフェッショナル品質の動画を生成",
-    "hero": {
-      "title": "アイデアを瞬時に動画に変換",
-      "description": "AI動画生成器は、テキストと画像で高品質な動画を素早く作成するのに役立ちます",
-      "cta": "作成を開始"
-    },
-    "generator": {
-      "title": "動画生成器",
-      "optimizePrompt": "プロンプトを最適化",
-      "generating": "生成中...",
-      "uploadImages": "画像をアップロード",
-      "selectProvider": "生成器を選択",
-      "selectModel": "モデルを選択",
-      "selectMode": "生成モードを選択",
-      "selectQuality": "品質レベル",
-      "prompt": "プロンプト",
-      "promptPlaceholder": "作成したい動画コンテンツを説明してください...",
-      "aspectRatio": "アスペクト比",
-      "duration": "再生時間",
-      "removeWatermark": "透かしを削除",
-      "removeWatermarkDesc": "生成された動画から透かしを削除（推奨）",
-      "cost": "コスト",
-      "credits": "クレジット",
-      "generateVideo": "動画を生成",
-      "uploading": "アップロード中...",
-      "uploadHint": "画像をアップロードするにはクリック",
-      "uploadDesc": "JPEG、PNG、WEBP、最大10MB",
-      "textToVideo": "テキストから動画",
-      "imageToVideo": "画像から動画",
-      "reference": "参考",
-      "storyboard": "ストーリーボード",
-      "watermarkRemover": "透かし削除",
-      "veo31Fast": "Veo 3.1 高速",
-      "veo31Quality": "Veo 3.1 品質",
-      "sora2Basic": "Sora 2",
-      "sora2Pro": "Sora 2 Pro",
-      "standard": "標準",
-      "high": "高品質",
-      "portrait": "縦長",
-      "landscape": "横長",
-      "auto": "自動"
-    },
-    "examples": {
-      "title": "サンプルギャラリー",
-      "subtitle": "これらの素晴らしいAI生成動画の例をチェックしてください",
-      "createSimilar": "類似を作成",
-      "noExamples": "利用可能な例がありません"
-    },
-    "optimize": {
-      "title": "AIプロンプト最適化",
-      "subtitle": "テンプレートを選択してプロンプトを最適化し、より良い動画結果を得る",
-      "originalPrompt": "元のプロンプト",
-      "selectTemplate": "テンプレートを選択",
-      "optimize": "プロンプトを最適化",
-      "optimizing": "最適化中...",
-      "optimizedPrompt": "最適化されたプロンプト",
-      "copy": "プロンプトをコピー",
-      "copySuccess": "クリップボードにコピーしました",
-      "fillBack": "生成器に入力",
-      "fillBackSuccess": "プロンプトが正常に入力されました",
-      "close": "閉じる",
-      "templateCinematic": "映画スタイル",
-      "templateCommercial": "コマーシャル/広告",
-      "templateDocumentary": "ドキュメンタリー/自然",
-      "templateGeneral": "一般的な動画"
-    }
-  },
-  "models": {
-    "image": {
-      "kie-nano-banana": {
-        "name": "Nano Banana",
-        "description": "Google Nano Banana - Schnelle hochwertige Bildgenerierung (Text zu Bild)"
-      },
-      "kie-nano-banana-edit": {
-        "name": "Nano Banana Edit",
-        "description": "Google Nano Banana Edit - Bild-zu-Bild-Modus"
-      },
-      "kie-gpt4o-image": {
-        "name": "GPT-4o Image",
-        "description": "OpenAI GPT-4o 画像生成 - 最高の理解力（テキストから画像 + 画像から画像）"
-      }
-    },
-    "video": {
-      "veo3_fast": {
-        "name": "Veo 3.1 Schnell",
-        "displayName": "Veo 3.1 Schnell",
-        "description": "高品質な高速動画生成"
-      },
-      "veo3": {
-        "name": "Veo 3.1 品質",
-        "displayName": "Veo 3.1 品質",
-        "description": "Hochwertige Videogenerierung"
-      },
-      "sora-2-text-to-video": {
-        "name": "Sora 2 Text zu Video",
-        "displayName": "Sora 2 Text zu Video",
-        "description": "Text-zu-Video-Generierung mit Sora 2"
-      },
-      "sora-2-image-to-video": {
-        "name": "Sora 2 Bild zu Video",
-        "displayName": "Sora 2 Bild zu Video",
-        "description": "Bild-zu-Video-Generierung mit Sora 2"
-      },
-      "sora-2-pro-text-to-video": {
-        "name": "Sora 2 Pro Text zu Video",
-        "displayName": "Sora 2 Pro Text zu Video",
-        "description": "Professionelle Text-zu-Video-Generierung"
-      },
-      "sora-2-pro-image-to-video": {
-        "name": "Sora 2 Pro Bild zu Video",
-        "displayName": "Sora 2 Pro Bild zu Video",
-        "description": "Professionelle Bild-zu-Video-Generierung"
-      },
-      "sora-2-pro-storyboard": {
-        "name": "Sora 2 Pro Storyboard",
-        "displayName": "Sora 2 Pro Storyboard",
-        "description": "Mehrszeniges Storyboard-Video-Generierung"
-      },
-      "sora-watermark-remover": {
-        "name": "Sora Wasserzeichenentferner",
-        "displayName": "Sora Wasserzeichenentferner",
-        "description": "Wasserzeichen aus Sora-Videos entfernen"
-      }
-    }
-  },
-  "generators": {
-    "common": {
-      "pleaseLogin": "まずログインしてください",
-      "pleaseEnterPrompt": "プロンプトを入力してください",
-      "pleaseUploadImages": "画像をアップロードしてください",
-      "optimize": "最適化",
-      "cost": "コスト",
-      "credits": "クレジット",
-      "uploading": "アップロード中...",
-      "generating": "生成中...",
-      "aiGenerating": "AI生成中...",
-      "estimatedTime": "推定時間",
-      "taskId": "タスクID",
-      "browserNotSupport": "お使いのブラウザは動画再生に対応していません",
-      "regenerate": "再生成",
-      "download": "ダウンロード",
-      "generationResult": "生成結果",
-      "generationFailed": "生成に失敗しました",
-      "pleaseFillAllScenes": "すべてのシーン説明を入力してください",
-      "totalSceneDuration": "シーン合計時間",
-      "exceedsVideoDuration": "動画時間を超過",
-      "promptHint": "詳細な説明でより良い結果が得られます。AIを使用してプロンプトを最適化してください"
-    },
-    "video": {
-      "generationMode": "生成モード",
-      "qualityLevel": "品質レベル",
-      "standard": "標準",
-      "highQuality": "高品質",
-      "sceneList": "シーンリスト",
-      "total": "合計:",
-      "seconds": "s",
-      "addScene": "シーンを追加",
-      "scene": "シーン",
-      "describeScene": "このシーンを説明してください...",
-      "duration": "時間",
-      "textToVideo": "テキストから動画",
-      "imageToVideo": "画像から動画",
-      "reference": "参照"
-    },
-    "image": {
-      "imageToImage": "画像編集",
-      "textToImage": "テキストから画像",
-      "startGeneration": "生成開始",
-      "nanaBananaRatioHint": "Nano Bananaは複数のアスペクト比をサポートしています。ニーズに合ったものを選択してください"
-    },
-    "upload": {
-      "clickToUpload": "クリックして画像をアップロード",
-      "supportedFormats": "JPEG、PNG、WEBP、最大10MB"
-    },
-    "labels": {
-      "label": "ラベル",
-      "labelCn": "ラベル (CN)",
-      "generator": "ジェネレーター",
-      "aspectRatio": "アスペクト比",
-      "duration": "時間",
-      "quality": "品質",
-      "highQuality": "高",
-      "standard": "標準",
-      "watermark": "透かし",
-      "removed": "削除済み",
-      "kept": "保持"
-    }
-  },
-  "promptTemplates": {
-    "image": {
-      "image-general": {
-        "name": "一般画像",
-        "description": "一般的な画像生成最適化"
-      },
-      "image-professional-portrait": {
-        "name": "プロフェッショナルポートレート",
-        "description": "プロフェッショナルポートレート最適化"
-      },
-      "image-artistic-portrait": {
-        "name": "アーティスティックポートレート",
-        "description": "アーティスティックポートレート最適化"
-      },
-      "image-product": {
-        "name": "商品撮影",
-        "description": "商品撮影とEコマース画像"
-      },
-      "image-landscape": {
-        "name": "風景写真",
-        "description": "自然風景と建築写真"
-      }
-    },
-    "video": {
-      "video-cinematic": {
-        "name": "映画スタイル",
-        "description": "ドラマチックな照明と構成による映画的なストーリーテリングの最適化"
-      },
-      "video-commercial": {
-        "name": "コマーシャル/広告",
-        "description": "製品プレゼンテーションとブランド広告の最適化"
-      },
-      "video-documentary": {
-        "name": "ドキュメンタリー/自然",
-        "description": "自然ドキュメンタリーと野生動物スタイルの最適化"
-      },
-      "video-general": {
-        "name": "一般動画",
-        "description": "一般的な動画生成最適化"
-      }
-    }
-  },
-  "innovationLab": {
-    "title": "イノベーションラボ",
-    "subtitle": "AI創作の無限の可能性を探索し、注目の例を表示して類似のものを作成",
-    "createSimilar": "類似のものを作成",
-    "viewTutorial": "チュートリアルを見る",
-    "prompt": "プロンプト",
-    "tutorial": "チュートリアル",
-    "noExamples": "例がありません",
-    "loading": "読み込み中...",
-    "imageExample": "画像例",
-    "videoExample": "動画例"
+  "dashboard": {
+    "title": "ダッシュボード",
+    "welcome": "Welcome back, {name}!",
+    "credits": "Credits",
+    "availableCredits": "Available credits",
+    "images": "画像",
+    "videos": "動画",
+    "totalGenerated": "Total generated",
+    "subscription": "Subscription",
+    "active": "有効",
+    "inactive": "無効",
+    "noSubscription": "No subscription",
+    "quickActions": "クイックアクション",
+    "quickActionsDesc": "すぐに作成を開始",
+    "generateImage": "画像を生成",
+    "generateVideo": "動画を生成",
+    "buyCredits": "クレジットを購入",
+    "accountInfo": "アカウント情報",
+    "accountInfoDesc": "アカウントの詳細",
+    "email": "メールアドレス",
+    "memberSince": "Member since",
+    "subscriptionEnds": "Subscription ends",
+    "recentActivity": "最近のアクティビティ",
+    "recentActivityDesc": "最近の作成物",
+    "noRecentActivity": "最近のアクティビティなし"
   }
 }

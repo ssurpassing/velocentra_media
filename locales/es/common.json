@@ -6,23 +6,20 @@
   },
   "nav": {
     "home": "Inicio",
+    "createStudio": "Espacio de Trabajo",
     "pricing": "Precios",
     "aiVideo": "AI Video",
     "aiImage": "AI Imagen",
     "generate": "Generar",
     "login": "Iniciar sesión",
     "signup": "Registrarse",
-    "logout": "Cerrar sesión",
-    "createStudio": "Espacio de Trabajo"
+    "logout": "Cerrar sesión"
   },
   "hero": {
-    "title": "Avatares Profesionales en 60 Segundos",
-    "subtitle": "Sube un selfie y deja que la IA cree impresionantes retratos profesionales para ti",
-    "cta": "Empezar",
-    "ctaSecondary": "Ver Ejemplos",
     "badge": "Plataforma Creativa con IA",
     "welcomeTo": "Bienvenido a",
     "aiTownLab": "AI Town Lab",
+    "subtitle": "Sube un selfie y deja que la IA cree impresionantes retratos profesionales para ti",
     "tagline": "Laboratorio Creativo de IA Todo en Uno, Convierte Tu Imaginación en Realidad",
     "imageGen": "Generación de Imágenes",
     "videoGen": "Creación de Videos",
@@ -35,131 +32,33 @@
     "quickBadge": "Generación Rápida"
   },
   "quickGenerator": {
+    "badge": "Inicio Rápido",
     "title": "Generador Rápido de Avatares",
     "subtitle": "Sube tu foto, selecciona un modelo de IA y genera avatares profesionales rápidamente",
-    "uploadPrompt": "Sube Tu Foto",
-    "uploadHint": "Arrastra y suelta o haz clic para seleccionar (máx. 5MB)",
-    "styleLabel": "Seleccionar Estilo",
-    "generate": "Generar Avatar",
-    "generating": "Generando...",
-    "selectStyle": "Por favor selecciona un estilo",
-    "uploadImage": "Por favor sube una imagen",
-    "needLogin": "Se requiere iniciar sesión para usar las funciones de generación",
-    "pleaseLogin": "Por favor inicia sesión primero",
-    "pleaseUploadImage": "Por favor sube una imagen primero",
-    "uploadSection": "Subir Imagen",
-    "selectModel": "Seleccionar Modelo IA",
-    "promptSection": "Prompt (Opcional)",
-    "promptPlaceholder": "Ej.: Soy un empleado de banco, necesito una foto LinkedIn profesional",
-    "startGeneration": "Iniciar Generación",
-    "uploading": "Subiendo...",
-    "generatingImage": "Generando...",
-    "resultSection": "Resultado Generado",
-    "regenerate": "Regenerar",
-    "download": "Descargar",
-    "aiGenerating": "IA está generando...",
-    "estimatedTime": "Tiempo estimado: 10-30 segundos",
-    "resultPlaceholder": "La imagen generada aparecerá aquí",
-    "usageTips": "💡 Consejos de Uso",
-    "tip1": "• Mejores resultados con fotos frontales claras",
-    "tip2": "• Agrega prompts para resultados más precisos",
-    "tip3": "• Diferentes modelos de IA tienen diferentes características de estilo",
-    "tip4": "• La generación suele tardar 10-30 segundos",
-    "exploreMore": "Explorar Más Estilos →",
-    "changeImage": "Haz clic para cambiar la imagen",
-    "uploadDescription": "Arrastra y suelta o haz clic para seleccionar",
-    "uploadFormats": "Soporta JPG, PNG, WebP (máx. 5MB)",
-    "badge": "Inicio Rápido",
-    "imageTab": "IA Imagen",
-    "videoTab": "IA Video",
-    "imageDesc": "Generación de Imágenes",
-    "videoDesc": "Creación de Videos",
     "loginTitle": "Desbloquea la Creación con IA",
     "loginSubtitle": "Inicia sesión para acceder a todos los modelos de IA y comenzar tu viaje creativo",
     "login": "Iniciar Sesión",
     "signup": "Registrarse",
+    "imageTab": "IA Imagen",
+    "imageDesc": "Generación de Imágenes",
+    "videoTab": "IA Video",
+    "videoDesc": "Creación de Videos",
     "exploreImages": "Explorar Más Funciones de Imagen",
     "exploreImagesDesc": "Ver todos los modelos de generación de imágenes y funciones avanzadas",
     "exploreVideos": "Explorar Más Funciones de Video",
     "exploreVideosDesc": "Ver todos los modelos de generación de videos y funciones avanzadas"
   },
-  "creative": {
-    "title": "Generador de Avatares IA",
-    "subtitle": "Elige un estilo y comienza a crear tu avatar único",
-    "exploreMore": "Explorar Más Estilos",
-    "tabs": {
-      "myPhotos": "Mis Fotos",
-      "publicGallery": "Galería Pública"
-    },
-    "noPhotos": "Aún no hay fotos, ¡comienza a crear!",
-    "noPublicPhotos": "Aún no hay fotos públicas",
-    "loadMore": "Cargar Más",
+  "innovationLab": {
+    "title": "Laboratorio de Innovación",
+    "subtitle": "Explora las posibilidades infinitas de la creación con IA, ve ejemplos destacados y crea similares",
+    "createSimilar": "Crear Similar",
+    "viewTutorial": "Ver Tutorial",
+    "prompt": "Prompt",
+    "tutorial": "Tutorial",
+    "noExamples": "No hay ejemplos disponibles",
     "loading": "Cargando...",
-    "seo": {
-      "aboutTitle": "Sobre la Generación de Avatares Profesionales con IA",
-      "aboutDescription": "Usa sistemas avanzados de canalización de IA para generar rápidamente avatares profesionales de alta calidad. Soporta canalización profesional (7 etapas) y canalización rápida (3 etapas).",
-      "tutorialTitle": "Tutorial",
-      "tutorial1": "Sube tu foto",
-      "tutorial2": "Selecciona canalización de generación (profesional o rápida)",
-      "tutorial3": "Haz clic en generar y espera la creación de IA",
-      "tutorial4": "Después de la generación, puedes elegir mostrar públicamente tu trabajo",
-      "faqTitle": "FAQ",
-      "faq1Question": "¿Cuánto tiempo tarda la generación?",
-      "faq1Answer": "La canalización rápida tarda unos 5-10 segundos, la canalización profesional tarda unos 15-25 segundos.",
-      "faq2Question": "¿Cuántos puedo generar?",
-      "faq2Answer": "Los usuarios gratuitos tienen 3 oportunidades gratuitas de generación, los usuarios de pago pueden comprar créditos para generación ilimitada.",
-      "faq3Question": "¿Quién posee los derechos de autor de las fotos generadas?",
-      "faq3Answer": "Los derechos de autor de las fotos generadas pertenecen al usuario y pueden usarse libremente."
-    },
-    "actions": {
-      "publish": "Publicar",
-      "unpublish": "Despublicar",
-      "feature": "Destacar",
-      "unfeature": "Quitar Destacado",
-      "publishToGallery": "Publicar en Galería",
-      "unpublishFromGallery": "Despublicar de Galería"
-    },
-    "styles": {
-      "linkedin-professional": "Foto Profesional de LinkedIn",
-      "linkedin-pro-pipeline": "Foto Profesional de LinkedIn",
-      "dating-app-photo": "Foto para App de Citas",
-      "social-media-avatar": "Avatar para Redes Sociales",
-      "executive-portrait": "Retrato Ejecutivo",
-      "creative-artistic-portrait": "Retrato Artístico Creativo",
-      "official-id-photo": "Foto de Identificación Oficial"
-    },
-    "generator": {
-      "mode": "Modo de Generación",
-      "qualityMode": "Modo de Calidad",
-      "simple": "Simple Rápido",
-      "simpleDesc": "8-15s · 100 créditos",
-      "pro": "Pro Profesional",
-      "proDesc": "15-25s · 150 créditos",
-      "imageToImage": "Imagen a Imagen",
-      "textToImage": "Texto a Imagen",
-      "uploadImage": "Subir Imagen",
-      "aiModel": "Modelo IA",
-      "customPrompt": "Prompt Personalizado (Opcional)",
-      "customPromptPlaceholder": "Añade descripción extra para mejorar la generación...",
-      "startGeneration": "Iniciar Generación",
-      "uploading": "Subiendo...",
-      "generating": "Generando..."
-    },
-    "progress": {
-      "title": "Progreso de Generación",
-      "initializing": "Inicializando",
-      "processing": "Procesando",
-      "completed": "Completado",
-      "failed": "Generación Fallida",
-      "estimatedTime": "Tiempo estimado restante",
-      "seconds": "segundos"
-    },
-    "comparison": {
-      "original": "Original",
-      "generated": "Generado",
-      "viewOriginal": "Ver Original",
-      "viewGenerated": "Ver Generado"
-    }
+    "imageExample": "Ejemplo de Imagen",
+    "videoExample": "Ejemplo de Video"
   },
   "pricing": {
     "title": "Elige Tu Plan",
@@ -168,6 +67,7 @@
     "popular": "Más Popular",
     "perMonth": "por mes",
     "perYear": "/año",
+    "billedAnnually": "Facturado anualmente",
     "save": "Ahorra",
     "getStarted": "Empezar",
     "buyNow": "Comprar Ahora",
@@ -175,7 +75,6 @@
     "monthly": "Mensual",
     "yearly": "Anual",
     "credits": "Créditos",
-    "billedAnnually": "Facturado anualmente",
     "plans": {
       "subscription-monthly-1000": {
         "name": "Básico Mensual",
@@ -301,7 +200,13 @@
     "q4": "¿Se guardan mis fotos?",
     "a4": "Las fotos originales se eliminan automáticamente después de 24 horas. Los avatares generados se guardan permanentemente en tu cuenta.",
     "q5": "¿Puedo usarlos comercialmente?",
-    "a5": "Sí, tienes plenos derechos para usar los avatares generados con fines comerciales o personales."
+    "a5": "Sí, tienes plenos derechos para usar los avatares generados con fines comerciales o personales.",
+    "q6": "¿Qué modelos de IA son compatibles? ¿Cuáles son sus características?",
+    "a6": "La generación de imágenes admite Google Nano Banana (rápido y de alta calidad) y GPT-4o (mejor comprensión). La generación de video admite Google Veo 3.1 (modos rápido/calidad) y OpenAI Sora 2/Sora 2 Pro (calidad cinematográfica). Diferentes modelos se adaptan a diferentes escenarios creativos.",
+    "q7": "¿Cuál es la diferencia entre créditos y suscripciones?",
+    "a7": "Las suscripciones se renuevan automáticamente mensual/anualmente con créditos fijos cada mes, ideal para uso a largo plazo. Los paquetes de créditos son compras únicas que nunca caducan, más flexibles para uso bajo demanda. Ambos dan acceso a todos los modelos de IA y funciones premium.",
+    "q8": "¿Cómo crear videos cortos virales y anuncios de IA?",
+    "a8": "Usa nuestro Generador de Video IA, ingresa texto creativo o sube imágenes de productos, selecciona la relación de aspecto apropiada (9:16 vertical para TikTok/Douyin, 16:9 horizontal para YouTube), y la IA genera automáticamente videos profesionales. Admite optimización de prompts, perfecto para anuncios de comercio electrónico, promoción de marca y marketing en redes sociales."
   },
   "auth": {
     "login": "Iniciar sesión",
@@ -344,11 +249,6 @@
       "title": "Planes de Precios - Paquetes Flexibles de Generación de Avatares",
       "description": "Elige el paquete de generación de avatares que se ajuste a tus necesidades. Prueba gratuita y múltiples planes de pago disponibles. Paga según uses sin tarifas ocultas."
     },
-    "create": {
-      "title": "Espacio de trabajo AI - AI Town Lab",
-      "description": "Plataforma de creación AI profesional que integra generación de imágenes y creación de videos. Compatible con varios modelos de AI, incluidos Nano Banana, GPT-4o, Google Veo, OpenAI Sora y más.",
-      "keywords": "Creación AI,Generación de imágenes,Generación de videos,Espacio de trabajo AI,Plataforma creativa,Nano Banana,GPT-4o,Veo,Sora"
-    },
     "creative": {
       "title": "Generación Creativa de Avatares con IA - Explora Múltiples Estilos",
       "description": "Explora varios estilos de generación de avatares IA: retratos profesionales, fotos de citas, avatares de redes sociales, retratos artísticos y más. Sube tu foto y genera instantáneamente."
@@ -362,6 +262,271 @@
       "title": "Generador de Imágenes IA - Creación Profesional de Avatares e Imágenes",
       "description": "Genera avatares e imágenes de calidad profesional usando tecnología IA avanzada. Soporta modelos Nano Banana y GPT-4o para generación rápida de fotos de alta calidad e imágenes creativas.",
       "keywords": "generación imagen IA,generador avatar,foto profesional,Nano Banana,GPT-4o,creación imagen IA"
+    },
+    "create": {
+      "title": "Espacio de trabajo AI - AI Town Lab",
+      "description": "Plataforma de creación AI profesional que integra generación de imágenes y creación de videos. Compatible con varios modelos de AI, incluidos Nano Banana, GPT-4o, Google Veo, OpenAI Sora y más.",
+      "keywords": "Creación AI,Generación de imágenes,Generación de videos,Espacio de trabajo AI,Plataforma creativa,Nano Banana,GPT-4o,Veo,Sora"
+    }
+  },
+  "aiImage": {
+    "title": "Generador de Imágenes IA",
+    "subtitle": "Genera imágenes de calidad profesional con tecnología IA potente",
+    "hero": {
+      "title": "Imagina Audazmente, Nosotros lo Hacemos Realidad",
+      "description": "Sube fotos y transfórmalas en obras artísticas impresionantes",
+      "cta": "Subir Imagen"
+    },
+    "generator": {
+      "title": "Generador de Imágenes",
+      "mode": "Modo de Generación",
+      "imageToImage": "Imagen-a-Imagen",
+      "textToImage": "Texto-a-Imagen",
+      "uploadImage": "Subir Imagen",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Describe la imagen que quieres generar...",
+      "ratio": "Relación de Aspecto",
+      "numberOfImages": "Número de Imágenes",
+      "optimizePrompt": "Optimizar Prompt",
+      "generateImage": "Generar Imagen",
+      "cost": "Costo de Créditos",
+      "generating": "Generando...",
+      "uploading": "Subiendo..."
+    },
+    "myImages": {
+      "title": "Mis Imágenes",
+      "empty": "¡Aún no hay imágenes, crea tu primera!"
+    },
+    "examples": {
+      "title": "Imágenes de Ejemplo",
+      "subtitle": "Mira estos increíbles ejemplos de imágenes generadas por IA",
+      "createSimilar": "Crear Similar",
+      "noExamples": "No hay ejemplos disponibles"
+    },
+    "optimize": {
+      "title": "Asistente de Optimización de Prompt IA",
+      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de imagen",
+      "originalPrompt": "Prompt Original",
+      "selectTemplate": "Seleccionar Plantilla de Optimización",
+      "optimize": "Optimizar Prompt",
+      "optimizing": "Optimizando...",
+      "optimizedPrompt": "Prompt Optimizado",
+      "copy": "Copiar Prompt",
+      "copySuccess": "Copiado al portapapeles",
+      "fillBack": "Rellenar de Vuelta al Generador",
+      "close": "Cerrar"
+    }
+  },
+  "aiVideo": {
+    "title": "Generador de Videos IA",
+    "subtitle": "Genera videos profesionales con tecnología IA potente de Veo 3.1 y Sora 2",
+    "hero": {
+      "title": "Convierte tus Ideas en Videos al Instante",
+      "description": "El Generador de Videos IA te ayuda a crear rápidamente videos de alta calidad desde texto e imágenes",
+      "cta": "Comenzar a Crear"
+    },
+    "generator": {
+      "title": "Generador de Videos",
+      "optimizePrompt": "Optimizar Prompt",
+      "generating": "Generando...",
+      "uploadImages": "Subir Imágenes",
+      "selectProvider": "Seleccionar Generador",
+      "selectModel": "Seleccionar Modelo",
+      "selectMode": "Modo de Generación",
+      "selectQuality": "Nivel de Calidad",
+      "prompt": "Prompt",
+      "promptPlaceholder": "Describe el video que quieres crear...",
+      "aspectRatio": "Relación de Aspecto",
+      "duration": "Duración",
+      "removeWatermark": "Quitar Marca de Agua",
+      "removeWatermarkDesc": "Quitar marca de agua del video generado (recomendado)",
+      "cost": "Costo",
+      "credits": "créditos",
+      "generateVideo": "Generar Video",
+      "uploading": "Subiendo...",
+      "uploadHint": "Haz clic para subir imágenes",
+      "uploadDesc": "JPEG, PNG, WEBP, máx. 10MB",
+      "textToVideo": "Texto a Video",
+      "imageToVideo": "Imagen a Video",
+      "reference": "Referencia",
+      "storyboard": "Storyboard",
+      "watermarkRemover": "Removedor de Marca de Agua",
+      "veo31Fast": "Veo 3.1 Rápido",
+      "veo31Quality": "Veo 3.1 Calidad",
+      "sora2Basic": "Sora 2",
+      "sora2Pro": "Sora 2 Pro",
+      "standard": "Estándar",
+      "high": "Alta Calidad",
+      "portrait": "Retrato",
+      "landscape": "Paisaje",
+      "auto": "Auto"
+    },
+    "examples": {
+      "title": "Galería de Ejemplos",
+      "subtitle": "Mira estos increíbles ejemplos de videos generados por IA",
+      "createSimilar": "Crear Similar",
+      "noExamples": "No hay ejemplos disponibles"
+    },
+    "optimize": {
+      "title": "Optimizador de Prompt IA",
+      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de video",
+      "originalPrompt": "Prompt Original",
+      "selectTemplate": "Seleccionar Plantilla",
+      "optimize": "Optimizar Prompt",
+      "optimizing": "Optimizando...",
+      "optimizedPrompt": "Prompt Optimizado",
+      "copy": "Copiar Prompt",
+      "copySuccess": "Copiado al portapapeles",
+      "fillBack": "Rellenar al Generador",
+      "fillBackSuccess": "Prompt rellenado exitosamente",
+      "close": "Cerrar",
+      "templateCinematic": "Estilo Cinematográfico",
+      "templateCommercial": "Comercial/Publicidad",
+      "templateDocumentary": "Documental/Naturaleza",
+      "templateGeneral": "Video General"
+    }
+  },
+  "trustIndicators": {
+    "title": "Plataforma Profesional de Creación con IA",
+    "models": "Modelos de IA",
+    "speed": "Ultrarrápido",
+    "seconds": "seg",
+    "quality": "Calidad Ultra HD",
+    "support": "Soporte 24/7",
+    "poweredBy": "Impulsado por IA"
+  },
+  "beforeAfterShowcase": {
+    "title": "Transformación Impulsada por IA",
+    "subtitle": "Sube fotos, genera obras profesionales en 60 segundos",
+    "uploadedPhoto": "Foto Subida",
+    "aiGenerated": "Generado por IA",
+    "example": "Ejemplo",
+    "altBefore": "Foto subida",
+    "altAfter": "Foto generada por IA"
+  },
+  "comparisonSlider": {
+    "beforeLabel": "Original",
+    "afterLabel": "Generado",
+    "dragToCompare": "Arrastra para comparar"
+  },
+  "creativeGallery": {
+    "title": "Escaparate Creativo",
+    "subtitle": "Explora posibilidades infinitas, inspírate con estos ejemplos seleccionados",
+    "portrait": "Retrato y Avatar",
+    "commercial": "Comercial y Anuncios",
+    "animation": "Animación y Video",
+    "creative": "Diseño Creativo",
+    "allWorks": "Todas las Obras",
+    "imageWorks": "Generación de Imágenes",
+    "videoWorks": "Creación de Videos",
+    "createSimilar": "Crear Similar",
+    "viewMore": "Ver Galería Completa",
+    "loading": "Cargando...",
+    "untitled": "Sin título"
+  },
+  "createStudio": {
+    "title": "Espacio de Trabajo",
+    "subtitle": "Plataforma Creativa Impulsada por IA",
+    "loading": "Cargando...",
+    "imageTab": "Generación de Imágenes",
+    "videoTab": "Creación de Videos",
+    "myWorks": "Mis Obras",
+    "selectModel": "Seleccionar Modelo de IA",
+    "imageModels": "Modelos de Generación de Imágenes",
+    "videoModels": "Modelos de Creación de Videos",
+    "recommended": "Recomendado",
+    "modelTip": "Elige el mejor modelo de IA para tus necesidades creativas",
+    "imageGen": "Generación de Imágenes",
+    "videoGen": "Creación de Videos",
+    "canvasTip": "Ajusta parámetros, libera creatividad, deja que la IA cree contenido asombroso para ti",
+    "generatorParams": "Parámetros del Generador",
+    "adjustParams": "Ajusta los parámetros a continuación para comenzar a crear",
+    "currentTasks": "En Progreso",
+    "completedTasks": "Completado",
+    "noCurrentTasks": "No hay tareas en progreso",
+    "noCurrentTasksDesc": "¡Completa los parámetros a la izquierda y haz clic en generar para comenzar!",
+    "noCompletedTasks": "No hay obras completadas",
+    "noCompletedTasksDesc": "Tu historial de creación se mostrará aquí",
+    "generating": "Generando...",
+    "pending": "Pendiente",
+    "processing": "Procesando",
+    "download": "Descargar",
+    "clickToSwitch": "Haz clic para cambiar",
+    "aiImageGen": "Generación de Imágenes IA",
+    "aiVideoGen": "Video IA",
+    "aiImageGeneration": "Generación de Imágenes con IA",
+    "aiVideoGeneration": "Generación de Videos con IA",
+    "noTasks": "Sin Tareas",
+    "noTasksDesc": "Selecciona un modelo a la izquierda, ingresa una descripción para comenzar a crear",
+    "inProgress": "En Progreso",
+    "history": "Historial",
+    "queueing": "En cola...",
+    "aiGenerating": "IA Generando...",
+    "mayTakeSomeTime": "Esto puede tomar 10-30 segundos",
+    "generationFailed": "Generación Fallida",
+    "generationTask": "Tarea de Generación",
+    "copyPrompt": "Copiar Prompt",
+    "regenerate": "Regenerar",
+    "copied": "Copiado",
+    "promptCopied": "Prompt copiado al portapapeles",
+    "failedNoDownload": "Generación fallida, no se puede descargar"
+  },
+  "models": {
+    "image": {
+      "kie-nano-banana": {
+        "name": "Nano Banana",
+        "description": "Google Nano Banana - Generación de imágenes rápida y de alta calidad (texto a imagen)"
+      },
+      "kie-nano-banana-edit": {
+        "name": "Nano Banana Edit",
+        "description": "Google Nano Banana Edit - Modo imagen a imagen"
+      },
+      "kie-gpt4o-image": {
+        "name": "GPT-4o Image",
+        "description": "Generación de Imágenes OpenAI GPT-4o - Mejor comprensión (texto a imagen + imagen a imagen)"
+      }
+    },
+    "video": {
+      "veo3_fast": {
+        "name": "Veo 3.1 Rápido",
+        "displayName": "Veo 3.1 Rápido",
+        "description": "Generación de video rápida con buena calidad"
+      },
+      "veo3": {
+        "name": "Veo 3.1 Calidad",
+        "displayName": "Veo 3.1 Calidad",
+        "description": "Generación de video de alta calidad"
+      },
+      "sora-2-text-to-video": {
+        "name": "Sora 2 Texto a Video",
+        "displayName": "Sora 2 Texto a Video",
+        "description": "Generación de texto a video con Sora 2"
+      },
+      "sora-2-image-to-video": {
+        "name": "Sora 2 Imagen a Video",
+        "displayName": "Sora 2 Imagen a Video",
+        "description": "Generación de imagen a video con Sora 2"
+      },
+      "sora-2-pro-text-to-video": {
+        "name": "Sora 2 Pro Texto a Video",
+        "displayName": "Sora 2 Pro Texto a Video",
+        "description": "Generación profesional de texto a video"
+      },
+      "sora-2-pro-image-to-video": {
+        "name": "Sora 2 Pro Imagen a Video",
+        "displayName": "Sora 2 Pro Imagen a Video",
+        "description": "Generación profesional de imagen a video"
+      },
+      "sora-2-pro-storyboard": {
+        "name": "Sora 2 Pro Storyboard",
+        "displayName": "Sora 2 Pro Storyboard",
+        "description": "Generación de video de storyboard multi-escena"
+      },
+      "sora-watermark-remover": {
+        "name": "Sora Removedor de Marca de Agua",
+        "displayName": "Sora Removedor de Marca de Agua",
+        "description": "Eliminar marcas de agua de videos de Sora"
+      }
     }
   },
   "home": {
@@ -493,44 +658,6 @@
       }
     }
   },
-  "trustIndicators": {
-    "title": "Plataforma Profesional de Creación con IA",
-    "models": "Modelos de IA",
-    "speed": "Ultrarrápido",
-    "seconds": "seg",
-    "quality": "Calidad Ultra HD",
-    "support": "Soporte 24/7",
-    "poweredBy": "Impulsado por IA"
-  },
-  "beforeAfterShowcase": {
-    "title": "Transformación Impulsada por IA",
-    "subtitle": "Sube fotos, genera obras profesionales en 60 segundos",
-    "uploadedPhoto": "Foto Subida",
-    "aiGenerated": "Generado por IA",
-    "example": "Ejemplo",
-    "altBefore": "Foto subida",
-    "altAfter": "Foto generada por IA"
-  },
-  "comparisonSlider": {
-    "beforeLabel": "Original",
-    "afterLabel": "Generado",
-    "dragToCompare": "Arrastra para comparar"
-  },
-  "creativeGallery": {
-    "title": "Escaparate Creativo",
-    "subtitle": "Explora posibilidades infinitas, inspírate con estos ejemplos seleccionados",
-    "portrait": "Retrato y Avatar",
-    "commercial": "Comercial y Anuncios",
-    "animation": "Animación y Video",
-    "creative": "Diseño Creativo",
-    "allWorks": "Todas las Obras",
-    "imageWorks": "Generación de Imágenes",
-    "videoWorks": "Creación de Videos",
-    "createSimilar": "Crear Similar",
-    "viewMore": "Ver Galería Completa",
-    "loading": "Cargando...",
-    "untitled": "Sin título"
-  },
   "errors": {
     "api": {
       "PRO_MODEL_REQUIRES_SUBSCRIPTION": "Los modelos Sora 2 Pro solo están disponibles para suscriptores de pago o usuarios con créditos. Por favor actualiza tu plan.",
@@ -544,6 +671,126 @@
       "INVALID_FILE_TYPE": "Tipo de archivo no soportado",
       "GENERATION_FAILED": "Generación fallida, por favor intenta de nuevo",
       "TIMEOUT": "Tiempo de espera de solicitud agotado, por favor intenta de nuevo más tarde"
+    }
+  },
+  "generators": {
+    "common": {
+      "pleaseLogin": "Por favor inicia sesión primero",
+      "pleaseEnterPrompt": "Por favor ingresa un prompt",
+      "pleaseUploadImages": "Por favor sube imágenes",
+      "optimize": "Optimizar",
+      "cost": "Costo",
+      "credits": "créditos",
+      "uploading": "Subiendo...",
+      "generating": "Generando...",
+      "aiGenerating": "IA está generando...",
+      "estimatedTime": "Tiempo estimado",
+      "taskId": "ID de Tarea",
+      "browserNotSupport": "Tu navegador no soporta reproducción de video",
+      "regenerate": "Generar de Nuevo",
+      "download": "Descargar",
+      "generationResult": "Resultado de Generación",
+      "generationFailed": "Generación fallida",
+      "pleaseFillAllScenes": "Por favor completa todas las descripciones de escena",
+      "totalSceneDuration": "Duración total de escena",
+      "exceedsVideoDuration": "excede la duración del video",
+      "promptHint": "Descripciones detalladas producen mejores resultados. Usa IA para optimizar tu prompt",
+      "model": "Modelo",
+      "prompt": "Generation Prompt",
+      "images": "Image",
+      "aspectRatio": "Ratio",
+      "seed": "Semilla",
+      "optional": "Opcional",
+      "seedPlaceholder": "Please input seed"
+    },
+    "video": {
+      "generationMode": "Modo de Generación",
+      "qualityLevel": "Nivel de Calidad",
+      "standard": "Estándar",
+      "highQuality": "Alta Calidad",
+      "sceneList": "Lista de Escenas",
+      "total": "Total:",
+      "seconds": "s",
+      "addScene": "Agregar Escena",
+      "scene": "Escena",
+      "describeScene": "Describe esta escena...",
+      "duration": "Duración",
+      "textToVideo": "Texto a Video",
+      "imageToVideo": "Imagen a Video",
+      "reference": "Referencia",
+      "generationType": "Tipo de Generación",
+      "startFrame": "Fotograma Inicial",
+      "endFrame": "Fotograma Final",
+      "promptPlaceholder": "Describe el video que quieres generar...",
+      "promptHint": "Cuanto más detallado sea el prompt, mejor será la calidad del video",
+      "generateButton": "Generar Video",
+      "generationTimeHint": "La generación de video Veo 3.1 generalmente toma 2-5 minutos, por favor sea paciente",
+      "videoPreview": "Vista Previa del Video",
+      "videoPreviewHint": "El video se mostrará aquí después de la generación"
+    },
+    "image": {
+      "imageToImage": "Edición de Imagen",
+      "textToImage": "Texto a Imagen",
+      "startGeneration": "Iniciar Generación",
+      "nanaBananaRatioHint": "Nano Banana soporta múltiples relaciones de aspecto, elige la que se adapte a tus necesidades"
+    },
+    "upload": {
+      "clickToUpload": "Haz clic para subir imágenes",
+      "supportedFormats": "JPEG, PNG, WEBP, máx 10MB",
+      "uploading": "Subiendo imágenes...",
+      "maxImages": "Máximo {max} imágenes"
+    },
+    "labels": {
+      "label": "Etiqueta",
+      "labelCn": "Etiqueta (CN)",
+      "generator": "Generador",
+      "aspectRatio": "Relación de Aspecto"
+    }
+  },
+  "promptTemplates": {
+    "image": {
+      "image-general": {
+        "name": "Imagen General",
+        "description": "Optimización de generación de imágenes de propósito general"
+      },
+      "image-professional-portrait": {
+        "name": "Retrato Profesional",
+        "description": "Optimización de retrato profesional"
+      },
+      "image-artistic-portrait": {
+        "name": "Retrato Artístico",
+        "description": "Optimización de retrato artístico"
+      },
+      "image-product": {
+        "name": "Fotografía de Producto",
+        "description": "Fotografía de producto e imágenes de comercio electrónico"
+      },
+      "image-landscape": {
+        "name": "Fotografía de Paisaje",
+        "description": "Paisajes naturales y fotografía arquitectónica"
+      },
+      "image-anime": {
+        "name": "Anime",
+        "description": "Anime style optimization"
+      }
+    },
+    "video": {
+      "video-cinematic": {
+        "name": "Estilo Cinematográfico",
+        "description": "Optimizar para narración cinematográfica con iluminación y composición dramáticas"
+      },
+      "video-commercial": {
+        "name": "Comercial/Publicidad",
+        "description": "Optimizar para presentación de productos y publicidad de marca"
+      },
+      "video-documentary": {
+        "name": "Documental/Naturaleza",
+        "description": "Optimizar para documental natural y estilo de vida silvestre"
+      },
+      "video-general": {
+        "name": "Video General",
+        "description": "Optimización de generación de video de propósito general"
+      }
     }
   },
   "footer": {
@@ -846,342 +1093,44 @@
     },
     "acceptance": "Al usar AI Town Lab, reconoce que ha leído, entendido y acepta estar sujeto a estos Términos de Servicio."
   },
-  "createStudio": {
-    "title": "Espacio de Trabajo",
-    "subtitle": "Plataforma Creativa Impulsada por IA",
-    "loading": "Cargando...",
-    "imageTab": "Generación de Imágenes",
-    "videoTab": "Creación de Videos",
-    "myWorks": "Mis Obras",
-    "selectModel": "Seleccionar Modelo de IA",
-    "imageModels": "Modelos de Generación de Imágenes",
-    "videoModels": "Modelos de Creación de Videos",
-    "recommended": "Recomendado",
-    "modelTip": "Elige el mejor modelo de IA para tus necesidades creativas",
-    "imageGen": "Generación de Imágenes",
-    "videoGen": "Creación de Videos",
-    "canvasTip": "Ajusta parámetros, libera creatividad, deja que la IA cree contenido asombroso para ti",
-    "generatorParams": "Parámetros del Generador",
-    "adjustParams": "Ajusta los parámetros a continuación para comenzar a crear",
-    "currentTasks": "En Progreso",
-    "completedTasks": "Completado",
-    "noCurrentTasks": "No hay tareas en progreso",
-    "noCurrentTasksDesc": "¡Completa los parámetros a la izquierda y haz clic en generar para comenzar!",
-    "noCompletedTasks": "No hay obras completadas",
-    "noCompletedTasksDesc": "Tu historial de creación se mostrará aquí",
-    "generating": "Generando...",
-    "pending": "Pendiente",
-    "processing": "Procesando",
-    "download": "Descargar",
-    "clickToSwitch": "Haz clic para cambiar",
-    "aiImageGen": "Generación de Imágenes IA",
-    "aiVideoGen": "Video IA",
-    "aiImageGeneration": "Generación de Imágenes con IA",
-    "aiVideoGeneration": "Generación de Videos con IA",
-    "noTasks": "Sin Tareas",
-    "noTasksDesc": "Selecciona un modelo a la izquierda, ingresa una descripción para comenzar a crear",
-    "inProgress": "En Progreso",
-    "history": "Historial",
-    "queueing": "En cola...",
-    "aiGenerating": "IA Generando...",
-    "mayTakeSomeTime": "Esto puede tomar 10-30 segundos",
-    "generationFailed": "Generación Fallida",
-    "generationTask": "Tarea de Generación",
-    "copyPrompt": "Copiar Prompt",
-    "regenerate": "Regenerar",
-    "copied": "Copiado",
-    "promptCopied": "Prompt copiado al portapapeles",
-    "failedNoDownload": "Generación fallida, no se puede descargar"
-  },
-  "aiImage": {
-    "title": "Generador de Imágenes IA",
-    "subtitle": "Genera imágenes de calidad profesional con tecnología IA potente",
-    "hero": {
-      "title": "Imagina Audazmente, Nosotros lo Hacemos Realidad",
-      "description": "Sube fotos y transfórmalas en obras artísticas impresionantes",
-      "cta": "Subir Imagen"
-    },
-    "generator": {
-      "title": "Generador de Imágenes",
-      "mode": "Modo de Generación",
-      "imageToImage": "Imagen-a-Imagen",
-      "textToImage": "Texto-a-Imagen",
-      "uploadImage": "Subir Imagen",
-      "prompt": "Prompt",
-      "promptPlaceholder": "Describe la imagen que quieres generar...",
-      "ratio": "Relación de Aspecto",
-      "numberOfImages": "Número de Imágenes",
-      "optimizePrompt": "Optimizar Prompt",
-      "generateImage": "Generar Imagen",
-      "cost": "Costo de Créditos",
-      "generating": "Generando...",
-      "uploading": "Subiendo..."
-    },
-    "myImages": {
-      "title": "Mis Imágenes",
-      "empty": "¡Aún no hay imágenes, crea tu primera!"
-    },
-    "examples": {
-      "title": "Imágenes de Ejemplo",
-      "subtitle": "Mira estos increíbles ejemplos de imágenes generadas por IA",
-      "createSimilar": "Crear Similar"
-    },
-    "optimize": {
-      "title": "Asistente de Optimización de Prompt IA",
-      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de imagen",
-      "originalPrompt": "Prompt Original",
-      "selectTemplate": "Seleccionar Plantilla de Optimización",
-      "optimize": "Optimizar Prompt",
-      "optimizing": "Optimizando...",
-      "optimizedPrompt": "Prompt Optimizado",
-      "copy": "Copiar Prompt",
-      "copySuccess": "Copiado al portapapeles",
-      "fillBack": "Rellenar de Vuelta al Generador",
-      "close": "Cerrar"
+  "payment": {
+    "success": {
+      "title": "Payment Successful!",
+      "description": "Thank you for your purchase. Your credits have been added to your account.",
+      "whatNext": "¿Qué Sigue?",
+      "creditsAdded": "Credits have been added to your account",
+      "receiptSent": "Receipt has been sent to your email",
+      "readyToUse": "You can start creating immediately",
+      "goToDashboard": "Ir al Panel",
+      "startCreating": "Comenzar a Crear",
+      "needHelp": "¿Necesitas ayuda?",
+      "contactSupport": "Contactar Soporte"
     }
   },
-  "aiVideo": {
-    "title": "Generador de Videos IA",
-    "subtitle": "Genera videos profesionales con tecnología IA potente de Veo 3.1 y Sora 2",
-    "hero": {
-      "title": "Convierte tus Ideas en Videos al Instante",
-      "description": "El Generador de Videos IA te ayuda a crear rápidamente videos de alta calidad desde texto e imágenes",
-      "cta": "Comenzar a Crear"
-    },
-    "generator": {
-      "title": "Generador de Videos",
-      "optimizePrompt": "Optimizar Prompt",
-      "generating": "Generando...",
-      "uploadImages": "Subir Imágenes",
-      "selectProvider": "Seleccionar Generador",
-      "selectModel": "Seleccionar Modelo",
-      "selectMode": "Modo de Generación",
-      "selectQuality": "Nivel de Calidad",
-      "prompt": "Prompt",
-      "promptPlaceholder": "Describe el video que quieres crear...",
-      "aspectRatio": "Relación de Aspecto",
-      "duration": "Duración",
-      "removeWatermark": "Quitar Marca de Agua",
-      "removeWatermarkDesc": "Quitar marca de agua del video generado (recomendado)",
-      "cost": "Costo",
-      "credits": "créditos",
-      "generateVideo": "Generar Video",
-      "uploading": "Subiendo...",
-      "uploadHint": "Haz clic para subir imágenes",
-      "uploadDesc": "JPEG, PNG, WEBP, máx. 10MB",
-      "textToVideo": "Texto a Video",
-      "imageToVideo": "Imagen a Video",
-      "reference": "Referencia",
-      "storyboard": "Storyboard",
-      "watermarkRemover": "Removedor de Marca de Agua",
-      "veo31Fast": "Veo 3.1 Rápido",
-      "veo31Quality": "Veo 3.1 Calidad",
-      "sora2Basic": "Sora 2",
-      "sora2Pro": "Sora 2 Pro",
-      "standard": "Estándar",
-      "high": "Alta Calidad",
-      "portrait": "Retrato",
-      "landscape": "Paisaje",
-      "auto": "Auto"
-    },
-    "examples": {
-      "title": "Galería de Ejemplos",
-      "subtitle": "Mira estos increíbles ejemplos de videos generados por IA",
-      "createSimilar": "Crear Similar",
-      "noExamples": "No hay ejemplos disponibles"
-    },
-    "optimize": {
-      "title": "Optimizador de Prompt IA",
-      "subtitle": "Selecciona una plantilla para optimizar tu prompt para mejores resultados de video",
-      "originalPrompt": "Prompt Original",
-      "selectTemplate": "Seleccionar Plantilla",
-      "optimize": "Optimizar Prompt",
-      "optimizing": "Optimizando...",
-      "optimizedPrompt": "Prompt Optimizado",
-      "copy": "Copiar Prompt",
-      "copySuccess": "Copiado al portapapeles",
-      "fillBack": "Rellenar al Generador",
-      "fillBackSuccess": "Prompt rellenado exitosamente",
-      "close": "Cerrar",
-      "templateCinematic": "Estilo Cinematográfico",
-      "templateCommercial": "Comercial/Publicidad",
-      "templateDocumentary": "Documental/Naturaleza",
-      "templateGeneral": "Video General"
-    }
-  },
-  "models": {
-    "image": {
-      "kie-nano-banana": {
-        "name": "Nano Banana",
-        "description": "Google Nano Banana - Generación de imágenes rápida y de alta calidad (texto a imagen)"
-      },
-      "kie-nano-banana-edit": {
-        "name": "Nano Banana Edit",
-        "description": "Google Nano Banana Edit - Modo imagen a imagen"
-      },
-      "kie-gpt4o-image": {
-        "name": "GPT-4o Image",
-        "description": "Generación de Imágenes OpenAI GPT-4o - Mejor comprensión (texto a imagen + imagen a imagen)"
-      }
-    },
-    "video": {
-      "veo3_fast": {
-        "name": "Veo 3.1 Rápido",
-        "displayName": "Veo 3.1 Rápido",
-        "description": "Generación de video rápida con buena calidad"
-      },
-      "veo3": {
-        "name": "Veo 3.1 Calidad",
-        "displayName": "Veo 3.1 Calidad",
-        "description": "Generación de video de alta calidad"
-      },
-      "sora-2-text-to-video": {
-        "name": "Sora 2 Texto a Video",
-        "displayName": "Sora 2 Texto a Video",
-        "description": "Generación de texto a video con Sora 2"
-      },
-      "sora-2-image-to-video": {
-        "name": "Sora 2 Imagen a Video",
-        "displayName": "Sora 2 Imagen a Video",
-        "description": "Generación de imagen a video con Sora 2"
-      },
-      "sora-2-pro-text-to-video": {
-        "name": "Sora 2 Pro Texto a Video",
-        "displayName": "Sora 2 Pro Texto a Video",
-        "description": "Generación profesional de texto a video"
-      },
-      "sora-2-pro-image-to-video": {
-        "name": "Sora 2 Pro Imagen a Video",
-        "displayName": "Sora 2 Pro Imagen a Video",
-        "description": "Generación profesional de imagen a video"
-      },
-      "sora-2-pro-storyboard": {
-        "name": "Sora 2 Pro Storyboard",
-        "displayName": "Sora 2 Pro Storyboard",
-        "description": "Generación de video de storyboard multi-escena"
-      },
-      "sora-watermark-remover": {
-        "name": "Sora Removedor de Marca de Agua",
-        "displayName": "Sora Removedor de Marca de Agua",
-        "description": "Eliminar marcas de agua de videos de Sora"
-      }
-    }
-  },
-  "generators": {
-    "common": {
-      "pleaseLogin": "Por favor inicia sesión primero",
-      "pleaseEnterPrompt": "Por favor ingresa un prompt",
-      "pleaseUploadImages": "Por favor sube imágenes",
-      "optimize": "Optimizar",
-      "cost": "Costo",
-      "credits": "créditos",
-      "uploading": "Subiendo...",
-      "generating": "Generando...",
-      "aiGenerating": "IA está generando...",
-      "estimatedTime": "Tiempo estimado",
-      "taskId": "ID de Tarea",
-      "browserNotSupport": "Tu navegador no soporta reproducción de video",
-      "regenerate": "Generar de Nuevo",
-      "download": "Descargar",
-      "generationResult": "Resultado de Generación",
-      "generationFailed": "Generación fallida",
-      "pleaseFillAllScenes": "Por favor completa todas las descripciones de escena",
-      "totalSceneDuration": "Duración total de escena",
-      "exceedsVideoDuration": "excede la duración del video",
-      "promptHint": "Descripciones detalladas producen mejores resultados. Usa IA para optimizar tu prompt"
-    },
-    "video": {
-      "generationMode": "Modo de Generación",
-      "qualityLevel": "Nivel de Calidad",
-      "standard": "Estándar",
-      "highQuality": "Alta Calidad",
-      "sceneList": "Lista de Escenas",
-      "total": "Total:",
-      "seconds": "s",
-      "addScene": "Agregar Escena",
-      "scene": "Escena",
-      "describeScene": "Describe esta escena...",
-      "duration": "Duración",
-      "textToVideo": "Texto a Video",
-      "imageToVideo": "Imagen a Video",
-      "reference": "Referencia"
-    },
-    "image": {
-      "imageToImage": "Edición de Imagen",
-      "textToImage": "Texto a Imagen",
-      "startGeneration": "Iniciar Generación",
-      "nanaBananaRatioHint": "Nano Banana soporta múltiples relaciones de aspecto, elige la que se adapte a tus necesidades"
-    },
-    "upload": {
-      "clickToUpload": "Haz clic para subir imágenes",
-      "supportedFormats": "JPEG, PNG, WEBP, máx 10MB"
-    },
-    "labels": {
-      "label": "Etiqueta",
-      "labelCn": "Etiqueta (CN)",
-      "generator": "Generador",
-      "aspectRatio": "Relación de Aspecto",
-      "duration": "Duración",
-      "quality": "Calidad",
-      "highQuality": "Alta",
-      "standard": "Estándar",
-      "watermark": "Marca de Agua",
-      "removed": "Eliminada",
-      "kept": "Conservada"
-    }
-  },
-  "promptTemplates": {
-    "image": {
-      "image-general": {
-        "name": "Imagen General",
-        "description": "Optimización de generación de imágenes de propósito general"
-      },
-      "image-professional-portrait": {
-        "name": "Retrato Profesional",
-        "description": "Optimización de retrato profesional"
-      },
-      "image-artistic-portrait": {
-        "name": "Retrato Artístico",
-        "description": "Optimización de retrato artístico"
-      },
-      "image-product": {
-        "name": "Fotografía de Producto",
-        "description": "Fotografía de producto e imágenes de comercio electrónico"
-      },
-      "image-landscape": {
-        "name": "Fotografía de Paisaje",
-        "description": "Paisajes naturales y fotografía arquitectónica"
-      }
-    },
-    "video": {
-      "video-cinematic": {
-        "name": "Estilo Cinematográfico",
-        "description": "Optimizar para narración cinematográfica con iluminación y composición dramáticas"
-      },
-      "video-commercial": {
-        "name": "Comercial/Publicidad",
-        "description": "Optimizar para presentación de productos y publicidad de marca"
-      },
-      "video-documentary": {
-        "name": "Documental/Naturaleza",
-        "description": "Optimizar para documental natural y estilo de vida silvestre"
-      },
-      "video-general": {
-        "name": "Video General",
-        "description": "Optimización de generación de video de propósito general"
-      }
-    }
-  },
-  "innovationLab": {
-    "title": "Laboratorio de Innovación",
-    "subtitle": "Explora las posibilidades infinitas de la creación con IA, ve ejemplos destacados y crea similares",
-    "createSimilar": "Crear Similar",
-    "viewTutorial": "Ver Tutorial",
-    "prompt": "Prompt",
-    "tutorial": "Tutorial",
-    "noExamples": "No hay ejemplos disponibles",
-    "loading": "Cargando...",
-    "imageExample": "Ejemplo de Imagen",
-    "videoExample": "Ejemplo de Video"
+  "dashboard": {
+    "title": "Panel de Control",
+    "welcome": "Welcome back, {name}!",
+    "credits": "Credits",
+    "availableCredits": "Available credits",
+    "images": "Imágenes",
+    "videos": "Videos",
+    "totalGenerated": "Total generated",
+    "subscription": "Subscription",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "noSubscription": "No subscription",
+    "quickActions": "Acciones Rápidas",
+    "quickActionsDesc": "Comienza a crear rápidamente",
+    "generateImage": "Generar Imagen",
+    "generateVideo": "Generar Video",
+    "buyCredits": "Comprar Créditos",
+    "accountInfo": "Información de Cuenta",
+    "accountInfoDesc": "Detalles de tu cuenta",
+    "email": "Correo Electrónico",
+    "memberSince": "Member since",
+    "subscriptionEnds": "Subscription ends",
+    "recentActivity": "Actividad Reciente",
+    "recentActivityDesc": "Tus creaciones recientes",
+    "noRecentActivity": "Sin actividad reciente"
   }
 }
