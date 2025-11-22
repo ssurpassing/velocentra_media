@@ -28,12 +28,14 @@ interface CreditHistoryItem {
   task_id?: string;
   generation_tasks?: {
     id: string;
-    prompt: string;
+    original_prompt: string;
+    optimized_prompt: string | null;
     status: string;
     media_type: string;
-    model_name: string;
+    ai_model: string;
+    cost_credits: number;
     media_files: Array<{
-      file_url: string;
+      url: string;
       thumbnail_url: string;
     }>;
   };

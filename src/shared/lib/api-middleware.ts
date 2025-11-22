@@ -21,9 +21,10 @@ export interface UserProfile {
   email: string;
   full_name?: string;
   avatar_url?: string;
-  membership_tier: 'free' | 'basic' | 'pro' | 'enterprise';
+  membership_tier: 'free' | 'credits' | 'subscription' | 'basic' | 'pro' | 'enterprise';
   credits: number;
   free_generations_remaining: number;
+  subscription_end_date?: string;
   locale?: string;
   is_admin?: boolean;
 }
