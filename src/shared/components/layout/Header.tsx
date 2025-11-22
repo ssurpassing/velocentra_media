@@ -25,6 +25,41 @@ export function Header() {
   const locale = useLocale();
   const { user, profile, refreshAuth, loading } = useAuth();
   const { openLoginModal } = useLoginModal();
+  
+  // 缓存显示的名字，避免闪烁
+  const [cachedDisplayName, setCachedDisplayName] = useState<string>('');
+  
+  useEffect(() => {
+    if (user) {
+      const displayName = profile?.nickname || user.user_metadata?.nickname || user.email?.split('@')[0] || 'User';
+      setCachedDisplayName(displayName);
+      // 同时缓存到 localStorage
+      try {
+        localStorage.setItem('cached_display_name', displayName);
+      } catch (e) {
+        // 忽略
+      }
+    } else {
+      setCachedDisplayName('');
+      try {
+        localStorage.removeItem('cached_display_name');
+      } catch (e) {
+        // 忽略
+      }
+    }
+  }, [user, profile]);
+  
+  // 初始化时从 localStorage 读取缓存
+  useEffect(() => {
+    try {
+      const cached = localStorage.getItem('cached_display_name');
+      if (cached) {
+        setCachedDisplayName(cached);
+      }
+    } catch (e) {
+      // 忽略
+    }
+  }, []);
 
   const handleSignOut = async () => {
     try {
@@ -106,8 +141,8 @@ export function Header() {
                   className="flex items-center gap-2 border-primary/30 hover:bg-primary/10 min-w-[100px]"
                 >
                   <User className="h-4 w-4" />
-                  <span className={`hidden md:inline transition-opacity duration-200 ${!profile && user ? 'opacity-50' : 'opacity-100'}`}>
-                    {profile?.nickname || user.user_metadata?.nickname || user.email?.split('@')[0] || 'User'}
+                  <span className="hidden md:inline">
+                    {cachedDisplayName || 'User'}
                   </span>
                 </Button>
               </DropdownMenuTrigger>
@@ -115,7 +150,7 @@ export function Header() {
                 <DropdownMenuLabel>
                   <div className="flex flex-col space-y-1">
                     <p className="text-sm font-medium">
-                      {profile?.nickname || user.user_metadata?.nickname || user.email?.split('@')[0]}
+                      {cachedDisplayName || 'User'}
                     </p>
                     <p className="text-xs text-muted-foreground">{user.email}</p>
                   </div>

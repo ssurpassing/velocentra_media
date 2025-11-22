@@ -25,6 +25,7 @@ interface LoginModalProps {
 export function LoginModal({ open, onOpenChange }: LoginModalProps) {
   const t = useTranslations('auth');
   const { refreshAuth } = useAuth();
+  const supabase = createClient();
   const [isSignUp, setIsSignUp] = useState(false); // 切换登录/注册
   const [nickname, setNickname] = useState('');
   const [email, setEmail] = useState('');
@@ -66,14 +67,10 @@ export function LoginModal({ open, onOpenChange }: LoginModalProps) {
 
       if (response.success) {
         console.log(`✅ ${isSignUp ? 'Signup' : 'Login'} successful`);
-        // 关闭弹窗
-        onOpenChange(false);
-        // 刷新认证状态
-        await refreshAuth();
-        // 短暂延迟后刷新页面，确保状态更新
-        setTimeout(() => {
-          window.location.reload();
-        }, 100);
+        // 获取当前语言
+        const locale = window.location.pathname.split('/')[1] || 'zh';
+        // 直接跳转到首页，触发完整的页面加载和 AuthContext 初始化
+        window.location.href = `/${locale}`;
       } else {
         setError(response.error || (isSignUp ? '注册失败' : '登录失败'));
       }

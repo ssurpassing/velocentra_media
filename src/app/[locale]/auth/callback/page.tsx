@@ -20,25 +20,24 @@ export default function AuthCallbackPage() {
   useEffect(() => {
     // 防止重复执行
     if (hasProcessed.current) return;
+    hasProcessed.current = true;
     
     const handleCallback = async () => {
       try {
         console.log('🔐 Starting auth callback...');
-        console.log('👤 Current user from AuthContext:', user?.email || 'null');
-        
-        // 等待一小段时间让 AuthContext 完成初始化
-        await new Promise(resolve => setTimeout(resolve, 500));
         
         // 获取当前语言
         const locale = window.location.pathname.split('/')[1] || 'zh';
-        console.log('🌍 Locale detected:', locale);
-        console.log('🔄 Redirecting to homepage...');
         
-        // 标记已处理，防止重复执行
-        hasProcessed.current = true;
+        // Supabase 会自动处理 OAuth callback 并设置 session
+        // 我们只需要等待一小段时间让它完成，然后跳转
+        console.log('⏳ Waiting for Supabase to process callback...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
-        // 直接重定向到首页，让 AuthContext 处理认证状态
-        window.location.replace(`/${locale}`);
+        console.log('🌍 Redirecting to:', `/${locale}`);
+        
+        // 跳转到首页
+        window.location.href = `/${locale}`;
       } catch (err: any) {
         console.error('❌ Callback error:', err);
         setError(err.message || 'Authentication failed');
