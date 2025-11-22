@@ -24,9 +24,8 @@ export function Header() {
   const handleSignOut = async () => {
     try {
       await http.post('/auth/signout', {});
-      // 手动刷新认证状态
-      await refreshAuth();
-      router.push('/');
+      // 使用 window.location.href 强制完整页面刷新，清除所有客户端状态
+      window.location.href = `/${locale}`;
     } catch (error) {
       console.error('Sign out error:', error);
     }

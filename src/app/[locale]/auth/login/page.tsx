@@ -30,12 +30,11 @@ export default function LoginPage() {
       });
 
       if (response.success) {
-        console.log('✅ Login successful, refreshing auth...');
-        // 手动刷新认证状态
-        await refreshAuth();
-        console.log('✅ Auth refreshed, redirecting to home...');
-        // 使用 window.location.href 强制刷新页面，确保 session 正确加载
-        window.location.href = '/';
+        console.log('✅ Login successful, redirecting to home...');
+        // 获取当前语言
+        const locale = window.location.pathname.split('/')[1] || 'zh';
+        // 使用 window.location.href 强制完整页面刷新，确保 AuthContext 重新初始化
+        window.location.href = `/${locale}`;
       } else {
         setError(response.error || t('loginNow'));
       }

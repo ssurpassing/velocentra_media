@@ -43,9 +43,11 @@ export function LoginModal({ open, onOpenChange }: LoginModalProps) {
       });
 
       if (response.success) {
-        await refreshAuth();
-        onOpenChange(false);
-        window.location.href = '/dashboard';
+        console.log('✅ Login successful, redirecting to home...');
+        // 获取当前语言
+        const locale = window.location.pathname.split('/')[1] || 'zh';
+        // 使用 window.location.href 强制完整页面刷新，确保 AuthContext 重新初始化
+        window.location.href = `/${locale}`;
       } else {
         setError(response.error || t('loginNow'));
       }

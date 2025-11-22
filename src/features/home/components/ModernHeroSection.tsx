@@ -136,6 +136,7 @@ export function ModernHeroSection() {
                         src="/hero/image-generation.jpg"
                         alt="AI Image Generation"
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                         priority
                       />
@@ -149,6 +150,7 @@ export function ModernHeroSection() {
                         src="/hero/portrait.jpg"
                         alt="AI Portrait"
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                         priority
                       />
@@ -165,6 +167,7 @@ export function ModernHeroSection() {
                         src="/hero/poster.jpg"
                         alt="AI Poster"
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                         priority
                       />
@@ -183,6 +186,7 @@ export function ModernHeroSection() {
                         src="/hero/video-generation.jpg"
                         alt="AI Video Generation"
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                         priority
                       />

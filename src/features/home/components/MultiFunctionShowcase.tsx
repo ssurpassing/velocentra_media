@@ -177,6 +177,7 @@ export function MultiFunctionShowcase() {
                         src={currentShowcase.mediaUrl}
                         alt={t(currentShowcase.titleKey)}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
                       />
                     </div>

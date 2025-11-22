@@ -7,52 +7,38 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from '@/navigation';
-import { createBrowserSupabaseClient } from '@/infrastructure/database/client';
+import { createPlainClient } from '@/infrastructure/database/client';
 import { useAuth } from '@/shared/contexts/AuthContext';
 import { Loader2 } from 'lucide-react';
 
 export default function AuthCallbackPage() {
   const router = useRouter();
-  const { refreshAuth } = useAuth();
+  const { user, refreshAuth } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const hasProcessed = useRef(false);
 
   useEffect(() => {
     // 防止重复执行
     if (hasProcessed.current) return;
-    hasProcessed.current = true;
     
     const handleCallback = async () => {
       try {
         console.log('🔐 Starting auth callback...');
-        const supabase = createBrowserSupabaseClient();
+        console.log('👤 Current user from AuthContext:', user?.email || 'null');
         
-        // 从 URL 获取 code
-        const params = new URLSearchParams(window.location.search);
-        const code = params.get('code');
-        console.log('🔑 Code:', code ? 'present' : 'missing');
-
-        if (code) {
-          // 交换 code 获取 session
-          console.log('🔄 Exchanging code for session...');
-          const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-          
-          if (exchangeError) {
-            console.error('❌ Exchange code error:', exchangeError);
-            setError(exchangeError.message);
-            return;
-          }
-
-          console.log('✅ Session obtained, refreshing auth context...');
-          // 刷新 AuthContext 中的用户状态
-          await refreshAuth();
-          
-          console.log('🏠 Redirecting to homepage...');
-          // 重定向到首页
-          router.push('/');
-        } else {
-          setError('No code provided');
-        }
+        // 等待一小段时间让 AuthContext 完成初始化
+        await new Promise(resolve => setTimeout(resolve, 500));
+        
+        // 获取当前语言
+        const locale = window.location.pathname.split('/')[1] || 'zh';
+        console.log('🌍 Locale detected:', locale);
+        console.log('🔄 Redirecting to homepage...');
+        
+        // 标记已处理，防止重复执行
+        hasProcessed.current = true;
+        
+        // 直接重定向到首页，让 AuthContext 处理认证状态
+        window.location.replace(`/${locale}`);
       } catch (err: any) {
         console.error('❌ Callback error:', err);
         setError(err.message || 'Authentication failed');
@@ -60,7 +46,8 @@ export default function AuthCallbackPage() {
     };
 
     handleCallback();
-  }, [router, refreshAuth]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // 空依赖数组，只在组件挂载时执行一次
 
   if (error) {
     return (

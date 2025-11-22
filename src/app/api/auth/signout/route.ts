@@ -13,7 +13,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: error.message }, { status: 400 });
     }
 
-    return NextResponse.json({ success: true });
+    // 创建响应并清除所有认证相关的 cookies
+    const response = NextResponse.json({ success: true });
+    
+    // 清除 Supabase 的认证 cookies
+    response.cookies.delete('sb-access-token');
+    response.cookies.delete('sb-refresh-token');
+    
+    return response;
   } catch (error: any) {
     console.error('Signout error:', error);
     return NextResponse.json(
