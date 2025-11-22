@@ -14,6 +14,7 @@ import { ImageUploadSection } from './ImageUploadSection';
 import { useAuth } from '@/shared/contexts/AuthContext';
 import { http } from '@/infrastructure/http/client';
 import { PromptOptimizeModal } from '@/shared/components/modals/PromptOptimizeModal';
+import { IMAGE_MODEL_CREDITS } from '@/shared/config/model-credits';
 
 // v4.1: 重试上下文类型
 type RetryContext = {
@@ -107,7 +108,7 @@ export const GPT4oGenerator = forwardRef<GPT4oGeneratorHandle, GPT4oGeneratorPro
 
   const IMAGE_COUNTS = [1, 2, 4];
 
-  const costPerImage = 80;
+  const costPerImage = IMAGE_MODEL_CREDITS['kie-gpt4o-image'] || IMAGE_MODEL_CREDITS['default'];
   const totalCost = costPerImage * numberOfImages;
 
   // 处理图片选择

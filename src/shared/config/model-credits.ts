@@ -16,18 +16,10 @@ export interface ImageModelCredits {
  */
 export const IMAGE_MODEL_CREDITS: ImageModelCredits = {
   // KIE 模型
-  'kie-nano-banana': 50,
-  'kie-nano-banana-edit': 80,
-  'kie-gpt4o-image': 80,
-  'kie-dalle3': 50,
-  
-  // Stability AI 模型
-  'stability-sd3': 80,
-  'stability-sd3-turbo': 50,
-  'stability-ultra': 100,
-  
-  // Midjourney (如果有)
-  'midjourney-v6': 30,
+  'kie-nano-banana': 10,
+  'kie-nano-banana-edit': 12,
+  'kie-gpt4o-image': 15,
+
   
   // 默认值
   'default': 10,
@@ -40,9 +32,9 @@ export const IMAGE_STYLE_CREDITS: Record<string, number> = {
   'custom': 0,          // 自定义无额外成本
   'realistic': 0,       // 写实风格
   'anime': 0,           // 动漫风格
-  'painting': 5,        // 绘画风格（额外成本）
+  'painting': 0,        // 绘画风格（额外成本）
   'sketch': 0,          // 素描风格
-  '3d': 5,              // 3D 风格（额外成本）
+  '3d': 0,              // 3D 风格（额外成本）
 };
 
 // ========================================
@@ -71,27 +63,27 @@ export const VIDEO_MODEL_CREDITS: VideoModelCredits = {
   
   // Sora 2 基础版
   'sora-2-text-to-video': {
-    '10s': 6,
-    '15s': 6,
+    '10s': 50,
+    '15s': 80,
   },
   'sora-2-image-to-video': {
-    '10s': 6,
-    '15s': 6,
+    '10s': 50,
+    '15s': 80,
   },
   
   // Sora 2 Pro 版
   'sora-2-pro-text-to-video': {
-    '10s': 150,  // Standard
-    '15s': 270,  // Standard
+    '10s': 300,  // Standard
+    '15s': 500,  // Standard
   },
   'sora-2-pro-image-to-video': {
-    '10s': 150,  // Standard
-    '15s': 270,  // Standard
+    '10s': 300,  // Standard
+    '15s': 500,  // Standard
   },
   'sora-2-pro-storyboard': {
-    '10s': 150,  // Standard
-    '15s': 270,  // Standard
-    '25s': 450,  // Standard
+    '10s': 300,  // Standard
+    '15s': 500,  // Standard
+    '25s': 700,  // Standard
   },
   
   // Sora 水印移除
