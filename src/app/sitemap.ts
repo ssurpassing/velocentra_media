@@ -24,17 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/create', priority: 0.9, changeFrequency: 'daily' as const },
   ];
 
-  // Generate alternates for all languages
-  const generateAlternates = (path: string) => {
-    const languages: Record<string, string> = {};
-    locales.forEach((locale) => {
-      const hreflangCode = localeMapping[locale];
-      languages[hreflangCode] = `${SITE_URL}/${locale}${path}`;
-    });
-    return { languages };
-  };
-
-  // Add main routes for all locales
+  // Add main routes for all locales (without alternates to avoid duplication)
   locales.forEach((locale) => {
     mainRoutes.forEach(({ path, priority, changeFrequency }) => {
       staticPages.push({
@@ -42,7 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency,
         priority,
-        alternates: generateAlternates(path),
       });
     });
   });
