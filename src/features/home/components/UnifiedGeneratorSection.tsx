@@ -55,17 +55,22 @@ export function UnifiedGeneratorSection() {
                     {t('loginSubtitle')}
                   </p>
                   <div className="flex gap-4 justify-center">
-                    <Link href="/auth/login">
-                      <Button size="lg" variant="outline" className="min-w-[140px]">
-                        {t('login')}
-                      </Button>
-                    </Link>
-                    <Link href="/auth/signup">
-                      <Button size="lg" className="gradient-primary min-w-[140px]">
-                        {t('signup')}
-                        <ArrowRight className="h-4 w-4 ml-2" />
-                      </Button>
-                    </Link>
+                    <Button 
+                      size="lg" 
+                      variant="outline" 
+                      className="min-w-[140px]"
+                      onClick={() => window.dispatchEvent(new CustomEvent('openLoginModal'))}
+                    >
+                      {t('login')}
+                    </Button>
+                    <Button 
+                      size="lg" 
+                      className="gradient-primary min-w-[140px]"
+                      onClick={() => window.dispatchEvent(new CustomEvent('openLoginModal'))}
+                    >
+                      {t('signup')}
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Button>
                   </div>
                 </div>
               </div>

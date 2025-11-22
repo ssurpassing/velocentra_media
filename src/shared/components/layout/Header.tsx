@@ -5,10 +5,10 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Sparkles, Wand2, LayoutDashboard, User, LogOut, CreditCard, Settings } from 'lucide-react';
 import { Button } from '@/shared/components/ui/Button';
 import { useAuth } from '@/shared/contexts/AuthContext';
+import { useLoginModal } from '@/shared/contexts/LoginModalContext';
 import { http } from '@/infrastructure/http/client';
 import { LanguageSwitcher } from '@/shared/components/ui/LanguageSwitcher';
 import { Link, usePathname, useRouter } from '@/navigation';
-import { LoginModal } from '@/shared/components/modals/LoginModal';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,7 +24,7 @@ export function Header() {
   const router = useRouter();
   const locale = useLocale();
   const { user, profile, refreshAuth, loading } = useAuth();
-  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const { openLoginModal } = useLoginModal();
 
   const handleSignOut = async () => {
     try {
@@ -140,7 +140,7 @@ export function Header() {
             <Button 
               variant="outline" 
               size="sm" 
-              onClick={() => setLoginModalOpen(true)}
+              onClick={openLoginModal}
               className="flex items-center gap-2 border-primary/30 hover:bg-primary/10 min-w-[100px]"
             >
               <User className="h-4 w-4" />
@@ -149,9 +149,6 @@ export function Header() {
           )}
         </div>
       </div>
-      
-      {/* Login Modal */}
-      <LoginModal open={loginModalOpen} onOpenChange={setLoginModalOpen} />
     </header>
   );
 }

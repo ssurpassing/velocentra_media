@@ -50,7 +50,8 @@ export function DashboardClient() {
 
   useEffect(() => {
     if (!authLoading && !user) {
-      router.push('/auth/login');
+      // 打开登录弹窗而不是跳转
+      window.dispatchEvent(new CustomEvent('openLoginModal'));
       return;
     }
 
@@ -58,7 +59,7 @@ export function DashboardClient() {
       loadUserStats();
       loadCreditHistory();
     }
-  }, [user, authLoading, router]);
+  }, [user, authLoading]);
 
   const loadUserStats = async () => {
     try {

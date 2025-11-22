@@ -126,8 +126,8 @@ export function VideoGenerator() {
     if (!user) {
       setError(t('generators.common.pleaseLogin'));
       setTimeout(() => {
-        router.push('/auth/login');
-      }, 1500);
+        window.dispatchEvent(new CustomEvent('openLoginModal'));
+      }, 500);
       return;
     }
 

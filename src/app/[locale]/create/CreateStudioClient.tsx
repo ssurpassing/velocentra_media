@@ -142,9 +142,9 @@ export function CreateStudioClient() {
   // 登录检查
   useEffect(() => {
     if (!authLoading && !user) {
-      router.push('/auth/login');
+      window.dispatchEvent(new CustomEvent('openLoginModal'));
     }
-  }, [user, authLoading, router]);
+  }, [user, authLoading]);
 
   // 切换类型时自动选择推荐模型
   useEffect(() => {

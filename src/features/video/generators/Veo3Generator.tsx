@@ -153,8 +153,8 @@ export const Veo3Generator = forwardRef<Veo3GeneratorHandle, Veo3GeneratorProps>
     if (!user) {
       setError(t('generators.common.pleaseLogin'));
       setTimeout(() => {
-        router.push('/auth/login');
-      }, 1500);
+        window.dispatchEvent(new CustomEvent('openLoginModal'));
+      }, 500);
       return;
     }
 

@@ -55,7 +55,7 @@ export default function ResultPage() {
 
   useEffect(() => {
     if (!authLoading && !user) {
-      router.push('/auth/login');
+      window.dispatchEvent(new CustomEvent('openLoginModal'));
       return;
     }
 

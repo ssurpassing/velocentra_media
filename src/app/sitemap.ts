@@ -22,8 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '', priority: 1.0, changeFrequency: 'daily' as const },
     { path: '/pricing', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/create', priority: 0.9, changeFrequency: 'daily' as const },
-    { path: '/auth/login', priority: 0.5, changeFrequency: 'monthly' as const },
-    { path: '/auth/signup', priority: 0.5, changeFrequency: 'monthly' as const },
   ];
 
   // Generate alternates for all languages

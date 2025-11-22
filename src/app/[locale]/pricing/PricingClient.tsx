@@ -19,7 +19,7 @@ export function PricingClient() {
 
   const handlePurchase = async (planId: string) => {
     if (!user) {
-      router.push('/auth/login');
+      window.dispatchEvent(new CustomEvent('openLoginModal'));
       return;
     }
 

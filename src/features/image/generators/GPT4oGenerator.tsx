@@ -134,8 +134,8 @@ export const GPT4oGenerator = forwardRef<GPT4oGeneratorHandle, GPT4oGeneratorPro
     if (!user) {
       setError(t('generators.common.pleaseLogin'));
       setTimeout(() => {
-        router.push('/auth/login');
-      }, 1500);
+        window.dispatchEvent(new CustomEvent('openLoginModal'));
+      }, 500);
       return;
     }
 
