@@ -19,12 +19,14 @@ export async function GET(request: NextRequest) {
         *,
         generation_tasks (
           id,
-          prompt,
+          original_prompt,
+          optimized_prompt,
           status,
           media_type,
-          model_name,
+          ai_model,
+          cost_credits,
           media_files (
-            file_url,
+            url,
             thumbnail_url
           )
         )
@@ -40,6 +42,9 @@ export async function GET(request: NextRequest) {
         error: 'Failed to fetch credit history' 
       }, { status: 500 });
     }
+
+    console.log(`📊 Credit history count: ${history?.length || 0}`);
+    console.log('📊 Sample record:', history?.[0]);
 
     return NextResponse.json({ 
       success: true, 

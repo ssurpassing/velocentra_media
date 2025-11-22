@@ -237,16 +237,9 @@ export async function POST(request: NextRequest) {
           const { error: historyError } = await supabase.from('credit_history').insert({
             user_id: userId,
             amount: creditsToAdd,
-            type: 'subscription',
+            type: 'purchase',
             balance_after: newCredits,
-            description: `Subscription activated - ${planName} (${isYearly ? 'Yearly' : 'Monthly'})`,
-            metadata: {
-              sessionId,
-              planId,
-              planName,
-              isYearly,
-              subscriptionMonths,
-            },
+            description: `订阅购买 - ${planName} (${isYearly ? '年付' : '月付'})`,
           });
 
           if (historyError) {

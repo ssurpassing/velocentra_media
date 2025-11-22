@@ -17,6 +17,7 @@ import {
 import { taskService } from '@/infrastructure/services/database/task-service';
 
 export async function POST(request: NextRequest) {
+  console.log('🎨 ========== IMAGE GENERATION API CALLED ==========');
   try {
     // 1. 验证用户认证
     const authResult = await authenticateUser(request);
@@ -120,7 +121,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 9. 扣除积分
-    await deductCredits(
+    const deductResult = await deductCredits(
       supabase,
       user.id,
       profile,
@@ -128,6 +129,13 @@ export async function POST(request: NextRequest) {
       kieTaskId,
       `Generated image with ${validatedRequest.aiModel}`
     );
+    
+    if (!deductResult.success) {
+      console.error('❌ Failed to deduct credits:', deductResult.error);
+      // 继续执行，不阻止任务创建
+    } else {
+      console.log(`✅ Credits deducted: ${taskPrep.creditCost}, task: ${kieTaskId}`);
+    }
 
     // 10. v4.1: 如果是从失败任务重试而来，删除旧的失败任务记录
     if (retryFromTaskId) {

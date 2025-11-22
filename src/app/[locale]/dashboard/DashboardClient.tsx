@@ -304,7 +304,8 @@ export function DashboardClient() {
               <p className="text-sm mt-2">开始创作，这里将显示您的活动记录</p>
             </div>
           ) : (
-            <div className="overflow-x-auto">
+            <div className="overflow-visible">
+              <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b">
@@ -347,7 +348,7 @@ export function DashboardClient() {
                       <td className="py-3 px-4 text-sm max-w-xs">
                         {item.generation_tasks ? (
                           <div className="space-y-1">
-                            <p className="font-medium">{item.generation_tasks.model_name}</p>
+                            <p className="font-medium">{item.generation_tasks.ai_model}</p>
                             <p className="text-xs text-muted-foreground">{item.description}</p>
                           </div>
                         ) : (
@@ -355,18 +356,31 @@ export function DashboardClient() {
                         )}
                       </td>
                       <td className="py-3 px-4 text-sm max-w-md">
-                        {item.generation_tasks?.prompt ? (
-                          <p className="truncate" title={item.generation_tasks.prompt}>
-                            {item.generation_tasks.prompt}
+                        {item.generation_tasks?.original_prompt ? (
+                          <p className="truncate" title={item.generation_tasks.original_prompt}>
+                            {item.generation_tasks.original_prompt}
                           </p>
                         ) : (
                           <span className="text-muted-foreground">-</span>
                         )}
                       </td>
                       <td className="py-3 px-4 text-right">
-                        <span className={`font-medium ${item.amount < 0 ? 'text-red-500' : 'text-green-500'}`}>
-                          {item.amount > 0 ? '+' : ''}{item.amount}
-                        </span>
+                        {item.generation_tasks ? (
+                          <div className="flex flex-col items-end">
+                            <span className="font-medium text-red-500">
+                              -{item.generation_tasks.cost_credits || 0}
+                            </span>
+                            {item.amount !== -(item.generation_tasks.cost_credits || 0) && (
+                              <span className="text-xs text-muted-foreground">
+                                (实际: {item.amount})
+                              </span>
+                            )}
+                          </div>
+                        ) : (
+                          <span className={`font-medium ${item.amount < 0 ? 'text-red-500' : 'text-green-500'}`}>
+                            {item.amount > 0 ? '+' : ''}{item.amount}
+                          </span>
+                        )}
                       </td>
                       <td className="py-3 px-4 text-center">
                         {item.generation_tasks ? (
@@ -394,17 +408,42 @@ export function DashboardClient() {
                       </td>
                       <td className="py-3 px-4 text-center">
                         {item.generation_tasks?.media_files && item.generation_tasks.media_files.length > 0 ? (
-                          <Button
-                            size="sm"
-                            variant="ghost"
-                            className="h-8 w-8 p-0"
-                            onClick={() => {
-                              const file = item.generation_tasks!.media_files[0];
-                              window.open(file.file_url || file.thumbnail_url, '_blank');
-                            }}
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </Button>
+                          <div className="relative inline-block group">
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="h-8 px-3"
+                              onClick={() => {
+                                const file = item.generation_tasks!.media_files[0];
+                                window.open(file.url || file.thumbnail_url, '_blank');
+                              }}
+                            >
+                              查看
+                            </Button>
+                            {/* 悬浮预览 */}
+                            <div className="fixed z-[9999] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200" style={{ left: 'auto', right: '100%', top: '50%', transform: 'translate(-1rem, -50%)' }}>
+                              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-2xl border-2 border-primary/20 p-3 pointer-events-auto">
+                                <div className="text-xs text-muted-foreground mb-2 font-medium">结果预览:</div>
+                                {item.generation_tasks.media_type === 'image' ? (
+                                  <img
+                                    src={item.generation_tasks.media_files[0].thumbnail_url || item.generation_tasks.media_files[0].url}
+                                    alt="预览"
+                                    className="w-80 h-auto max-h-96 object-contain rounded"
+                                  />
+                                ) : (
+                                  <video
+                                    src={item.generation_tasks.media_files[0].url}
+                                    poster={item.generation_tasks.media_files[0].thumbnail_url}
+                                    className="w-80 h-auto max-h-96 object-contain rounded"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                  />
+                                )}
+                              </div>
+                            </div>
+                          </div>
                         ) : (
                           <span className="text-xs text-muted-foreground">-</span>
                         )}
@@ -413,6 +452,7 @@ export function DashboardClient() {
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
         </CardContent>

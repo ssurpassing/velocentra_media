@@ -8,7 +8,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { authenticateUser, getUserProfile } from '@/shared/lib/api-middleware';
+import { authenticateUser, getUserProfile, deductCredits } from '@/shared/lib/api-middleware';
 import { videoGenerationService } from '@/infrastructure/services/generation';
 import { createSora2Client } from '@/infrastructure/services/ai-clients/sora2';
 import { calculateVideoCredits } from '@/shared/config/model-credits';
@@ -259,7 +259,23 @@ export async function POST(request: NextRequest) {
 
     logger.info({ taskId: sora2TaskId, userId: user.id, model }, '📝 任务已创建');
 
-    // 11. v4.1: 如果是从失败任务重试而来，删除旧的失败任务记录
+    // 11. 扣除积分并记录历史
+    const deductResult = await deductCredits(
+      supabase,
+      user.id,
+      profile,
+      creditCost,
+      sora2TaskId,
+      `Generated video with ${model}`
+    );
+    
+    if (!deductResult.success) {
+      logger.error({ error: deductResult.error }, '❌ Failed to deduct credits');
+    } else {
+      logger.info({ credits: creditCost, taskId: sora2TaskId }, '✅ Credits deducted');
+    }
+
+    // 12. v4.1: 如果是从失败任务重试而来，删除旧的失败任务记录
     if (retryFromTaskId) {
       try {
         const { data: oldTask } = await supabase

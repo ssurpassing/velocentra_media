@@ -218,7 +218,7 @@ export async function deductCredits(
         .eq('id', userId);
 
       // 记录历史
-      await supabase.from('credit_history').insert({
+      const { error: freeHistoryError } = await supabase.from('credit_history').insert({
         user_id: userId,
         amount: 0,
         type: 'usage',
@@ -226,6 +226,11 @@ export async function deductCredits(
         task_id: taskId,
         description: description || `Free generation used (${profile.free_generations_remaining - 1} remaining)`,
       });
+      
+      if (freeHistoryError) {
+        console.error('❌ Failed to insert free credit history:', freeHistoryError);
+        return { success: false, error: freeHistoryError.message };
+      }
     } else {
       // 扣除积分
       const newBalance = profile.credits - credits;
@@ -236,7 +241,7 @@ export async function deductCredits(
         .eq('id', userId);
 
       // 记录历史
-      await supabase.from('credit_history').insert({
+      const { error: historyError } = await supabase.from('credit_history').insert({
         user_id: userId,
         amount: -credits,
         type: 'usage',
@@ -244,6 +249,11 @@ export async function deductCredits(
         task_id: taskId,
         description: description || `Generation task (${credits} credits)`,
       });
+      
+      if (historyError) {
+        console.error('❌ Failed to insert credit history:', historyError);
+        return { success: false, error: historyError.message };
+      }
     }
 
     return { success: true };

@@ -8,7 +8,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { authenticateUser, getUserProfile } from '@/shared/lib/api-middleware';
+import { authenticateUser, getUserProfile, deductCredits } from '@/shared/lib/api-middleware';
 import { videoGenerationService } from '@/infrastructure/services/generation';
 import { createVeo3Client } from '@/infrastructure/services/ai-clients/veo3';
 import { calculateVideoCredits } from '@/shared/config/model-credits';
@@ -146,7 +146,23 @@ export async function POST(request: NextRequest) {
 
     logger.info({ taskId: veo3TaskId, userId: user.id, model }, '📝 Video task prepared');
 
-    // 9. v4.1: 如果是从失败任务重试而来，删除旧的失败任务记录
+    // 9. 扣除积分并记录历史
+    const deductResult = await deductCredits(
+      supabase,
+      user.id,
+      profile,
+      creditCost,
+      veo3TaskId,
+      `Generated video with veo-${model}`
+    );
+    
+    if (!deductResult.success) {
+      logger.error({ error: deductResult.error }, '❌ Failed to deduct credits');
+    } else {
+      logger.info({ credits: creditCost, taskId: veo3TaskId }, '✅ Credits deducted');
+    }
+
+    // 10. v4.1: 如果是从失败任务重试而来，删除旧的失败任务记录
     if (retryFromTaskId) {
       try {
         const { data: oldTask } = await supabase
