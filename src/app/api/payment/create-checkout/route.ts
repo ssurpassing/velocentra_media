@@ -89,6 +89,7 @@ export async function POST(request: NextRequest) {
         planId: planId || '',
         planName: plan?.name || '',
         credits: plan?.credits || 0,
+        generationQuota: plan?.generationQuota || 0,
       });
     }
 

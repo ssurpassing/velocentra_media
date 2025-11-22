@@ -14,6 +14,7 @@ export async function createCheckoutSession(params: {
   planId?: string;
   planName?: string;
   credits?: number;
+  generationQuota?: number;
 }): Promise<{ success: boolean; sessionId?: string; url?: string; error?: string }> {
   try {
     const session = await stripe.checkout.sessions.create({
@@ -32,6 +33,7 @@ export async function createCheckoutSession(params: {
         planId: params.planId || '',
         planName: params.planName || '',
         credits: params.credits?.toString() || '0',
+        generationQuota: params.generationQuota?.toString() || '0',
         type: 'credit_purchase',
       },
     });

@@ -15,6 +15,7 @@ import { Button } from '@/shared/components/ui/Button';
 import { Sora2Model } from '@/infrastructure/services/ai-clients/sora2/types';
 import { calculateVideoCredits } from '@/shared/config/video-models';
 import { PromptOptimizeModal } from '@/shared/components/modals/PromptOptimizeModal';
+import { UpgradeModal } from '@/shared/components/modals/UpgradeModal';
 import {
   BaseVideoGenerator,
   PromptInput,
@@ -82,7 +83,7 @@ export const Sora2Generator = forwardRef<Sora2GeneratorHandle, Sora2GeneratorPro
   ({ locale = 'en', retryContext, onClearRetry }, ref) => {
   const router = useRouter();
   const pathname = usePathname();
-  const { user } = useAuth();
+  const { user, profile } = useAuth();
   const t = useTranslations();
 
   // 模型类型和模式
@@ -115,6 +116,7 @@ export const Sora2Generator = forwardRef<Sora2GeneratorHandle, Sora2GeneratorPro
   const [uploadingImages, setUploadingImages] = useState(false);
   const [error, setError] = useState('');
   const [optimizeModalOpen, setOptimizeModalOpen] = useState(false);
+  const [upgradeModalOpen, setUpgradeModalOpen] = useState(false);
 
   // 根据模型类型和模式确定完整模型名称
   const getModelName = (): Sora2Model => {
@@ -371,10 +373,22 @@ export const Sora2Generator = forwardRef<Sora2GeneratorHandle, Sora2GeneratorPro
         <div className="grid grid-cols-2 gap-3">
           {MODEL_TYPES.map((type) => {
             const isSelected = modelType === type.id;
+            const isPro = type.id === 'pro';
+            const hasProAccess = profile && (
+              profile.membership_tier === 'subscription' || 
+              profile.membership_tier === 'credits'
+            );
+            
             return (
               <button
                 key={type.id}
                 onClick={() => {
+                  // 如果是 Pro 且用户没有权限，打开升级弹窗
+                  if (isPro && !hasProAccess) {
+                    setUpgradeModalOpen(true);
+                    return;
+                  }
+                  
                   setModelType(type.id);
                   // 重置模式（如果当前模式在新类型中不可用）
                   const newModes = MODES[type.id];
@@ -382,13 +396,21 @@ export const Sora2Generator = forwardRef<Sora2GeneratorHandle, Sora2GeneratorPro
                     setMode(newModes[0].id);
                   }
                 }}
-                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
+                className={`relative px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                   isSelected
                     ? 'bg-white dark:bg-gray-800 border-2 border-blue-500 text-gray-900 dark:text-white shadow-sm'
                     : 'bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-gray-300 dark:hover:border-gray-600'
                 }`}
               >
                 {t(type.translationKey)}
+                {isPro && !hasProAccess && (
+                  <span className="absolute -top-1 -right-1 flex h-5 w-5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-5 w-5 bg-amber-500 items-center justify-center">
+                      <Crown className="h-3 w-3 text-white" />
+                    </span>
+                  </span>
+                )}
               </button>
             );
           })}
@@ -652,6 +674,13 @@ export const Sora2Generator = forwardRef<Sora2GeneratorHandle, Sora2GeneratorPro
           setOptimizeModalOpen(false);
         }}
         type="video"
+      />
+
+      {/* 升级弹窗 */}
+      <UpgradeModal
+        open={upgradeModalOpen}
+        onOpenChange={setUpgradeModalOpen}
+        feature="Sora 2 Pro"
       />
     </>
   );

@@ -200,104 +200,64 @@ export function CanvasArea({ creativeType, locale, onRetryFromTask }: CanvasArea
   const currentTasks = tasks.filter(t => t.status === 'pending' || t.status === 'processing');
   const historyTasks = tasks.filter(t => t.status === 'completed' || t.status === 'failed');
 
-  // 使用 Supabase Realtime 监听任务状态变化
+  // 使用轮询监听任务状态变化（Realtime 有问题时的备用方案）
   useEffect(() => {
-    let channel: any = null;
-    let isSubscribed = true;
-    
-    const setupRealtimeSubscription = async () => {
-      const supabase = createBrowserSupabaseClient();
+    let pollInterval: NodeJS.Timeout | null = null;
+    let isActive = true;
+    let lastTasksJson = '';
+    let currentTasks: Task[] = [];
+
+    const fetchTasks = async () => {
+      if (!isActive) return;
       
-      // 检查并刷新会话
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) {
-        return;
-      }
-      
-      // 订阅 generation_tasks 表的变化
-      channel = supabase
-        .channel(`task-changes-${creativeType}-${Date.now()}`) // 使用唯一的 channel 名称
-        .on(
-          'postgres_changes',
-          {
-            event: '*', // 监听所有变化：INSERT, UPDATE, DELETE
-            schema: 'public',
-            table: 'generation_tasks',
+      try {
+        const response = await http.get('/tasks', {
+          params: {
+            mediaType: creativeType,
+            page: 1,
+            limit: 50,
+            _t: Date.now(),
           },
-          (payload: any) => {
-            // 检查是否是当前类型的任务
-            const taskData: any = payload.new || payload.old;
-            if (taskData && taskData.media_type !== creativeType) {
-              return;
-            }
-            
-            // 刷新任务列表（添加时间戳绕过缓存）
-            const fetchTasks = async () => {
-              try {
-                const response = await http.get('/tasks', {
-                  params: {
-                    mediaType: creativeType,
-                    page: 1,
-                    limit: 50,
-                    _t: Date.now(), // 添加时间戳绕过缓存
-                  },
-                });
-                setTasks(response.data.tasks || []);
-              } catch (error) {
-                console.error('Failed to fetch tasks:', error);
-              }
-            };
-            
-            fetchTasks();
-          }
-        )
-        .subscribe((status: any, err?: any) => {
-          if (err) {
-            console.error('Realtime subscription error:', err);
-            
-            // 如果是 token 过期错误，尝试重新订阅
-            if (err.message?.includes('Token has expired') || err.message?.includes('InvalidJWTToken')) {
-              if (isSubscribed) {
-                supabase.removeChannel(channel);
-                setTimeout(() => {
-                  if (isSubscribed) {
-                    setupRealtimeSubscription();
-                  }
-                }, 2000);
-              }
-            }
-          }
-          if (status === 'CHANNEL_ERROR') {
-            console.error('Realtime channel error');
-          } else if (status === 'TIMED_OUT') {
-            console.error('Realtime subscription timed out');
-          }
         });
+        
+        const newTasks = response.data.tasks || [];
+        const newTasksJson = JSON.stringify(newTasks);
+        
+        // 只在真正有变化时更新和打印日志
+        if (newTasksJson !== lastTasksJson) {
+          lastTasksJson = newTasksJson;
+          currentTasks = newTasks;
+          setTasks(newTasks);
+          
+          // 只在有实际变化时打印日志
+          const activeTasks = newTasks.filter((t: Task) => t.status === 'pending' || t.status === 'processing');
+          const completedTasks = newTasks.filter((t: Task) => t.status === 'completed');
+          console.log(`[Polling] ✅ Tasks updated - Active: ${activeTasks.length}, Completed: ${completedTasks.length}, Total: ${newTasks.length}`);
+          
+          // 根据活跃任务数量调整轮询间隔
+          const hasActive = activeTasks.length > 0;
+          const newInterval = hasActive ? 3000 : 10000;
+          
+          if (pollInterval) {
+            clearInterval(pollInterval);
+            pollInterval = setInterval(fetchTasks, newInterval);
+          }
+        }
+      } catch (error) {
+        console.error('[Polling] ❌ Failed to fetch tasks:', error);
+      }
     };
 
-    setupRealtimeSubscription();
+    // 初始加载
+    fetchTasks();
 
-    // 设置定期刷新会话（每 50 分钟刷新一次，token 有效期通常是 1 小时）
-    const refreshInterval = setInterval(async () => {
-      const supabase = createBrowserSupabaseClient();
-      const { data, error } = await supabase.auth.refreshSession();
-      if (error) {
-        console.error('Failed to refresh session:', error);
-      } else {
-        // 刷新成功后，重新建立 Realtime 连接
-        if (channel && isSubscribed) {
-          supabase.removeChannel(channel);
-          setupRealtimeSubscription();
-        }
-      }
-    }, 50 * 60 * 1000); // 50 分钟
+    // 固定间隔轮询（初始 5 秒）
+    pollInterval = setInterval(fetchTasks, 5000);
 
     return () => {
-      isSubscribed = false;
-      clearInterval(refreshInterval);
-      if (channel) {
-        const supabase = createBrowserSupabaseClient();
-        supabase.removeChannel(channel);
+      isActive = false;
+      if (pollInterval) {
+        clearInterval(pollInterval);
       }
     };
   }, [creativeType]);

@@ -381,7 +381,6 @@ export const GPT4oGenerator = forwardRef<GPT4oGeneratorHandle, GPT4oGeneratorPro
         <Button
           onClick={handleGenerate}
           disabled={generating || uploading || !prompt.trim()}
-          loading={generating || uploading}
           className="w-full h-12 text-base font-semibold bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 hover:from-emerald-600 hover:via-teal-600 hover:to-emerald-600 text-white shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-200"
           size="lg"
         >

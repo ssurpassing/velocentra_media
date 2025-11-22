@@ -451,7 +451,6 @@ export const NanaBananaGenerator = forwardRef<NanaBananaGeneratorHandle, NanaBan
         <Button
           onClick={handleGenerate}
           disabled={generating || uploading || !prompt.trim() || (isImageMode && imageFiles.length === 0 && imagePreviews.length === 0)}
-          loading={generating || uploading}
           className="w-full h-12 text-base font-semibold bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 hover:from-amber-600 hover:via-yellow-600 hover:to-amber-600 text-white shadow-lg shadow-amber-500/25 hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-200"
           size="lg"
         >

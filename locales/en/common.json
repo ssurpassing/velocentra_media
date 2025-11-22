@@ -33,9 +33,9 @@
   },
   "quickGenerator": {
     "badge": "Quick Start",
-    "title": "Quick Avatar Generator",
-    "subtitle": "Upload your photo, select AI model, and generate professional avatars quickly",
-    "loginTitle": "Unlock AI Creation",
+    "title": "Start Creating Now",
+    "subtitle": "Choose image or video generation and experience professional AI creative tools",
+    "loginTitle": "Unlock AI Creation Power",
     "loginSubtitle": "Login to access all AI models and start your creative journey",
     "login": "Login",
     "signup": "Sign Up",
@@ -47,6 +47,21 @@
     "exploreImagesDesc": "View all image generation models and advanced features",
     "exploreVideos": "Explore More Video Features",
     "exploreVideosDesc": "View all video generation models and advanced features"
+  },
+  "upgradeModal": {
+    "title": "Upgrade to Pro",
+    "description": "Unlock all premium features and enjoy unlimited creative experience",
+    "featureRequiresPro": "{feature} requires Pro membership",
+    "benefits": "Pro Membership Benefits",
+    "unlimitedGeneration": "Unlimited image and video generation",
+    "priorityQueue": "Priority processing queue for faster generation",
+    "higherQuality": "Access to high-quality Pro models",
+    "advancedFeatures": "Unlock all advanced features and parameters",
+    "noWatermark": "Watermark-free output",
+    "specialOffer": "Limited Time Offer",
+    "offerDescription": "Get 20% off your first month when you upgrade now",
+    "maybeLater": "Maybe Later",
+    "upgradeNow": "Upgrade Now"
   },
   "innovationLab": {
     "title": "Innovation Lab",

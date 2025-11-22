@@ -34,8 +34,14 @@ export class CreditService {
 
   /**
    * 检查用户积分是否足够
+   * 
+   * 规则：
+   * - 订阅会员：只检查积分和订阅有效期，不检查生成次数
+   * - 积分会员：检查积分和生成次数
+   * - 免费会员：只检查免费生成次数
    */
   checkCredits(profile: UserProfile, requiredCredits: number): CreditCheckResult {
+    // 免费会员：只检查免费次数
     if (profile.membership_tier === 'free') {
       if (profile.free_generations_remaining <= 0) {
         return {
@@ -47,6 +53,56 @@ export class CreditService {
       return { success: true, canProceed: true };
     }
 
+    // 订阅会员：检查积分和订阅有效期
+    if (profile.membership_tier === 'subscription') {
+      const now = new Date();
+      const subscriptionEndDate = profile.subscription_end_date ? new Date(profile.subscription_end_date) : null;
+      
+      // 检查订阅是否过期
+      if (!subscriptionEndDate || subscriptionEndDate < now) {
+        return {
+          success: false,
+          canProceed: false,
+          error: 'Subscription expired. Please renew your subscription.',
+        };
+      }
+      
+      // 检查积分
+      if (profile.credits < requiredCredits) {
+        return {
+          success: false,
+          canProceed: false,
+          error: `Insufficient credits. Required: ${requiredCredits}, Available: ${profile.credits}`,
+        };
+      }
+      
+      return { success: true, canProceed: true };
+    }
+
+    // 积分会员：检查积分和生成次数
+    if (profile.membership_tier === 'credits') {
+      // 检查生成次数
+      if (profile.free_generations_remaining <= 0) {
+        return {
+          success: false,
+          canProceed: false,
+          error: 'No generation quota remaining. Please purchase more credits.',
+        };
+      }
+      
+      // 检查积分
+      if (profile.credits < requiredCredits) {
+        return {
+          success: false,
+          canProceed: false,
+          error: `Insufficient credits. Required: ${requiredCredits}, Available: ${profile.credits}`,
+        };
+      }
+      
+      return { success: true, canProceed: true };
+    }
+
+    // 默认：只检查积分
     if (profile.credits < requiredCredits) {
       return {
         success: false,
@@ -100,8 +156,41 @@ export class CreditService {
 
         logger.info({ userId, taskId, remaining: newFreeCount }, 'Free generation used');
         return { success: true, newBalance: profile.credits };
+      } else if (profile.membership_tier === 'credits') {
+        // 积分会员：扣除积分和生成次数
+        const newBalance = profile.credits - credits;
+        const newQuota = profile.free_generations_remaining - 1;
+        
+        const { error: updateError } = await this.supabase
+          .from('user_profiles')
+          .update({ 
+            credits: newBalance,
+            free_generations_remaining: newQuota,
+          })
+          .eq('id', userId);
+
+        if (updateError) {
+          logger.error({ userId, error: updateError }, 'Failed to deduct credits and quota');
+          return {
+            success: false,
+            error: updateError.message || 'Failed to deduct credits and quota',
+          };
+        }
+
+        // 记录历史
+        await this.supabase.from('credit_history').insert({
+          user_id: userId,
+          amount: -credits,
+          type: 'usage',
+          balance_after: newBalance,
+          task_id: taskId,
+          description: description || `Used ${credits} credits (${newQuota} generations remaining)`,
+        });
+
+        logger.info({ userId, taskId, credits, newBalance, newQuota }, 'Credits and quota deducted');
+        return { success: true, newBalance };
       } else {
-        // 扣除积分
+        // 订阅会员或其他：只扣除积分
         const newBalance = profile.credits - credits;
         
         const { error: updateError } = await this.supabase

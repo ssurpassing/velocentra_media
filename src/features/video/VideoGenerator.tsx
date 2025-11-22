@@ -400,7 +400,6 @@ export function VideoGenerator() {
           <Button
             onClick={handleGenerate}
             disabled={generating || uploadingImages || !prompt.trim()}
-            loading={generating || uploadingImages}
             className="w-full"
             size="lg"
           >

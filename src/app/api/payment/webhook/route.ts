@@ -52,12 +52,13 @@ export async function POST(request: NextRequest) {
 
         // 判断是积分购买还是订阅
         if (session.mode === 'payment') {
-          // 积分购买
+          // 积分包购买
           const creditsAmount = session.metadata?.credits ? parseInt(session.metadata.credits) : 0;
+          const generationQuota = session.metadata?.generationQuota ? parseInt(session.metadata.generationQuota) : 0;
           const planId = session.metadata?.planId || '';
           const planName = session.metadata?.planName || 'Unknown Plan';
 
-          console.log(`[Webhook] Credit purchase: ${creditsAmount} credits for user ${userId}`);
+          console.log(`[Webhook] Credit pack purchase: ${creditsAmount} credits + ${generationQuota} generations for user ${userId}`);
 
           if (creditsAmount === 0) {
             console.error('[Webhook] Invalid credits amount: 0');
@@ -85,10 +86,10 @@ export async function POST(request: NextRequest) {
 
           console.log('[Webhook] Transaction record created');
 
-          // 增加用户积分
+          // 获取当前用户信息
           const { data: profile, error: profileFetchError } = await supabase
             .from('user_profiles')
-            .select('credits')
+            .select('credits, free_generations_remaining')
             .eq('id', userId)
             .single();
 
@@ -98,15 +99,20 @@ export async function POST(request: NextRequest) {
           }
 
           const oldCredits = profile?.credits || 0;
+          const oldQuota = profile?.free_generations_remaining || 0;
           const newCredits = oldCredits + creditsAmount;
+          const newQuota = oldQuota + generationQuota;
 
           console.log(`[Webhook] Updating credits: ${oldCredits} -> ${newCredits}`);
+          console.log(`[Webhook] Updating generation quota: ${oldQuota} -> ${newQuota}`);
 
+          // 更新积分和生成次数（积分会员）
           const { error: updateError } = await supabase
             .from('user_profiles')
             .update({
               credits: newCredits,
-              membership_tier: 'credits',
+              free_generations_remaining: newQuota,
+              membership_tier: 'credits', // 积分会员
               updated_at: new Date().toISOString(),
             })
             .eq('id', userId);
@@ -116,7 +122,7 @@ export async function POST(request: NextRequest) {
             throw updateError;
           }
 
-          console.log('[Webhook] User credits updated successfully');
+          console.log('[Webhook] User credits and quota updated successfully');
 
           // 更新支付意图状态为 completed
           await supabase
@@ -151,12 +157,18 @@ export async function POST(request: NextRequest) {
 
           console.log(`[Webhook] ✅ Credit purchase completed successfully for user ${userId}`);
         } else if (session.mode === 'subscription') {
-          // 订阅
+          // 订阅（月付或年付）
           const planId = session.metadata?.planId || '';
           const planName = session.metadata?.planName || 'Unknown Plan';
           const creditsPerMonth = session.metadata?.credits ? parseInt(session.metadata.credits) : 0;
+          const isYearly = planId.includes('yearly');
+          
+          // 年付一次性发放全年积分，月付发放一个月积分
+          const creditsToAdd = isYearly ? creditsPerMonth * 12 : creditsPerMonth;
+          const subscriptionMonths = isYearly ? 12 : 1;
 
-          console.log(`[Webhook] Subscription: ${planName} for user ${userId}`);
+          console.log(`[Webhook] Subscription: ${planName} for user ${userId} (${isYearly ? 'Yearly' : 'Monthly'})`);
+          console.log(`[Webhook] Credits to add: ${creditsToAdd}`);
 
           const { error: transactionError } = await supabase.from('transactions').insert({
             user_id: userId,
@@ -175,16 +187,43 @@ export async function POST(request: NextRequest) {
             throw transactionError;
           }
 
-          // 更新用户订阅状态
-          const subscriptionEndDate = new Date();
-          subscriptionEndDate.setMonth(subscriptionEndDate.getMonth() + 1);
+          // 获取当前用户信息
+          const { data: profile, error: profileFetchError } = await supabase
+            .from('user_profiles')
+            .select('credits, subscription_end_date')
+            .eq('id', userId)
+            .single();
+
+          if (profileFetchError) {
+            console.error('[Webhook] Failed to fetch user profile:', profileFetchError);
+            throw profileFetchError;
+          }
+
+          const oldCredits = profile?.credits || 0;
+          const newCredits = oldCredits + creditsToAdd;
+
+          // 计算新的订阅结束时间（累加）
+          const now = new Date();
+          let currentEndDate = profile?.subscription_end_date ? new Date(profile.subscription_end_date) : now;
+          
+          // 如果订阅已过期，从现在开始计算
+          if (currentEndDate < now) {
+            currentEndDate = now;
+          }
+          
+          // 累加订阅时间
+          const newEndDate = new Date(currentEndDate);
+          newEndDate.setMonth(newEndDate.getMonth() + subscriptionMonths);
+
+          console.log(`[Webhook] Subscription credits: ${oldCredits} -> ${newCredits}`);
+          console.log(`[Webhook] Subscription end date: ${currentEndDate.toISOString()} -> ${newEndDate.toISOString()}`);
 
           const { error: updateError } = await supabase
             .from('user_profiles')
             .update({
-              membership_tier: 'subscription',
-              subscription_end_date: subscriptionEndDate.toISOString(),
-              credits: creditsPerMonth, // 订阅首月积分
+              membership_tier: 'subscription', // 订阅会员
+              subscription_end_date: newEndDate.toISOString(),
+              credits: newCredits, // 累加积分
               updated_at: new Date().toISOString(),
             })
             .eq('id', userId);
@@ -192,6 +231,26 @@ export async function POST(request: NextRequest) {
           if (updateError) {
             console.error('[Webhook] Failed to update subscription status:', updateError);
             throw updateError;
+          }
+
+          // 记录积分历史
+          const { error: historyError } = await supabase.from('credit_history').insert({
+            user_id: userId,
+            amount: creditsToAdd,
+            type: 'subscription',
+            balance_after: newCredits,
+            description: `Subscription activated - ${planName} (${isYearly ? 'Yearly' : 'Monthly'})`,
+            metadata: {
+              sessionId,
+              planId,
+              planName,
+              isYearly,
+              subscriptionMonths,
+            },
+          });
+
+          if (historyError) {
+            console.error('[Webhook] Failed to create credit history:', historyError);
           }
 
           // 更新支付意图状态为 completed

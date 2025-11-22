@@ -17,9 +17,6 @@ export function Header() {
   const locale = useLocale();
   const { user, profile, refreshAuth, loading } = useAuth();
   const [loginModalOpen, setLoginModalOpen] = useState(false);
-  
-  // 调试日志
-  console.log('🎯 Header locale:', locale, 'pathname:', pathname);
 
   const handleSignOut = async () => {
     try {

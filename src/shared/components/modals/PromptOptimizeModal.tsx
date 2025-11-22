@@ -187,7 +187,6 @@ export function PromptOptimizeModal({
                 <Button
                   onClick={handleOptimize}
                   disabled={optimizing || !originalPrompt.trim()}
-                  loading={optimizing}
                   className="w-full"
                   size="lg"
                 >
