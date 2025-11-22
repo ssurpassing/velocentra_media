@@ -6,7 +6,7 @@ import { useAuth } from '@/shared/contexts/AuthContext';
 import { useRouter } from '@/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/shared/components/ui/Card';
 import { Button } from '@/shared/components/ui/Button';
-import { Coins, CreditCard, Image, Video, Calendar, TrendingUp, Sparkles, Zap, ArrowRight, Mail } from 'lucide-react';
+import { Coins, CreditCard, Image, Video, Calendar, TrendingUp, Sparkles, Zap, ArrowRight, Mail, CheckCircle, XCircle, Clock, ExternalLink } from 'lucide-react';
 import { http } from '@/infrastructure/http/client';
 
 interface UserStats {
@@ -18,12 +18,35 @@ interface UserStats {
   subscriptionEndDate?: string;
 }
 
+interface CreditHistoryItem {
+  id: string;
+  amount: number;
+  type: string;
+  description: string;
+  balance_after: number;
+  created_at: string;
+  task_id?: string;
+  generation_tasks?: {
+    id: string;
+    prompt: string;
+    status: string;
+    media_type: string;
+    model_name: string;
+    media_files: Array<{
+      file_url: string;
+      thumbnail_url: string;
+    }>;
+  };
+}
+
 export function DashboardClient() {
   const { user, profile, loading: authLoading } = useAuth();
   const router = useRouter();
   const t = useTranslations();
   const [stats, setStats] = useState<UserStats | null>(null);
   const [loading, setLoading] = useState(true);
+  const [creditHistory, setCreditHistory] = useState<CreditHistoryItem[]>([]);
+  const [historyLoading, setHistoryLoading] = useState(true);
 
   useEffect(() => {
     if (!authLoading && !user) {
@@ -33,6 +56,7 @@ export function DashboardClient() {
 
     if (user) {
       loadUserStats();
+      loadCreditHistory();
     }
   }, [user, authLoading, router]);
 
@@ -47,6 +71,20 @@ export function DashboardClient() {
       console.error('Failed to load user stats:', error);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const loadCreditHistory = async () => {
+    try {
+      setHistoryLoading(true);
+      const response = await http.get('/user/credit-history');
+      if (response.success) {
+        setCreditHistory(response.data);
+      }
+    } catch (error) {
+      console.error('Failed to load credit history:', error);
+    } finally {
+      setHistoryLoading(false);
     }
   };
 
@@ -171,7 +209,7 @@ export function DashboardClient() {
           <CardContent className="space-y-3">
             <Button 
               className="w-full h-12 gradient-primary group" 
-              onClick={() => router.push('/ai-image')}
+              onClick={() => router.push('/create?tab=image')}
             >
               <Image className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               {t('dashboard.generateImage')}
@@ -180,7 +218,7 @@ export function DashboardClient() {
             <Button 
               className="w-full h-12 border-purple-500/30 hover:bg-purple-500/10 group" 
               variant="outline" 
-              onClick={() => router.push('/ai-video')}
+              onClick={() => router.push('/create?tab=video')}
             >
               <Video className="mr-2 h-5 w-5 text-purple-500 group-hover:scale-110 transition-transform" />
               {t('dashboard.generateVideo')}
@@ -241,23 +279,141 @@ export function DashboardClient() {
         </Card>
       </div>
 
-      {/* Recent Activity Placeholder */}
+      {/* Credit History */}
       <Card className="hover:shadow-lg transition-shadow">
         <CardHeader>
           <div className="flex items-center gap-2">
             <TrendingUp className="h-5 w-5 text-primary" />
-            <CardTitle>{t('dashboard.recentActivity')}</CardTitle>
+            <CardTitle>积分消耗历史</CardTitle>
           </div>
-          <CardDescription>{t('dashboard.recentActivityDesc')}</CardDescription>
+          <CardDescription>查看您的积分使用记录和生成任务详情</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="text-center py-12 text-muted-foreground">
-            <div className="p-4 rounded-full bg-primary/5 w-fit mx-auto mb-4">
-              <TrendingUp className="h-12 w-12 opacity-50" />
+          {historyLoading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto"></div>
+              <p className="mt-2 text-sm text-muted-foreground">加载中...</p>
             </div>
-            <p className="text-lg">{t('dashboard.noRecentActivity')}</p>
-            <p className="text-sm mt-2">开始创作，这里将显示您的活动记录</p>
-          </div>
+          ) : creditHistory.length === 0 ? (
+            <div className="text-center py-12 text-muted-foreground">
+              <div className="p-4 rounded-full bg-primary/5 w-fit mx-auto mb-4">
+                <TrendingUp className="h-12 w-12 opacity-50" />
+              </div>
+              <p className="text-lg">暂无消耗记录</p>
+              <p className="text-sm mt-2">开始创作，这里将显示您的活动记录</p>
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b">
+                    <th className="text-left py-3 px-4 text-sm font-medium text-muted-foreground">时间</th>
+                    <th className="text-left py-3 px-4 text-sm font-medium text-muted-foreground">类型</th>
+                    <th className="text-left py-3 px-4 text-sm font-medium text-muted-foreground">任务详情</th>
+                    <th className="text-left py-3 px-4 text-sm font-medium text-muted-foreground">提示词</th>
+                    <th className="text-right py-3 px-4 text-sm font-medium text-muted-foreground">积分</th>
+                    <th className="text-center py-3 px-4 text-sm font-medium text-muted-foreground">状态</th>
+                    <th className="text-center py-3 px-4 text-sm font-medium text-muted-foreground">结果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {creditHistory.map((item) => (
+                    <tr key={item.id} className="border-b hover:bg-muted/50 transition-colors">
+                      <td className="py-3 px-4 text-sm">
+                        {new Date(item.created_at).toLocaleString('zh-CN', {
+                          month: '2-digit',
+                          day: '2-digit',
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
+                      </td>
+                      <td className="py-3 px-4">
+                        <div className="flex items-center gap-2">
+                          {item.generation_tasks?.media_type === 'image' ? (
+                            <Image className="h-4 w-4 text-blue-500" />
+                          ) : item.generation_tasks?.media_type === 'video' ? (
+                            <Video className="h-4 w-4 text-purple-500" />
+                          ) : (
+                            <Coins className="h-4 w-4 text-amber-500" />
+                          )}
+                          <span className="text-sm">
+                            {item.generation_tasks?.media_type === 'image' ? '图片' : 
+                             item.generation_tasks?.media_type === 'video' ? '视频' : 
+                             item.type === 'purchase' ? '充值' : '其他'}
+                          </span>
+                        </div>
+                      </td>
+                      <td className="py-3 px-4 text-sm max-w-xs">
+                        {item.generation_tasks ? (
+                          <div className="space-y-1">
+                            <p className="font-medium">{item.generation_tasks.model_name}</p>
+                            <p className="text-xs text-muted-foreground">{item.description}</p>
+                          </div>
+                        ) : (
+                          <span className="text-muted-foreground">{item.description}</span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-sm max-w-md">
+                        {item.generation_tasks?.prompt ? (
+                          <p className="truncate" title={item.generation_tasks.prompt}>
+                            {item.generation_tasks.prompt}
+                          </p>
+                        ) : (
+                          <span className="text-muted-foreground">-</span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-right">
+                        <span className={`font-medium ${item.amount < 0 ? 'text-red-500' : 'text-green-500'}`}>
+                          {item.amount > 0 ? '+' : ''}{item.amount}
+                        </span>
+                      </td>
+                      <td className="py-3 px-4 text-center">
+                        {item.generation_tasks ? (
+                          <div className="flex items-center justify-center gap-1">
+                            {item.generation_tasks.status === 'completed' ? (
+                              <>
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                <span className="text-xs text-green-600">成功</span>
+                              </>
+                            ) : item.generation_tasks.status === 'failed' ? (
+                              <>
+                                <XCircle className="h-4 w-4 text-red-500" />
+                                <span className="text-xs text-red-600">失败</span>
+                              </>
+                            ) : (
+                              <>
+                                <Clock className="h-4 w-4 text-amber-500" />
+                                <span className="text-xs text-amber-600">处理中</span>
+                              </>
+                            )}
+                          </div>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">-</span>
+                        )}
+                      </td>
+                      <td className="py-3 px-4 text-center">
+                        {item.generation_tasks?.media_files && item.generation_tasks.media_files.length > 0 ? (
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="h-8 w-8 p-0"
+                            onClick={() => {
+                              const file = item.generation_tasks!.media_files[0];
+                              window.open(file.file_url || file.thumbnail_url, '_blank');
+                            }}
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </Button>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">-</span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </CardContent>
       </Card>
       </div>

@@ -1,14 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { Sparkles, Wand2 } from 'lucide-react';
+import { Sparkles, Wand2, LayoutDashboard, User, LogOut, CreditCard, Settings } from 'lucide-react';
 import { Button } from '@/shared/components/ui/Button';
 import { useAuth } from '@/shared/contexts/AuthContext';
 import { http } from '@/infrastructure/http/client';
 import { LanguageSwitcher } from '@/shared/components/ui/LanguageSwitcher';
 import { Link, usePathname, useRouter } from '@/navigation';
 import { LoginModal } from '@/shared/components/modals/LoginModal';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/shared/components/ui/DropdownMenu';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -85,38 +93,59 @@ export function Header() {
           </Link>
         </nav>
 
-        {/* Language Switcher & Auth buttons */}
+        {/* Language Switcher & User Menu */}
         <div className="flex items-center space-x-3">
           <LanguageSwitcher />
-          {loading ? (
-            // 骨架屏 - 避免闪烁
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-24 bg-muted animate-pulse rounded" />
-              <div className="h-8 w-16 bg-muted animate-pulse rounded" />
-            </div>
-          ) : user ? (
-            <div className="flex items-center space-x-2 animate-in fade-in duration-200">
-              <span className="text-sm text-muted-foreground">
-                {profile?.nickname || user.email?.split('@')[0] || user.email}
-              </span>
-              <Button variant="outline" size="sm" onClick={handleSignOut} className="border-primary/30 hover:bg-primary/10">
-                {t('logout')}
-              </Button>
-            </div>
+          
+          {user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex items-center gap-2 border-primary/30 hover:bg-primary/10 min-w-[100px]"
+                >
+                  <User className="h-4 w-4" />
+                  <span className={`hidden md:inline transition-opacity duration-200 ${!profile && user ? 'opacity-50' : 'opacity-100'}`}>
+                    {profile?.nickname || user.user_metadata?.nickname || user.email?.split('@')[0] || 'User'}
+                  </span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56">
+                <DropdownMenuLabel>
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium">
+                      {profile?.nickname || user.user_metadata?.nickname || user.email?.split('@')[0]}
+                    </p>
+                    <p className="text-xs text-muted-foreground">{user.email}</p>
+                  </div>
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={() => router.push('/dashboard')}>
+                  <LayoutDashboard className="mr-2 h-4 w-4" />
+                  <span>Dashboard</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => router.push('/pricing')}>
+                  <CreditCard className="mr-2 h-4 w-4" />
+                  <span>购买积分</span>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={handleSignOut} className="text-red-600 focus:text-red-600">
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>退出登录</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           ) : (
-            <div className="flex items-center space-x-2 animate-in fade-in duration-200">
-              <Button 
-                variant="ghost" 
-                size="sm" 
-                onClick={() => setLoginModalOpen(true)}
-                className="hover:bg-primary/10"
-              >
-                {t('login')}
-              </Button>
-              <Button size="sm" asChild className="gradient-primary">
-                <Link href="/auth/signup">{t('signup')}</Link>
-              </Button>
-            </div>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={() => setLoginModalOpen(true)}
+              className="flex items-center gap-2 border-primary/30 hover:bg-primary/10 min-w-[100px]"
+            >
+              <User className="h-4 w-4" />
+              <span className="hidden md:inline">登录</span>
+            </Button>
           )}
         </div>
       </div>

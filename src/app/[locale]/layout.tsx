@@ -1,8 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n/config';
-import { Header } from '@/shared/components/layout/Header';
-import { Footer } from '@/shared/components/layout/Footer';
+import { ClientLayout } from '@/shared/components/layout/ClientLayout';
 import { Toaster } from '@/shared/components/ui/toaster';
 import { 
   generateMetadata as generateSEOMetadata,
@@ -69,11 +68,9 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
         />
         <NextIntlClientProvider messages={messages} locale={typedLocale}>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <div className="flex-1">{children}</div>
-            <Footer />
-          </div>
+          <ClientLayout>
+            {children}
+          </ClientLayout>
           <Toaster />
         </NextIntlClientProvider>
       </body>
