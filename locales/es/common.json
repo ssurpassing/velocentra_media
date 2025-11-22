@@ -761,35 +761,39 @@
         "name": "Retrato Artístico",
         "description": "Optimización de retrato artístico"
       },
-      "image-product": {
-        "name": "Fotografía de Producto",
-        "description": "Fotografía de producto e imágenes de comercio electrónico"
+      "image-realistic-photo": {
+        "name": "Foto Realista",
+        "description": "Generación de imágenes fotorrealistas"
       },
-      "image-landscape": {
-        "name": "Fotografía de Paisaje",
-        "description": "Paisajes naturales y fotografía arquitectónica"
+      "image-concept-art": {
+        "name": "Arte Conceptual",
+        "description": "Diseño conceptual de juegos y películas"
+      },
+      "image-illustration": {
+        "name": "Ilustración",
+        "description": "Estilo de ilustración comercial y de libros ilustrados"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "Estilo Anime",
+        "description": "Imágenes de estilo anime japonés"
       }
     },
     "video": {
       "video-cinematic": {
         "name": "Estilo Cinematográfico",
-        "description": "Optimizar para narración cinematográfica con iluminación y composición dramáticas"
+        "description": "Optimizado para narrativa cinematográfica con iluminación y composición dramática"
       },
       "video-commercial": {
-        "name": "Comercial/Publicidad",
-        "description": "Optimizar para presentación de productos y publicidad de marca"
+        "name": "Publicidad",
+        "description": "Optimizado para exhibición de productos y publicidad de marca"
       },
       "video-documentary": {
-        "name": "Documental/Naturaleza",
-        "description": "Optimizar para documental natural y estilo de vida silvestre"
+        "name": "Documental",
+        "description": "Optimizado para documental natural y estilo de vida silvestre"
       },
       "video-general": {
         "name": "Video General",
-        "description": "Optimización de generación de video de propósito general"
+        "description": "Adecuado para varios escenarios de generación de video"
       }
     }
   },

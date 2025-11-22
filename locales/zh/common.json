@@ -765,13 +765,17 @@
         "name": "艺术肖像",
         "description": "适合创意艺术肖像风格"
       },
-      "image-product": {
-        "name": "产品摄影",
-        "description": "适合产品拍摄和电商图片"
+      "image-realistic-photo": {
+        "name": "写实照片",
+        "description": "适合生成逼真的摄影作品"
       },
-      "image-landscape": {
-        "name": "风景摄影",
-        "description": "适合自然风景和建筑摄影"
+      "image-concept-art": {
+        "name": "概念艺术",
+        "description": "适合游戏和影视概念设计"
+      },
+      "image-illustration": {
+        "name": "插画",
+        "description": "适合绘本和商业插画风格"
       },
       "image-anime": {
         "name": "动漫风格",

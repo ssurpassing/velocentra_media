@@ -765,17 +765,21 @@
         "name": "Artistic Portrait",
         "description": "Artistic portrait optimization"
       },
-      "image-product": {
-        "name": "Product Photography",
-        "description": "Product photography and e-commerce images"
+      "image-realistic-photo": {
+        "name": "Realistic Photo",
+        "description": "Photorealistic image generation"
       },
-      "image-landscape": {
-        "name": "Landscape Photography",
-        "description": "Natural landscape and architectural photography"
+      "image-concept-art": {
+        "name": "Concept Art",
+        "description": "Game and film concept design"
+      },
+      "image-illustration": {
+        "name": "Illustration",
+        "description": "Picture book and commercial illustration style"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "Anime Style",
+        "description": "Japanese anime style images"
       }
     },
     "video": {

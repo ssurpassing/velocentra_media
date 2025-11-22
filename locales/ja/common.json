@@ -751,7 +751,7 @@
     "image": {
       "image-general": {
         "name": "一般画像",
-        "description": "一般的な画像生成最適化"
+        "description": "汎用画像生成最適化"
       },
       "image-professional-portrait": {
         "name": "プロフェッショナルポートレート",
@@ -761,35 +761,39 @@
         "name": "アーティスティックポートレート",
         "description": "アーティスティックポートレート最適化"
       },
-      "image-product": {
-        "name": "商品撮影",
-        "description": "商品撮影とEコマース画像"
+      "image-realistic-photo": {
+        "name": "リアル写真",
+        "description": "フォトリアリスティック画像生成"
       },
-      "image-landscape": {
-        "name": "風景写真",
-        "description": "自然風景と建築写真"
+      "image-concept-art": {
+        "name": "コンセプトアート",
+        "description": "ゲームと映画のコンセプトデザイン"
+      },
+      "image-illustration": {
+        "name": "イラストレーション",
+        "description": "絵本と商業イラストスタイル"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "アニメスタイル",
+        "description": "日本のアニメスタイル画像"
       }
     },
     "video": {
       "video-cinematic": {
         "name": "映画スタイル",
-        "description": "ドラマチックな照明と構成による映画的なストーリーテリングの最適化"
+        "description": "ドラマチックな照明と構図で映画的なストーリーテリングに最適化"
       },
       "video-commercial": {
-        "name": "コマーシャル/広告",
-        "description": "製品プレゼンテーションとブランド広告の最適化"
+        "name": "広告",
+        "description": "製品展示とブランド広告に最適化"
       },
       "video-documentary": {
-        "name": "ドキュメンタリー/自然",
-        "description": "自然ドキュメンタリーと野生動物スタイルの最適化"
+        "name": "ドキュメンタリー",
+        "description": "自然ドキュメンタリーと野生動物スタイルに最適化"
       },
       "video-general": {
         "name": "一般動画",
-        "description": "一般的な動画生成最適化"
+        "description": "様々な動画生成シナリオに適しています"
       }
     }
   },

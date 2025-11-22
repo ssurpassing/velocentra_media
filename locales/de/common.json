@@ -754,24 +754,28 @@
         "description": "Allgemeine Bildgenerierungsoptimierung"
       },
       "image-professional-portrait": {
-        "name": "Professionelles Portrait",
-        "description": "Professionelle Portraitoptimierung"
+        "name": "Professionelles Porträt",
+        "description": "Optimierung für professionelle Porträts"
       },
       "image-artistic-portrait": {
-        "name": "Künstlerisches Portrait",
-        "description": "Künstlerische Portraitoptimierung"
+        "name": "Künstlerisches Porträt",
+        "description": "Optimierung für künstlerische Porträts"
       },
-      "image-product": {
-        "name": "Produktfotografie",
-        "description": "Produktfotografie und E-Commerce-Bilder"
+      "image-realistic-photo": {
+        "name": "Realistisches Foto",
+        "description": "Fotorealistische Bildgenerierung"
       },
-      "image-landscape": {
-        "name": "Landschaftsfotografie",
-        "description": "Natürliche Landschaften und Architekturfotografie"
+      "image-concept-art": {
+        "name": "Konzeptkunst",
+        "description": "Spiel- und Filmkonzeptdesign"
+      },
+      "image-illustration": {
+        "name": "Illustration",
+        "description": "Bilderbuch- und kommerzielle Illustrationsstil"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "Anime-Stil",
+        "description": "Japanische Anime-Stil-Bilder"
       }
     },
     "video": {
@@ -780,16 +784,16 @@
         "description": "Optimierung für filmisches Storytelling mit dramatischer Beleuchtung und Komposition"
       },
       "video-commercial": {
-        "name": "Werbung/Werbespot",
+        "name": "Werbung",
         "description": "Optimierung für Produktpräsentation und Markenwerbung"
       },
       "video-documentary": {
-        "name": "Dokumentation/Natur",
+        "name": "Dokumentarfilm",
         "description": "Optimierung für natürliche Dokumentation und Wildlife-Stil"
       },
       "video-general": {
         "name": "Allgemeines Video",
-        "description": "Allgemeine Videogenerierungsoptimierung"
+        "description": "Geeignet für verschiedene Videogenerierungsszenarien"
       }
     }
   },

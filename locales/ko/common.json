@@ -751,45 +751,49 @@
     "image": {
       "image-general": {
         "name": "일반 이미지",
-        "description": "일반 이미지 생성 최적화"
+        "description": "범용 이미지 생성 최적화"
       },
       "image-professional-portrait": {
-        "name": "전문 포트레이트",
-        "description": "전문 포트레이트 최적화"
+        "name": "전문 인물 사진",
+        "description": "전문 인물 사진 최적화"
       },
       "image-artistic-portrait": {
-        "name": "예술적 포트레이트",
-        "description": "예술적 포트레이트 최적화"
+        "name": "예술적 초상화",
+        "description": "예술적 초상화 최적화"
       },
-      "image-product": {
-        "name": "제품 사진",
-        "description": "제품 사진 및 전자상거래 이미지"
+      "image-realistic-photo": {
+        "name": "사실적 사진",
+        "description": "사실적 이미지 생성"
       },
-      "image-landscape": {
-        "name": "풍경 사진",
-        "description": "자연 풍경 및 건축 사진"
+      "image-concept-art": {
+        "name": "컨셉 아트",
+        "description": "게임 및 영화 컨셉 디자인"
+      },
+      "image-illustration": {
+        "name": "일러스트레이션",
+        "description": "그림책 및 상업 일러스트 스타일"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "애니메이션 스타일",
+        "description": "일본 애니메이션 스타일 이미지"
       }
     },
     "video": {
       "video-cinematic": {
         "name": "영화 스타일",
-        "description": "드라마틱한 조명과 구성을 통한 영화적 스토리텔링 최적화"
+        "description": "드라마틱한 조명과 구도로 영화적 스토리텔링에 최적화"
       },
       "video-commercial": {
-        "name": "광고/커머셜",
-        "description": "제품 프레젠테이션 및 브랜드 광고 최적화"
+        "name": "광고",
+        "description": "제품 전시 및 브랜드 광고에 최적화"
       },
       "video-documentary": {
-        "name": "다큐멘터리/자연",
-        "description": "자연 다큐멘터리 및 야생동물 스타일 최적화"
+        "name": "다큐멘터리",
+        "description": "자연 다큐멘터리 및 야생동물 스타일에 최적화"
       },
       "video-general": {
-        "name": "일반 동영상",
-        "description": "일반 동영상 생성 최적화"
+        "name": "일반 비디오",
+        "description": "다양한 비디오 생성 시나리오에 적합"
       }
     }
   },

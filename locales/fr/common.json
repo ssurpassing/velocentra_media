@@ -750,46 +750,50 @@
   "promptTemplates": {
     "image": {
       "image-general": {
-        "name": "Image générale",
-        "description": "Optimisation de génération d'image générale"
+        "name": "Image Générale",
+        "description": "Optimisation de génération d'images à usage général"
       },
       "image-professional-portrait": {
-        "name": "Portrait professionnel",
+        "name": "Portrait Professionnel",
         "description": "Optimisation de portrait professionnel"
       },
       "image-artistic-portrait": {
-        "name": "Portrait artistique",
+        "name": "Portrait Artistique",
         "description": "Optimisation de portrait artistique"
       },
-      "image-product": {
-        "name": "Photographie de produit",
-        "description": "Photographie de produit et images e-commerce"
+      "image-realistic-photo": {
+        "name": "Photo Réaliste",
+        "description": "Génération d'images photoréalistes"
       },
-      "image-landscape": {
-        "name": "Photographie de paysage",
-        "description": "Paysages naturels et photographie architecturale"
+      "image-concept-art": {
+        "name": "Art Conceptuel",
+        "description": "Conception conceptuelle de jeux et de films"
+      },
+      "image-illustration": {
+        "name": "Illustration",
+        "description": "Style d'illustration commerciale et de livre d'images"
       },
       "image-anime": {
-        "name": "Anime",
-        "description": "Anime style optimization"
+        "name": "Style Anime",
+        "description": "Images de style anime japonais"
       }
     },
     "video": {
       "video-cinematic": {
-        "name": "Style cinématographique",
-        "description": "Optimisation pour narration cinématographique avec éclairage et composition dramatiques"
+        "name": "Style Cinématographique",
+        "description": "Optimisé pour la narration cinématographique avec éclairage et composition dramatiques"
       },
       "video-commercial": {
-        "name": "Commercial/Publicité",
-        "description": "Optimisation pour présentation de produits et publicité de marque"
+        "name": "Publicité",
+        "description": "Optimisé pour la présentation de produits et la publicité de marque"
       },
       "video-documentary": {
-        "name": "Documentaire/Nature",
-        "description": "Optimisation pour documentaire naturel et style faune"
+        "name": "Documentaire",
+        "description": "Optimisé pour le documentaire naturel et le style animalier"
       },
       "video-general": {
-        "name": "Vidéo générale",
-        "description": "Optimisation de génération vidéo générale"
+        "name": "Vidéo Générale",
+        "description": "Convient à divers scénarios de génération vidéo"
       }
     }
   },
