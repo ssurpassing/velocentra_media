@@ -32,7 +32,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Permanent storage',
       'Auto-renewal subscription',
     ],
-    stripePriceId: process.env.STRIPE_PRICE_ID_MONTHLY_1000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_MONTHLY_1000,
   },
   {
     id: 'subscription-monthly-5000',
@@ -52,7 +52,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Auto-renewal subscription',
     ],
     popular: true,
-    stripePriceId: process.env.STRIPE_PRICE_ID_MONTHLY_5000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_MONTHLY_5000,
   },
   {
     id: 'subscription-monthly-10000',
@@ -72,7 +72,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Dedicated support',
       'Auto-renewal subscription',
     ],
-    stripePriceId: process.env.STRIPE_PRICE_ID_MONTHLY_10000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_MONTHLY_10000,
   },
   // Annual Subscriptions (20% discount)
   {
@@ -93,7 +93,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Permanent storage',
       'Save $24/year',
     ],
-    stripePriceId: process.env.STRIPE_PRICE_ID_YEARLY_1000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_YEARLY_1000,
   },
   {
     id: 'subscription-yearly-5000',
@@ -115,7 +115,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Save $120/year',
     ],
     popular: true,
-    stripePriceId: process.env.STRIPE_PRICE_ID_YEARLY_5000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_YEARLY_5000,
   },
   {
     id: 'subscription-yearly-10000',
@@ -137,7 +137,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Dedicated support',
       'Save $240/year',
     ],
-    stripePriceId: process.env.STRIPE_PRICE_ID_YEARLY_10000,
+    stripePriceId: process.env.STRIPE_PRICE_ID_SUBSCRIPTION_YEARLY_10000,
   },
   // One-time Credit Packages
   {
